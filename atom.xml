@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-07-21T07:50:01.181Z</updated>
+  <updated>2016-07-21T09:00:48.475Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,19 +16,53 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>基本語法</title>
+    <link href="http://yoursite.com/2016/07/21/basic-syntax/"/>
+    <id>http://yoursite.com/2016/07/21/basic-syntax/</id>
+    <published>2016-07-21T08:58:21.021Z</published>
+    <updated>2016-07-21T09:00:48.475Z</updated>
+    
+    <content type="html"><![CDATA[<p>categories:</p>
+<ul>
+<li>tech<br>tags:</li>
+<li>hexo</li>
+<li>git</li>
+</ul>
+<h1 id="主標題-h1"><a href="#主標題-h1" class="headerlink" title="主標題(h1)"></a>主標題(h1)</h1><h2 id="次標題-h2"><a href="#次標題-h2" class="headerlink" title="次標題(h2)"></a>次標題(h2)</h2><h3 id="h3"><a href="#h3" class="headerlink" title="h3"></a>h3</h3><div class="tip"><br>    警告區塊<br></div>
+
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">p</span></div><div class="line">	<span class="attribute">color</span>: white</div></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"test"</span>&gt;</span></div><div class="line">	A test.</div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;categories:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;tech&lt;br&gt;tags:&lt;/li&gt;
+&lt;li&gt;hexo&lt;/li&gt;
+&lt;li&gt;git&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;主標題-h1&quot;&gt;&lt;a href=&quot;#主標題-h1&quot; class=&quot;headerlink&quot; title=&quot;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>修改主題（懶人法）</title>
     <link href="http://yoursite.com/2016/07/21/modify-themes/"/>
     <id>http://yoursite.com/2016/07/21/modify-themes/</id>
     <published>2016-07-21T07:28:26.022Z</published>
-    <updated>2016-07-21T07:50:01.181Z</updated>
+    <updated>2016-07-21T08:41:42.985Z</updated>
     
     <content type="html"><![CDATA[<p>將 themes 資料夾複製一份出來<br>這樣就可以自由修改la</p>
+<p>apollo 模版是以 jade 寫的<br>只要另外安裝外掛 <a href="https://github.com/hexojs/hexo-renderer-ejs" target="_blank" rel="external">Jade</a><br>hexo 就會自動幫你 compile<br>也可以另外插入 css 去修改了</p>
 ]]></content>
     
     <summary type="html">
     
       &lt;p&gt;將 themes 資料夾複製一份出來&lt;br&gt;這樣就可以自由修改la&lt;/p&gt;
-
+&lt;p&gt;apollo 模版是以 jade 寫的&lt;br&gt;只要另外安裝外掛 &lt;a href=&quot;https://github.com/hexojs/hexo-renderer-ejs&quot; target=&quot;_b
     
     </summary>
     
@@ -40,20 +74,28 @@
     <link href="http://yoursite.com/2016/07/21/keep-hexo-source-in-github/"/>
     <id>http://yoursite.com/2016/07/21/keep-hexo-source-in-github/</id>
     <published>2016-07-21T07:21:32.045Z</published>
-    <updated>2016-07-21T07:50:28.167Z</updated>
+    <updated>2016-07-21T09:07:01.773Z</updated>
     
     <content type="html"><![CDATA[<p>在 hexo 資料夾下初始化 git，並做第一次 commit</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git init</div><div class="line">git commit <span class="_">-a</span></div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git init</div><div class="line">git commit -a</div></pre></td></tr></table></figure>
 <p>將 branch 改名並推至遠端</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git branch -m hexo-article // 更名為 hexo-article</div><div class="line">git remote add origin https://github.com/thisis577/thisis577.github.io</div><div class="line">git fetch origin // 檢查遠端是否有新東西</div><div class="line">git push origin hexo-article -u</div></pre></td></tr></table></figure>]]></content>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git branch -m hexo-article <span class="comment"># 更名為 hexo-article</span></div><div class="line">git remote add origin https://github.com/thisis577/thisis577.github.io</div><div class="line">git fetch origin <span class="comment"># 檢查遠端是否有新東西</span></div><div class="line">git push origin hexo-article -u</div></pre></td></tr></table></figure>
+<p>在 _config.yml 設定 deploy</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="attr">deploy:</span></div><div class="line"><span class="attr">    type:</span> git</div><div class="line"><span class="attr">    repo:</span> git@github.com:thisis577/thisis577.github.io.git</div><div class="line"><span class="attr">    branch:</span> master</div></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
       &lt;p&gt;在 hexo 資料夾下初始化 git，並做第一次 commit&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div clas
     
     </summary>
     
+      <category term="tech" scheme="http://yoursite.com/categories/tech/"/>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="git" scheme="http://yoursite.com/tags/git/"/>
     
   </entry>
   
