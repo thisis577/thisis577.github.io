@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-07-21T06:55:58.182Z</updated>
+  <updated>2016-07-21T07:21:37.409Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,25 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>把 hexo 原始碼也放到 github 遠端保存</title>
+    <link href="http://yoursite.com/2016/07/21/keep-hexo-source-in-github/"/>
+    <id>http://yoursite.com/2016/07/21/keep-hexo-source-in-github/</id>
+    <published>2016-07-21T07:21:32.045Z</published>
+    <updated>2016-07-21T07:21:37.409Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="在-hexo-資料夾下初始化-git，並做第一次-commit"><a href="#在-hexo-資料夾下初始化-git，並做第一次-commit" class="headerlink" title="在 hexo 資料夾下初始化 git，並做第一次 commit"></a>在 hexo 資料夾下初始化 git，並做第一次 commit</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git init</div><div class="line">git commit <span class="_">-a</span></div></pre></td></tr></table></figure>
+<h1 id="將-branch-改名並推至遠端"><a href="#將-branch-改名並推至遠端" class="headerlink" title="將 branch 改名並推至遠端"></a>將 branch 改名並推至遠端</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git branch -m hexo-article // 更名為 hexo-article</div><div class="line">git remote add origin https://github.com/thisis577/thisis577.github.io</div><div class="line">git fetch origin // 檢查遠端是否有新東西</div><div class="line">git push origin hexo-article -u</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;在-hexo-資料夾下初始化-git，並做第一次-commit&quot;&gt;&lt;a href=&quot;#在-hexo-資料夾下初始化-git，並做第一次-commit&quot; class=&quot;headerlink&quot; title=&quot;在 hexo 資料夾下初始化 git，並做第一次 commi
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
