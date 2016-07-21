@@ -1,0 +1,14 @@
+menu:
+    Blog: /
+    Archive: /archives/
+    GitHub: https://github.com/thisis577
+
+favicon: /profile.png
+logo: /profile.png
+
+# Analytics
+# google-analytics:
+ga: UA-81119231-1
+
+# Copyright Infomation
+startyear: 2016

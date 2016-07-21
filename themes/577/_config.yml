@@ -1,0 +1,20 @@
+menu:
+    Blog: /
+    Archive: /archives/
+    Codepen: http://codepen.io/thisis577
+    GitHub: https://github.com/thisis577
+
+favicon: /profile.png
+logo: /profile.png
+
+# Comment
+# e.g disqus: seansun
+disqus:
+duoshuo:
+
+# Analytics
+# google-analytics:
+ga: UA-81119231-1
+
+# Copyright Infomation
+startyear: 2016
