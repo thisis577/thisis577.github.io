@@ -9,6 +9,7 @@ header {
 
 header .logo-link img {
 	height: 120px;
+	transform: scaleX(-1);
 }
 
 @media screen and (min-width: 700px) {
@@ -17,6 +18,6 @@ header .logo-link img {
 	}
 }
 
-pre {
+code, pre {
 	font-family: 'consolas', sans-serif;
 }

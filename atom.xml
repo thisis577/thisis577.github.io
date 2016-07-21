@@ -53,16 +53,17 @@
     <link href="http://yoursite.com/2016/07/21/modify-themes/"/>
     <id>http://yoursite.com/2016/07/21/modify-themes/</id>
     <published>2016-07-21T07:28:26.022Z</published>
-    <updated>2016-07-21T08:41:42.985Z</updated>
+    <updated>2016-07-21T09:18:50.386Z</updated>
     
     <content type="html"><![CDATA[<p>將 themes 資料夾複製一份出來<br>這樣就可以自由修改la</p>
 <p>apollo 模版是以 jade 寫的<br>只要另外安裝外掛 <a href="https://github.com/hexojs/hexo-renderer-ejs" target="_blank" rel="external">Jade</a><br>hexo 就會自動幫你 compile<br>也可以另外插入 css 去修改了</p>
+<a id="more"></a>
 ]]></content>
     
     <summary type="html">
     
       &lt;p&gt;將 themes 資料夾複製一份出來&lt;br&gt;這樣就可以自由修改la&lt;/p&gt;
-&lt;p&gt;apollo 模版是以 jade 寫的&lt;br&gt;只要另外安裝外掛 &lt;a href=&quot;https://github.com/hexojs/hexo-renderer-ejs&quot; target=&quot;_b
+&lt;p&gt;apollo 模版是以 jade 寫的&lt;br&gt;只要另外安裝外掛 &lt;a href=&quot;https://github.com/hexojs/hexo-renderer-ejs&quot;&gt;Jade&lt;/a&gt;&lt;br&gt;hexo 就會自動幫你 compile&lt;br&gt;也可以另外插入 css 去修改了&lt;/p&gt;
     
     </summary>
     
@@ -74,19 +75,20 @@
     <link href="http://yoursite.com/2016/07/21/keep-hexo-source-in-github/"/>
     <id>http://yoursite.com/2016/07/21/keep-hexo-source-in-github/</id>
     <published>2016-07-21T07:21:32.045Z</published>
-    <updated>2016-07-21T09:07:01.773Z</updated>
+    <updated>2016-07-21T09:19:19.825Z</updated>
     
     <content type="html"><![CDATA[<p>在 hexo 資料夾下初始化 git，並做第一次 commit</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git init</div><div class="line">git commit -a</div></pre></td></tr></table></figure>
+<a id="more"></a>
 <p>將 branch 改名並推至遠端</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git branch -m hexo-article <span class="comment"># 更名為 hexo-article</span></div><div class="line">git remote add origin https://github.com/thisis577/thisis577.github.io</div><div class="line">git fetch origin <span class="comment"># 檢查遠端是否有新東西</span></div><div class="line">git push origin hexo-article -u</div></pre></td></tr></table></figure>
-<p>在 _config.yml 設定 deploy</p>
+<p>在 <code>_config.yml</code> 設定 deploy</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="attr">deploy:</span></div><div class="line"><span class="attr">    type:</span> git</div><div class="line"><span class="attr">    repo:</span> git@github.com:thisis577/thisis577.github.io.git</div><div class="line"><span class="attr">    branch:</span> master</div></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
       &lt;p&gt;在 hexo 資料夾下初始化 git，並做第一次 commit&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div clas
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;git init&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;git commit -a&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
