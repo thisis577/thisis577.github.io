@@ -14,6 +14,8 @@ git init
 git commit -a
 ```
 
+<!-- more -->
+
 將 branch 改名並推至遠端
 
 ``` bash
@@ -23,7 +25,7 @@ git fetch origin # 檢查遠端是否有新東西
 git push origin hexo-article -u
 ```
 
-在 _config.yml 設定 deploy
+在 `_config.yml` 設定 deploy
 
 ``` yml
 deploy:
