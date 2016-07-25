@@ -12,12 +12,21 @@ header .logo-link img {
 	transform: scaleX(-1);
 }
 
+
+code, pre {
+	font-family: 'consolas', sans-serif;
+}
+
 @media screen and (min-width: 700px) {
 	header .nav {
 		line-height: 120px;
 	}
 }
 
-code, pre {
-	font-family: 'consolas', sans-serif;
+/* mobile */
+@media screen and (max-width: 700px) {
+	.wrap {
+		width: calc(100% - 3em);
+		margin: auto;
+	}
 }
