@@ -2,6 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2016/07/26/UI-state-note/</loc>
+    
+    <lastmod>2016-07-26T06:12:37.726Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/07/26/web-font-setting/</loc>
+    
+    <lastmod>2016-07-26T06:05:31.537Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/07/26/git-branch/</loc>
+    
+    <lastmod>2016-07-26T05:55:34.278Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/07/26/bourbon-neat-install-and-link/</loc>
+    
+    <lastmod>2016-07-26T05:40:14.018Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/07/21/hello-world/</loc>
+    
+    <lastmod>2016-07-26T04:36:16.008Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2016/07/21/keep-hexo-source-in-github/</loc>
     
     <lastmod>2016-07-21T09:19:19.825Z</lastmod>
@@ -12,20 +47,6 @@
     <loc>http://yoursite.com/2016/07/21/modify-themes/</loc>
     
     <lastmod>2016-07-21T09:18:50.386Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2016/07/21/basic-syntax/</loc>
-    
-    <lastmod>2016-07-21T09:00:48.475Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2016/07/21/hello-world/</loc>
-    
-    <lastmod>2016-07-21T06:55:58.182Z</lastmod>
     
   </url>
   
