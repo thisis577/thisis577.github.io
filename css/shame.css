@@ -1,5 +1,8 @@
+@import url("https://fonts.googleapis.com/earlyaccess/notosanstc.css");
+
 body {
-	font-family: 'sourcesanspro', '微軟正黑體', 'Helvetica Neue', Arial, sans-serif;
+	font-family: 'sourcesanspro', 'Noto Sans TC', '微軟正黑體', 'Helvetica Neue', Arial, sans-serif;
+	font-weight: 300;
 }
 
 header {
@@ -12,12 +15,34 @@ header .logo-link img {
 	transform: scaleX(-1);
 }
 
+h1 {
+	font-size: 1.3em;
+}
+.post-content h2, .post-content h3 {
+	margin-left: 1em;
+	font-size: 1.1em;
+
+}
+
+.post-content .tip {
+	margin-left: .75em;
+}
+code, pre {
+	font-family: 'consolas', sans-serif;
+}
+
 @media screen and (min-width: 700px) {
 	header .nav {
 		line-height: 120px;
 	}
 }
 
-code, pre {
-	font-family: 'consolas', sans-serif;
+/* mobile */
+@media screen and (max-width: 700px) {
+	.wrap {
+		width: calc(100% - 3em);
+		margin: auto;
+	}
 }
+
+
