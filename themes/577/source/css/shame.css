@@ -61,7 +61,7 @@ header .logo-link img {
 	margin-left: .75em;
 }
 code, pre {
-	font-family: 'consolas', sans-serif;
+	font-family: 'consolas', 'Noto Sans TC', sans-serif;
 }
 
 /* tags in post */

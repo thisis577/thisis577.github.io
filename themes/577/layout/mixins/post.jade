@@ -10,7 +10,7 @@ mixin postTags(item)
     if (item.tags && item.tags.length)
         span.post-tags
             - item.tags.each(function (tag) {
-                a.post-tag(href!=url_for(tag.path)) #{tag.name}
+                a.post-tag(href!=url_for(tag.path)) # #{tag.name}
             - })
 
 //- Index Page

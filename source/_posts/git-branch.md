@@ -1,12 +1,12 @@
 ---
 title: Git branch
 tags:
-- git
+- Git
 ---
 
 第一次推branch:
 
-``` BASH
+``` yml
 # 在該branch下
 git push -u origin BRANCH_NAME
 # 因遠端尚未有這支branch, 所以需要下此指令建立
@@ -17,7 +17,7 @@ git push -u origin BRANCH_NAME
 <!-- more -->
 
 到別人推的branch:
-``` BASH
+``` yml
 # 在master:
 git fetch
 git checkout BRANCH_NAME
