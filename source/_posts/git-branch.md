@@ -1,5 +1,5 @@
 ---
-title: git branch
+title: Git branch
 tags:
 - git
 ---

@@ -5,8 +5,6 @@ tags:
 - Font
 ---
 
-Ref: [Typography Handbook](http://typographyhandbook.com/)
-
 # Fallback
 - web font loader to fallbacks the webfont (if font loading is not compeleted
 
@@ -49,3 +47,6 @@ html
 - single direction margin - margin-bottom
 - vertical margin 會被 font-size 影響, 使用 em
 - horizontal margin 不會，所以用 rem
+
+Ref: [Typography Handbook](http://typographyhandbook.com/)
+
