@@ -2,6 +2,7 @@
 title: SEO note
 tags:
 - SEO
+- UI
 ---
 
 

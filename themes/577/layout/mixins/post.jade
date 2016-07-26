@@ -1,8 +1,17 @@
-mixin postInfo(item)
+mixin postInfo(item, isShowTag=true)
     .post-info
         != full_date(item.date, 'll')
         if item.from && (is_home() || is_post())
             a.post-from(href=item.from target="_blank" title=item.from) 翻譯。原文網址
+        if(isShowTag)
+            +postTags(item)
+
+mixin postTags(item)
+    if (item.tags && item.tags.length)
+        span.post-tags
+            - item.tags.each(function (tag) {
+                a.post-tag(href!=url_for(tag.path)) #{tag.name}
+            - })
 
 //- Index Page
 mixin posts()
@@ -31,9 +40,10 @@ mixin postList()
             if change
                 h2.archive-year!= year
             .post-item
-                +postInfo(item)
+                +postInfo(item, false)
                 a.post-title-link(href= url_for(item.path))
                     != item.title
+                +postTags(item)
         - })
 
 //- Post Page
