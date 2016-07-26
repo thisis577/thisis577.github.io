@@ -21,6 +21,7 @@ h1 {
 .post-content h2, .post-content h3 {
 	margin-left: 1em;
 	font-size: 1.1em;
+
 }
 
 .post-content .tip {
@@ -43,3 +44,5 @@ code, pre {
 		margin: auto;
 	}
 }
+
+
