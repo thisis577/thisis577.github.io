@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-07-26T06:05:31.537Z</updated>
+  <updated>2016-07-26T09:22:16.909Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,14 +16,69 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>SEO note</title>
+    <link href="http://yoursite.com/2016/07/26/SEO-note/"/>
+    <id>http://yoursite.com/2016/07/26/SEO-note/</id>
+    <published>2016-07-26T07:45:02.203Z</published>
+    <updated>2016-07-26T09:22:16.909Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="網頁配置"><a href="#網頁配置" class="headerlink" title="網頁配置"></a>網頁配置</h1><p>CTA = Call to Actions</p>
+<ul>
+<li>button</li>
+<li>Main CTA 要夠大夠醒目讓 user 一眼就能看到</li>
+</ul>
+<p>Cross-selling &amp; upselling</p>
+<ul>
+<li>Good-better-best options</li>
+<li>Recently viewed products</li>
+<li>People who bought this also bought…</li>
+<li>Additional service only £x extra</li>
+<li>See others in this category/brand</li>
+</ul>
+<a id="more"></a>
+<p>Ref: <a href="https://www.hitreach.com/perfect-web-page/#top" target="_blank" rel="external">The Anatomy of a Perfect Web Page</a></p>
+<p>&nbsp;</p>
+<h1 id="名詞解釋"><a href="#名詞解釋" class="headerlink" title="名詞解釋"></a>名詞解釋</h1><h2 id="Web-copy-網頁文案"><a href="#Web-copy-網頁文案" class="headerlink" title="Web copy = 網頁文案"></a>Web copy = 網頁文案</h2><ul>
+<li>Web copy is the bones of your website. It’s the core text that guides people through your site and tells them what they need to know.</li>
+<li>Web copy is copywriting for your website, found on all the major pages on your site. It’s designed to sell your products or services to people once they’ve found you.</li>
+</ul>
+<h2 id="Web-content-網頁內容？"><a href="#Web-content-網頁內容？" class="headerlink" title="Web content = 網頁內容？"></a>Web content = 網頁內容？</h2><ul>
+<li>Blog posts are web content. In fact, pretty much any piece of writing on the internet can be classed as ‘web content’.</li>
+</ul>
+<p>Ref: <a href="http://untamedwriting.com/the-difference-between-web-copy-and-web-content-and-why-your-site-needs-both/" target="_blank" rel="external">The Difference Between Web Copy and Web Content (and Why Your Site Needs Both)</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;網頁配置&quot;&gt;&lt;a href=&quot;#網頁配置&quot; class=&quot;headerlink&quot; title=&quot;網頁配置&quot;&gt;&lt;/a&gt;網頁配置&lt;/h1&gt;&lt;p&gt;CTA = Call to Actions&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;button&lt;/li&gt;
+&lt;li&gt;Main CTA 要夠大夠醒目讓 user 一眼就能看到&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Cross-selling &amp;amp; upselling&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Good-better-best options&lt;/li&gt;
+&lt;li&gt;Recently viewed products&lt;/li&gt;
+&lt;li&gt;People who bought this also bought…&lt;/li&gt;
+&lt;li&gt;Additional service only £x extra&lt;/li&gt;
+&lt;li&gt;See others in this category/brand&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="SEO" scheme="http://yoursite.com/tags/SEO/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Font note</title>
     <link href="http://yoursite.com/2016/07/26/web-font-setting/"/>
     <id>http://yoursite.com/2016/07/26/web-font-setting/</id>
     <published>2016-07-26T05:57:57.240Z</published>
-    <updated>2016-07-26T06:05:31.537Z</updated>
+    <updated>2016-07-26T09:16:00.553Z</updated>
     
-    <content type="html"><![CDATA[<p>Ref: <a href="http://typographyhandbook.com/" target="_blank" rel="external">Typography Handbook</a></p>
-<h1 id="Fallback"><a href="#Fallback" class="headerlink" title="Fallback"></a>Fallback</h1><ul>
+    <content type="html"><![CDATA[<h1 id="Fallback"><a href="#Fallback" class="headerlink" title="Fallback"></a>Fallback</h1><ul>
 <li>web font loader to fallbacks the webfont (if font loading is not compeleted</li>
 </ul>
 <h1 id="單位"><a href="#單位" class="headerlink" title="單位"></a>單位</h1><ul>
@@ -42,12 +97,12 @@
 <li>vertical margin 會被 font-size 影響, 使用 em</li>
 <li>horizontal margin 不會，所以用 rem</li>
 </ul>
+<p>Ref: <a href="http://typographyhandbook.com/" target="_blank" rel="external">Typography Handbook</a></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;Ref: &lt;a href=&quot;http://typographyhandbook.com/&quot;&gt;Typography Handbook&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;Fallback&quot;&gt;&lt;a href=&quot;#Fallback&quot; class=&quot;headerlink&quot; title=&quot;Fallback&quot;&gt;&lt;/a&gt;Fallback&lt;/h1&gt;&lt;ul&gt;
+      &lt;h1 id=&quot;Fallback&quot;&gt;&lt;a href=&quot;#Fallback&quot; class=&quot;headerlink&quot; title=&quot;Fallback&quot;&gt;&lt;/a&gt;Fallback&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;web font loader to fallbacks the webfont (if font loading is not compeleted&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&quot;單位&quot;&gt;&lt;a href=&quot;#單位&quot; class=&quot;headerlink&quot; title=&quot;單位&quot;&gt;&lt;/a&gt;單位&lt;/h1&gt;&lt;ul&gt;
@@ -68,11 +123,11 @@
   </entry>
   
   <entry>
-    <title>git branch</title>
+    <title>Git branch</title>
     <link href="http://yoursite.com/2016/07/26/git-branch/"/>
     <id>http://yoursite.com/2016/07/26/git-branch/</id>
     <published>2016-07-26T05:55:25.448Z</published>
-    <updated>2016-07-26T05:55:34.278Z</updated>
+    <updated>2016-07-26T09:29:42.454Z</updated>
     
     <content type="html"><![CDATA[<p>第一次推branch:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 在該branch下</span></div><div class="line">git push -u origin BRANCH_NAME</div><div class="line"><span class="comment"># 因遠端尚未有這支branch, 所以需要下此指令建立</span></div><div class="line"><span class="comment"># -u: 與遠端建立關連, 這樣下次才不需要又打長長的指令</span></div><div class="line"><span class="comment"># 之後就可以直接在 branch 下 git push 就好</span></div></pre></td></tr></table></figure>
@@ -149,11 +204,11 @@
   </entry>
   
   <entry>
-    <title>修改主題（懶人法）</title>
+    <title>修改主題(懶人法)</title>
     <link href="http://yoursite.com/2016/07/21/modify-themes/"/>
     <id>http://yoursite.com/2016/07/21/modify-themes/</id>
     <published>2016-07-21T07:28:26.022Z</published>
-    <updated>2016-07-21T09:18:50.386Z</updated>
+    <updated>2016-07-26T09:12:54.478Z</updated>
     
     <content type="html"><![CDATA[<p>將 themes 資料夾複製一份出來<br>這樣就可以自由修改la</p>
 <p>apollo 模版是以 jade 寫的<br>只要另外安裝外掛 <a href="https://github.com/hexojs/hexo-renderer-ejs" target="_blank" rel="external">Jade</a><br>hexo 就會自動幫你 compile<br>也可以另外插入 css 去修改了</p>

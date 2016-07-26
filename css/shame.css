@@ -3,11 +3,13 @@
 body {
 	font-family: 'sourcesanspro', 'Noto Sans TC', '微軟正黑體', 'Helvetica Neue', Arial, sans-serif;
 	font-weight: 300;
+	min-width: 320px;
 }
 
 header {
 	min-height: 120px;
 	margin-top: 20px;
+	padding: 20px 0px;
 }
 
 header .logo-link img {
@@ -15,15 +17,46 @@ header .logo-link img {
 	transform: scaleX(-1);
 }
 
-h1 {
+.wrap {
+	width: 600px;
+}
+
+.post-block .post-title {
+	font-size: 2em;
+	margin-bottom: 0;
+}
+.post-block .post-info {
+	margin-top: .5em;
+	margin-bottom: 3em;
+	position: relative;
+}
+.post-block .post-info:after {
+	content: '';
+	width: 1em;
+	height: 2px;
+	background-color: #42b983;
+	position: absolute;
+	bottom: -.5em;
+	left: 0;
+	opacity: .9;
+}
+
+.post-content h1 {
 	font-size: 1.3em;
+	font-weight: 600;
 }
 .post-content h2, .post-content h3 {
 	margin-left: 1em;
 	font-size: 1.1em;
-
+	font-weight: 500;
 }
 
+.post-content a {
+	border-bottom: 1px dotted #42b983;
+}
+.post-content a:hover {
+	border-bottom: 1px solid #42b983;
+}
 .post-content .tip {
 	margin-left: .75em;
 }
