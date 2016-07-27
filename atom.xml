@@ -325,9 +325,9 @@
       <category term="tech" scheme="http://yoursite.com/categories/tech/"/>
     
     
-      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
-    
       <category term="Git" scheme="http://yoursite.com/tags/Git/"/>
+    
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
     
   </entry>
   
