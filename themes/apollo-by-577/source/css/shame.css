@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/earlyaccess/notosanstc.css");
+@import url('https://fonts.googleapis.com/css?family=Play|Yanone+Kaffeesatz');
 
 body {
-	font-family: 'sourcesanspro', 'Noto Sans TC', '微軟正黑體', 'Helvetica Neue', Arial, sans-serif;
+	font-family: 'sourcesanspro', 'Play', 'Noto Sans TC', '微軟正黑體', 'Helvetica Neue', Arial, sans-serif;
 	font-weight: 300;
 	min-width: 320px;
 }
@@ -22,13 +23,12 @@ header .logo-link img {
 	color: #89c997;
 	display: inline-block;
 	font-size: 10px;
-	font-family: consolas, sans-serif;
+	font-family: 'Play', consolas, sans-serif;
 	margin-left: 10px;
 	text-align: left;
 	vertical-align: 35px;
-	width: 190px;
+	width: 150px;
 	word-break: break-word;
-	word-spacing: -0.2em
 }
 
 .wrap {
@@ -75,7 +75,7 @@ header .logo-link img {
 	margin-left: .75em;
 }
 code, pre {
-	font-family: 'consolas', 'Noto Sans TC', sans-serif;
+	font-family: 'consolas', 'play', 'Noto Sans TC', sans-serif;
 }
 
 /* tags in post */
@@ -89,12 +89,13 @@ code, pre {
 	color: #E36B6B;
 	border: 1px solid #E36B6B;
 	border-radius: 1.5em;
+	display: inline-block;
 	font-size: .9em;
-	padding: .05em .5em 0 .5em;
+	font-family: 'Play', sans-serif;
+	line-height: 1.4;
+	padding: 0 .5em .16em .5em;
 	min-width: 1.5em;
 	text-align: center;
-	display: inline-block;
-	line-height: 1.4;
 }
 
 .post-tag:hover {
@@ -132,8 +133,14 @@ code, pre {
 		margin: auto;
 		padding: 0 1em;
 	}
-	header {
-		margin-left: -1em;
+	.logo-link .subtitle {
+		display: block;
+		margin-left: 0;
+		text-align: center;
+		width: 100%;
+	}
+	.post-content h2, .post-content h3, .post-content .tip {
+		margin-left: 0;
 	}
 }
 

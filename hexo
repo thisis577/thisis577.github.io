@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+# Usage
+if [ "$1" == "" ];
+then
+	echo "Usage: `basename $0` [deploy] [COMMENT]"
+	echo "[COMMENT] is for commit hexo source code"
+	exit 0
+fi
+
+ACTION=$1
+COMMENT=$2
+
+if [ $1 == "deploy" ];
+then
+	# Hexo modify themes and deploy
+	echo "deploy start:"
+	hexo clean
+	hexo generate
+	hexo deploy
+fi
+
+# push hexo source
+if [ $2 != "" ];
+then
+	echo "push start:"
+	git commit -am {$COMMENT}
+	git push
+fi

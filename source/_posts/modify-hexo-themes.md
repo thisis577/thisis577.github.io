@@ -32,3 +32,5 @@ npm install hexo-renderer-jade --save
 <div class="tip">
 	凡是有修改 `.jade` 建議關掉重開 hexo 比較好，以確保有吃到變更
 </div>
+
+jade theme 寫法參考: [hexo-theme-pure](https://github.com/saintwinkle/hexo-theme-pure)

@@ -5,7 +5,7 @@
 # Site
 title: Hello Front-End
 subtitle: A little front-end desinger say little things
-description:
+description: A little front-end desinger say little things
 author: 577
 language: en
 timezone:
@@ -68,8 +68,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: 577
-#theme: white
+theme: apollo-by-577
 
 # 在归档页面显示所有文章
 # 需要上面安装的 hexo-generator-archive 插件支持

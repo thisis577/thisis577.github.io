@@ -1,10 +1,23 @@
 menu:
     Blog: /
     Archive: /archives/
+    Codepen: http://codepen.io/thisis577
     GitHub: https://github.com/thisis577
 
 favicon: /profile.png
 logo: /profile.png
+
+# Siderbar
+# sidbar: right
+# widgets:
+# - category
+# - tag
+# - tagCloud
+
+# Comment
+# e.g disqus: seansun
+disqus:
+duoshuo:
 
 # Analytics
 # google-analytics:
