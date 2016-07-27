@@ -7,6 +7,8 @@ html(lang=config.language)
             header
                 a.logo-link(href=url_for())
                     img(src=theme.logo)
+                    div.subtitle
+                        = config.subtitle
                 include nav
             section.container
                 block container

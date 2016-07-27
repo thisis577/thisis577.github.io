@@ -40,7 +40,7 @@ tags:
 		這樣在推出去之後網頁(`http://your_account.github.io`)才會動。
 	</div>
 
-2. 設定 `_config.yml`
+2. 設定 root `_config.yml`
 	``` yml
 	# 選擇主題
 	theme: theme-name

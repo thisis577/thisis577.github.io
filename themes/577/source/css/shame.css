@@ -17,6 +17,20 @@ header .logo-link img {
 	transform: scaleX(-1);
 }
 
+
+.logo-link .subtitle {
+	color: #89c997;
+	display: inline-block;
+	font-size: 10px;
+	font-family: consolas, sans-serif;
+	margin-left: 10px;
+	text-align: left;
+	vertical-align: 35px;
+	width: 190px;
+	word-break: break-word;
+	word-spacing: -0.2em
+}
+
 .wrap {
 	width: 640px;
 }
@@ -113,8 +127,13 @@ code, pre {
 /* mobile */
 @media screen and (max-width: 700px) {
 	.wrap {
-		width: calc(100% - 2em);
+		width: 100%;
+		box-sizing: border-box;
 		margin: auto;
+		padding: 0 1em;
+	}
+	header {
+		margin-left: -1em;
 	}
 }
 
