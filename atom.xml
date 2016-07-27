@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-07-27T04:34:45.329Z</updated>
+  <updated>2016-07-27T04:54:02.864Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2016/07/27/modify-hexo-themes/"/>
     <id>http://yoursite.com/2016/07/27/modify-hexo-themes/</id>
     <published>2016-07-27T04:34:45.329Z</published>
-    <updated>2016-07-27T04:34:45.329Z</updated>
+    <updated>2016-07-27T04:54:02.864Z</updated>
     
     <content type="html"><![CDATA[<h1 id="不是秘技的秘技"><a href="#不是秘技的秘技" class="headerlink" title="不是秘技的秘技"></a>不是秘技的秘技</h1><p>將 themes 資料夾複製一份出來，這樣就可以自由修改la~ O_&lt;</p>
 <div class="tip"><br><div>記得將 themes 資料夾底下的 .git 資料夾砍掉</div><br><div><code>(Windows 檢視需開啟隱藏資料夾才看得到)</code></div><br><code>這樣自己的 git 才 track 到 themes 底下的所有變更</code><br></div>
@@ -30,7 +30,10 @@
 <h1 id="很難懂的-Jade"><a href="#很難懂的-Jade" class="headerlink" title="很難懂的 Jade"></a>很難懂的 Jade</h1><p>Hexo-theme-apollo 模版是以 <code>Jade</code> 寫的，與官方使用的 <code>ejs</code> 不同<br>但只需要另外安裝 <code>Jade</code> 外掛 <a href="https://github.com/hexojs/hexo-renderer-jade" target="_blank" rel="external">hexo-render-jade</a></p>
 <h2 id="其實只需要一行指令"><a href="#其實只需要一行指令" class="headerlink" title="其實只需要一行指令"></a>其實只需要一行指令</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 安裝 Jade 外掛</span></div><div class="line">npm install hexo-renderer-jade --save</div></pre></td></tr></table></figure>
 <p>如此一來只要下 <code>hexo server</code> 就會自動幫你 compile<br>也可以另外插入 css 去修改了</p>
-<div class="tip"><br>    凡是有修改 <code>.jade</code> 建議關掉重開 hexo 比較好，以確保有吃到變更<br></div>]]></content>
+<div class="tip"><br>    凡是有修改 <code>.jade</code> 建議關掉重開 hexo 比較好，以確保有吃到變更<br></div>
+
+<p>jade theme 寫法參考: <a href="https://github.com/saintwinkle/hexo-theme-pure" target="_blank" rel="external">hexo-theme-pure</a></p>
+]]></content>
     
     <summary type="html">
     

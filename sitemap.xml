@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2016/07/27/modify-hexo-themes/</loc>
+    
+    <lastmod>2016-07-27T04:54:02.864Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2016/07/26/git-branch/</loc>
     
     <lastmod>2016-07-27T04:43:06.752Z</lastmod>
@@ -16,21 +23,14 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2016/07/27/modify-hexo-themes/</loc>
-    
-    <lastmod>2016-07-27T04:34:45.329Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2016/07/27/construct-hexo-with-github/</loc>
+    <loc>http://yoursite.com/2016/07/26/bourbon-neat-install-and-link/</loc>
     
     <lastmod>2016-07-27T04:34:45.314Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2016/07/26/bourbon-neat-install-and-link/</loc>
+    <loc>http://yoursite.com/2016/07/27/construct-hexo-with-github/</loc>
     
     <lastmod>2016-07-27T04:34:45.314Z</lastmod>
     
