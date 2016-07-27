@@ -27,6 +27,7 @@ tags:
 1. 打開 Github Desktop
 2. 設定 > options > Default Shell > 選擇 `Git Bash`
 3. 設定 > Open in Git shell
+4. 然後 Github Desktop 就可以功成身退惹
 
 <div class="tip">
 	步驟2可不做，我挑 Git Bash 只是因為介面比較順眼而已XD
@@ -60,19 +61,30 @@ tags:
 
 4. [修改 Hexo 主題 (懶人法)](../modify-hexo-themes)
 
+	若遇到 deploy 完 style 卻不對的情況: [(deploy后style.css不对)](https://github.com/hexojs/hexo/issues/579)
+
+	``` yml
+	# Make theme changes & deploy
+	hexo clean
+	hexo generate
+	hexo deploy
+	```
+
+
+
 5. [把 Hexo 原始碼也放到 github 遠端保存](../keep-hexo-source-in-github)
+
+	延伸: 在別的地方 clone 既有的 hexo repo
+
+	``` yml
+		# clone repo 到指定目錄
+		git clone http://github.com/your_account/your_account.github.io target_dir
+		# 切換到保存 hexo 原始碼的 branch
+		git checkout hexo_branch
+		# 將該裝的東西都裝一裝
+		npm install
+	```
 
 <div class="tip">
 若項目4.5連結失效可至 [#Hexo](/tags/Hexo/) 搜尋該主題
 </div>
-
-# 延伸: 在別的地方 clone 既有的 hexo repo
-
-``` yml
-# clone repo 到指定目錄
-git clone http://github.com/your_account/your_account.github.io target_dir
-# 切換到保存 hexo 原始碼的 branch
-git checkout hexo_branch
-# 將該裝的東西都裝一裝
-npm install
-```

@@ -27,7 +27,8 @@ then
 	if [ ${COMMENT} != "" ];
 	then
 		echo "push start:"
-		git commit -am ${COMMENT}
+		git add .
+		git commit -m ${COMMENT}
 		git push
 	fi
 fi
