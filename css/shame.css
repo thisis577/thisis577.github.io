@@ -17,8 +17,22 @@ header .logo-link img {
 	transform: scaleX(-1);
 }
 
+
+.logo-link .subtitle {
+	color: #89c997;
+	display: inline-block;
+	font-size: 10px;
+	font-family: consolas, sans-serif;
+	margin-left: 10px;
+	text-align: left;
+	vertical-align: 35px;
+	width: 190px;
+	word-break: break-word;
+	word-spacing: -0.2em
+}
+
 .wrap {
-	width: 600px;
+	width: 640px;
 }
 
 .post-block .post-title {
@@ -61,7 +75,7 @@ header .logo-link img {
 	margin-left: .75em;
 }
 code, pre {
-	font-family: 'consolas', sans-serif;
+	font-family: 'consolas', 'Noto Sans TC', sans-serif;
 }
 
 /* tags in post */
@@ -101,7 +115,7 @@ code, pre {
 	display: block;
 }
 .post-item .post-tag {
-	font-size: .6em;
+	font-size: .8em;
 }
 
 @media screen and (min-width: 700px) {
@@ -113,8 +127,16 @@ code, pre {
 /* mobile */
 @media screen and (max-width: 700px) {
 	.wrap {
-		width: calc(100% - 3em);
+		width: 100%;
+		box-sizing: border-box;
 		margin: auto;
+		padding: 0 1em;
+	}
+	.logo-link .subtitle {
+		display: block;
+		margin-left: 0;
+		text-align: center;
+		width: 100%;
 	}
 }
 

@@ -2,9 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2016/07/26/git-branch/</loc>
+    
+    <lastmod>2016-07-27T04:43:06.752Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/07/21/keep-hexo-source-in-github/</loc>
+    
+    <lastmod>2016-07-27T04:34:45.329Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/07/27/modify-hexo-themes/</loc>
+    
+    <lastmod>2016-07-27T04:34:45.329Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/07/27/construct-hexo-with-github/</loc>
+    
+    <lastmod>2016-07-27T04:34:45.314Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/07/26/bourbon-neat-install-and-link/</loc>
+    
+    <lastmod>2016-07-27T04:34:45.314Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2016/07/26/SEO-note/</loc>
     
-    <lastmod>2016-07-26T10:15:16.414Z</lastmod>
+    <lastmod>2016-07-26T10:36:44.266Z</lastmod>
     
   </url>
   
@@ -16,13 +51,6 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2016/07/26/git-branch/</loc>
-    
-    <lastmod>2016-07-26T09:29:42.454Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/2016/07/26/web-font-setting/</loc>
     
     <lastmod>2016-07-26T09:16:00.553Z</lastmod>
@@ -30,37 +58,9 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2016/07/21/modify-themes/</loc>
-    
-    <lastmod>2016-07-26T09:12:54.478Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/2016/07/26/UI-state-note/</loc>
     
     <lastmod>2016-07-26T06:12:37.726Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2016/07/26/bourbon-neat-install-and-link/</loc>
-    
-    <lastmod>2016-07-26T05:40:14.018Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2016/07/21/hello-world/</loc>
-    
-    <lastmod>2016-07-26T04:36:16.008Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2016/07/21/keep-hexo-source-in-github/</loc>
-    
-    <lastmod>2016-07-21T09:19:19.825Z</lastmod>
     
   </url>
   
