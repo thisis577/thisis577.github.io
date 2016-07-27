@@ -1,8 +1,6 @@
 ---
 title: 404 - Page not found
 toc: false
-comments: false
-permalink: /404
 ---
 
 Oops! This page is not exist.
