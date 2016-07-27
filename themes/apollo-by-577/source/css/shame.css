@@ -22,7 +22,7 @@ header .logo-link img {
 .logo-link .subtitle {
 	color: #89c997;
 	display: inline-block;
-	font-size: 10px;
+	font-size: .8rem;
 	font-family: 'Play', consolas, sans-serif;
 	margin-left: 10px;
 	text-align: left;
