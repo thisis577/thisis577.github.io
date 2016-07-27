@@ -75,7 +75,7 @@ header .logo-link img {
 	margin-left: .75em;
 }
 code, pre {
-	font-family: 'consolas', 'Noto Sans TC', sans-serif;
+	font-family: 'consolas', 'play', 'Noto Sans TC', sans-serif;
 }
 
 /* tags in post */
@@ -89,12 +89,13 @@ code, pre {
 	color: #E36B6B;
 	border: 1px solid #E36B6B;
 	border-radius: 1.5em;
+	display: inline-block;
 	font-size: .9em;
-	padding: .05em .5em 0 .5em;
+	font-family: 'Play', sans-serif;
+	line-height: 1.4;
+	padding: 0 .5em .16em .5em;
 	min-width: 1.5em;
 	text-align: center;
-	display: inline-block;
-	line-height: 1.4;
 }
 
 .post-tag:hover {
