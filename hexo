@@ -4,14 +4,15 @@
 if [ "$1" == "" ];
 then
 	echo "Usage: `basename $0` [deploy] [COMMENT]"
-	echo "[COMMENT] is for commit hexo source code"
+	echo "[COMMENT] is for commit hexo source code, need to connet by '-'"
+	echo "ex: this-is-a-commit-msg"
 	exit 0
 fi
 
 ACTION=$1
 COMMENT=$2
 
-if [ $1 == "deploy" ];
+if [ ${ACTION} == "deploy" ];
 then
 	# Hexo modify themes and deploy
 	echo "deploy start:"
@@ -21,9 +22,13 @@ then
 fi
 
 # push hexo source
-if [ $2 != "" ];
+if [ ${ACTION} != "" ];
 then
-	echo "push start:"
-	git commit -am {$COMMENT}
-	git push
+	if [ ${COMMENT} != "" ];
+	then
+		echo "push start:"
+		git commit -am ${COMMENT}
+		git push
+	fi
 fi
+
