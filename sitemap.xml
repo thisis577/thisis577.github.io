@@ -2,9 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2016/07/27/hexo-md-usage/</loc>
+    
+    <lastmod>2016-07-27T06:16:01.532Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/07/26/web-font-setting/</loc>
+    
+    <lastmod>2016-07-27T06:09:15.664Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/07/21/keep-hexo-source-in-github/</loc>
+    
+    <lastmod>2016-07-27T06:09:08.455Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/07/26/git-branch/</loc>
+    
+    <lastmod>2016-07-27T06:09:02.690Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2016/07/27/construct-hexo-with-github/</loc>
     
-    <lastmod>2016-07-27T05:54:26.695Z</lastmod>
+    <lastmod>2016-07-27T06:08:59.784Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/07/26/bourbon-neat-install-and-link/</loc>
+    
+    <lastmod>2016-07-27T06:08:56.464Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/07/27/modify-hexo-themes/</loc>
+    
+    <lastmod>2016-07-27T06:05:38.643Z</lastmod>
     
   </url>
   
@@ -16,44 +58,9 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2016/07/27/modify-hexo-themes/</loc>
-    
-    <lastmod>2016-07-27T04:54:02.864Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2016/07/26/git-branch/</loc>
-    
-    <lastmod>2016-07-27T04:43:06.752Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2016/07/21/keep-hexo-source-in-github/</loc>
-    
-    <lastmod>2016-07-27T04:34:45.329Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2016/07/26/bourbon-neat-install-and-link/</loc>
-    
-    <lastmod>2016-07-27T04:34:45.314Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/tags/index.html</loc>
     
     <lastmod>2016-07-26T09:57:07.360Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2016/07/26/web-font-setting/</loc>
-    
-    <lastmod>2016-07-26T09:16:00.553Z</lastmod>
     
   </url>
   

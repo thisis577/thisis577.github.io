@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-07-27T04:54:02.864Z</updated>
+  <updated>2016-07-27T06:16:01.532Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,45 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>md 基本使用注意事項</title>
+    <link href="http://yoursite.com/2016/07/27/hexo-md-usage/"/>
+    <id>http://yoursite.com/2016/07/27/hexo-md-usage/</id>
+    <published>2016-07-27T06:10:08.114Z</published>
+    <updated>2016-07-27T06:16:01.532Z</updated>
+    
+    <content type="html"><![CDATA[<p>tags 格式</p>
+<ul>
+<li>全小寫: 一般名詞，如 <code>hexo</code></li>
+<li>全大寫: 特定縮寫，如 <code>SEO</code></li>
+</ul>
+<div class="tip"><br>    統一格式是為了 tag 連結，但在顯示時皆會以字首大寫呈現。<br></div>
+
+<a id="more"></a>
+<h1 id="h1"><a href="#h1" class="headerlink" title="h1"></a>h1</h1><h2 id="h2-h6"><a href="#h2-h6" class="headerlink" title="h2~h6"></a>h2~h6</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"tip"</span>&gt;</span></div><div class="line">	警告區塊</div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;tags 格式&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;全小寫: 一般名詞，如 &lt;code&gt;hexo&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;全大寫: 特定縮寫，如 &lt;code&gt;SEO&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;tip&quot;&gt;&lt;br&gt;    統一格式是為了 tag 連結，但在顯示時皆會以字首大寫呈現。&lt;br&gt;&lt;/div&gt;
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>修改 Hexo 主題(懶人法)</title>
     <link href="http://yoursite.com/2016/07/27/modify-hexo-themes/"/>
     <id>http://yoursite.com/2016/07/27/modify-hexo-themes/</id>
     <published>2016-07-27T04:34:45.329Z</published>
-    <updated>2016-07-27T04:54:02.864Z</updated>
+    <updated>2016-07-27T06:05:38.643Z</updated>
     
     <content type="html"><![CDATA[<h1 id="不是秘技的秘技"><a href="#不是秘技的秘技" class="headerlink" title="不是秘技的秘技"></a>不是秘技的秘技</h1><p>將 themes 資料夾複製一份出來，這樣就可以自由修改la~ O_&lt;</p>
 <div class="tip"><br><div>記得將 themes 資料夾底下的 .git 資料夾砍掉</div><br><div><code>(Windows 檢視需開啟隱藏資料夾才看得到)</code></div><br><code>這樣自己的 git 才 track 到 themes 底下的所有變更</code><br></div>
@@ -43,7 +77,7 @@
     </summary>
     
     
-      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
   </entry>
   
@@ -52,7 +86,7 @@
     <link href="http://yoursite.com/2016/07/27/construct-hexo-with-github/"/>
     <id>http://yoursite.com/2016/07/27/construct-hexo-with-github/</id>
     <published>2016-07-27T04:34:45.314Z</published>
-    <updated>2016-07-27T05:54:26.695Z</updated>
+    <updated>2016-07-27T06:08:59.784Z</updated>
     
     <content type="html"><![CDATA[<h1 id="1-安裝-Github-Desktop"><a href="#1-安裝-Github-Desktop" class="headerlink" title="1. 安裝 Github Desktop"></a>1. 安裝 <a href="https://desktop.github.com/" target="_blank" rel="external">Github Desktop</a></h1><p>優點</p>
 <ul>
@@ -90,7 +124,7 @@
  <figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># clone repo 到指定目錄</span></div><div class="line">git clone http://github.com/your_account/your_account.github.io target_dir</div><div class="line"><span class="comment"># 切換到保存 hexo 原始碼的 branch</span></div><div class="line">git checkout hexo_branch</div><div class="line"><span class="comment"># 將該裝的東西都裝一裝</span></div><div class="line">npm install</div></pre></td></tr></table></figure>
 </li>
 </ol>
-<div class="tip"><br>若項目4.5連結失效可至 <a href="/tags/Hexo/">#Hexo</a> 搜尋該主題<br></div>
+<div class="tip"><br>若項目4.5連結失效可至 <a href="/tags/hexo/">#Hexo</a> 搜尋該主題<br></div>
 ]]></content>
     
     <summary type="html">
@@ -105,9 +139,9 @@
     </summary>
     
     
-      <category term="Github" scheme="http://yoursite.com/tags/Github/"/>
+      <category term="github" scheme="http://yoursite.com/tags/github/"/>
     
-      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
   </entry>
   
@@ -174,7 +208,7 @@
     <link href="http://yoursite.com/2016/07/26/web-font-setting/"/>
     <id>http://yoursite.com/2016/07/26/web-font-setting/</id>
     <published>2016-07-26T05:57:57.240Z</published>
-    <updated>2016-07-26T09:16:00.553Z</updated>
+    <updated>2016-07-27T06:09:15.664Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Fallback"><a href="#Fallback" class="headerlink" title="Fallback"></a>Fallback</h1><ul>
 <li>web font loader to fallbacks the webfont (if font loading is not compeleted</li>
@@ -216,7 +250,7 @@
     
       <category term="UI" scheme="http://yoursite.com/tags/UI/"/>
     
-      <category term="Font" scheme="http://yoursite.com/tags/Font/"/>
+      <category term="font" scheme="http://yoursite.com/tags/font/"/>
     
   </entry>
   
@@ -225,7 +259,7 @@
     <link href="http://yoursite.com/2016/07/26/git-branch/"/>
     <id>http://yoursite.com/2016/07/26/git-branch/</id>
     <published>2016-07-26T05:55:25.448Z</published>
-    <updated>2016-07-27T04:43:06.752Z</updated>
+    <updated>2016-07-27T06:09:02.690Z</updated>
     
     <content type="html"><![CDATA[<p>第一次推branch:</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 在該branch下</span></div><div class="line">git push -u origin BRANCH_NAME</div><div class="line"><span class="comment"># 因遠端尚未有這支branch, 所以需要下此指令建立</span></div><div class="line"><span class="comment"># -u: 與遠端建立關連, 這樣下次才不需要又打長長的指令</span></div><div class="line"><span class="comment"># 之後就可以直接在 branch 下 git push 就好</span></div></pre></td></tr></table></figure>
@@ -241,7 +275,7 @@
     </summary>
     
     
-      <category term="Git" scheme="http://yoursite.com/tags/Git/"/>
+      <category term="git" scheme="http://yoursite.com/tags/git/"/>
     
   </entry>
   
@@ -281,7 +315,7 @@
     <link href="http://yoursite.com/2016/07/26/bourbon-neat-install-and-link/"/>
     <id>http://yoursite.com/2016/07/26/bourbon-neat-install-and-link/</id>
     <published>2016-07-26T05:38:06.609Z</published>
-    <updated>2016-07-27T04:34:45.314Z</updated>
+    <updated>2016-07-27T06:08:56.464Z</updated>
     
     <content type="html"><![CDATA[<p>編輯 <code>bower.json</code><br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 加入 depenencies (後面為版本號)</span></div><div class="line"><span class="attr">"dependencies":</span> &#123;</div><div class="line"><span class="attr">    "bourbon":</span> <span class="string">"4.2.7"</span>,</div><div class="line"><span class="attr">    "neat":</span> <span class="string">"1.8.0"</span></div><div class="line">  &#125;</div><div class="line"></div><div class="line"><span class="comment"># 進行安裝</span></div><div class="line">bower install</div></pre></td></tr></table></figure></p>
 <a id="more"></a>
@@ -295,9 +329,11 @@
     </summary>
     
     
-      <category term="Bourbon" scheme="http://yoursite.com/tags/Bourbon/"/>
+      <category term="bourbon" scheme="http://yoursite.com/tags/bourbon/"/>
     
-      <category term="Neat" scheme="http://yoursite.com/tags/Neat/"/>
+      <category term="neat" scheme="http://yoursite.com/tags/neat/"/>
+    
+      <category term="github" scheme="http://yoursite.com/tags/github/"/>
     
   </entry>
   
@@ -306,7 +342,7 @@
     <link href="http://yoursite.com/2016/07/21/keep-hexo-source-in-github/"/>
     <id>http://yoursite.com/2016/07/21/keep-hexo-source-in-github/</id>
     <published>2016-07-21T07:21:32.045Z</published>
-    <updated>2016-07-27T04:34:45.329Z</updated>
+    <updated>2016-07-27T06:09:08.455Z</updated>
     
     <content type="html"><![CDATA[<p>在 hexo 資料夾下初始化 git，並做第一次 commit</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git init</div><div class="line">git commit -a</div></pre></td></tr></table></figure>
@@ -325,9 +361,9 @@
       <category term="tech" scheme="http://yoursite.com/categories/tech/"/>
     
     
-      <category term="Git" scheme="http://yoursite.com/tags/Git/"/>
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
-      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+      <category term="git" scheme="http://yoursite.com/tags/git/"/>
     
   </entry>
   
