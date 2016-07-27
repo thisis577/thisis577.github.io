@@ -160,9 +160,9 @@
     </summary>
     
     
-      <category term="SEO" scheme="http://yoursite.com/tags/SEO/"/>
-    
       <category term="UI" scheme="http://yoursite.com/tags/UI/"/>
+    
+      <category term="SEO" scheme="http://yoursite.com/tags/SEO/"/>
     
   </entry>
   
