@@ -19,6 +19,18 @@ Cross-selling & upselling
 - Additional service only £x extra
 - See others in this category/brand
 
+# On-site SEO
+
+1. Contextual links should be semantically relevant and beneficial to the user, and can also be used to upsell or cross-sell products.
+
+2. Title tag
+ - Your Title Tag should be 70 characters or less, and each page title should be unique at least for every page you wish to rank.
+
+3. Use one H1 tag per page, to include your primary keyword, and use secondary keywords or synonyms in H2/H3/H4 tags.
+
+4. Image 加上 alt tag 讓搜尋引擎認識
+
+
 
 <!-- more -->
 

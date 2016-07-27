@@ -100,25 +100,27 @@ code, pre {
 }
 
 .post-tag:hover {
-	/*background: #42b983;
-	color: white;*/
-	border-color: #42b983;
-	color: #42b983;
+	/*border-color: #42b983;
+	color: #42b983;*/
+	background: #E36B6B;
+	color: white;
+	border-color: #E36B6B;
 }
 
 .post-tag:not(:last-child) {
-	margin-right: .5em;
+	margin-right: .75em;
 }
 
 /* tags in archive */
 .post-item .post-tags {
-	/*margin-left: 125px;*/
+	margin-left: 125px;
 	margin-bottom: .75em;
 	display: block;
 }
 .post-item .post-tag {
 	font-size: .8em;
 }
+
 
 @media screen and (min-width: 700px) {
 	header .nav {
