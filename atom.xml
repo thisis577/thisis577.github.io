@@ -52,7 +52,7 @@
     <link href="http://yoursite.com/2016/07/27/construct-hexo-with-github/"/>
     <id>http://yoursite.com/2016/07/27/construct-hexo-with-github/</id>
     <published>2016-07-27T04:34:45.314Z</published>
-    <updated>2016-07-27T04:34:45.314Z</updated>
+    <updated>2016-07-27T05:54:26.695Z</updated>
     
     <content type="html"><![CDATA[<h1 id="1-安裝-Github-Desktop"><a href="#1-安裝-Github-Desktop" class="headerlink" title="1. 安裝 Github Desktop"></a>1. 安裝 <a href="https://desktop.github.com/" target="_blank" rel="external">Github Desktop</a></h1><p>優點</p>
 <ul>
@@ -67,6 +67,7 @@
 <li>打開 Github Desktop</li>
 <li>設定 &gt; options &gt; Default Shell &gt; 選擇 <code>Git Bash</code></li>
 <li>設定 &gt; Open in Git shell</li>
+<li>然後 Github Desktop 就可以功成身退惹</li>
 </ol>
 <div class="tip"><br>    步驟2可不做，我挑 Git Bash 只是因為介面比較順眼而已XD<br></div>
 
@@ -81,13 +82,15 @@
  <figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo server 	<span class="comment"># = hexo s, 進行 compile</span></div><div class="line">hexo generate 	<span class="comment"># = hexo g, 建立 publish 檔案</span></div><div class="line">hexo deploy	<span class="comment"># = hexo d, 將 publish 的檔案推到第二點設定的 repo 上</span></div></pre></td></tr></table></figure>
 </li>
 <li><p><a href="../modify-hexo-themes">修改 Hexo 主題 (懶人法)</a></p>
+<p> 若遇到 deploy 完 style 卻不對的情況: <a href="https://github.com/hexojs/hexo/issues/579" target="_blank" rel="external">(deploy后style.css不对)</a></p>
+ <figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Make theme changes &amp; deploy</span></div><div class="line">hexo clean</div><div class="line">hexo generate</div><div class="line">hexo deploy</div></pre></td></tr></table></figure>
 </li>
 <li><p><a href="../keep-hexo-source-in-github">把 Hexo 原始碼也放到 github 遠端保存</a></p>
+<p> 延伸: 在別的地方 clone 既有的 hexo repo</p>
+ <figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># clone repo 到指定目錄</span></div><div class="line">git clone http://github.com/your_account/your_account.github.io target_dir</div><div class="line"><span class="comment"># 切換到保存 hexo 原始碼的 branch</span></div><div class="line">git checkout hexo_branch</div><div class="line"><span class="comment"># 將該裝的東西都裝一裝</span></div><div class="line">npm install</div></pre></td></tr></table></figure>
 </li>
 </ol>
 <div class="tip"><br>若項目4.5連結失效可至 <a href="/tags/Hexo/">#Hexo</a> 搜尋該主題<br></div>
-
-<h1 id="延伸-在別的地方-clone-既有的-hexo-repo"><a href="#延伸-在別的地方-clone-既有的-hexo-repo" class="headerlink" title="延伸: 在別的地方 clone 既有的 hexo repo"></a>延伸: 在別的地方 clone 既有的 hexo repo</h1><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># clone repo 到指定目錄</span></div><div class="line">git clone http://github.com/your_account/your_account.github.io target_dir</div><div class="line"><span class="comment"># 切換到保存 hexo 原始碼的 branch</span></div><div class="line">git checkout hexo_branch</div><div class="line"><span class="comment"># 將該裝的東西都裝一裝</span></div><div class="line">npm install</div></pre></td></tr></table></figure>
 ]]></content>
     
     <summary type="html">
@@ -160,9 +163,9 @@
     </summary>
     
     
-      <category term="UI" scheme="http://yoursite.com/tags/UI/"/>
-    
       <category term="SEO" scheme="http://yoursite.com/tags/SEO/"/>
+    
+      <category term="UI" scheme="http://yoursite.com/tags/UI/"/>
     
   </entry>
   
