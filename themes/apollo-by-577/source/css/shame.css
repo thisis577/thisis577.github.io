@@ -18,6 +18,12 @@ header .logo-link img {
 	transform: scaleX(-1);
 }
 
+.tag-cloud {
+	text-align: center;
+}
+.tag-cloud a {
+	margin-right: .5em;
+}
 
 .logo-link .subtitle {
 	color: #89c997;
@@ -27,7 +33,7 @@ header .logo-link img {
 	margin-left: 10px;
 	text-align: left;
 	vertical-align: 35px;
-	width: 150px;
+	width: 140px;
 	word-break: break-word;
 }
 

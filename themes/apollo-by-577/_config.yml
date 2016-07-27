@@ -1,18 +1,17 @@
 menu:
     Blog: /
     Archive: /archives/
-    Codepen: http://codepen.io/thisis577
+    CodePen: http://codepen.io/thisis577
     GitHub: https://github.com/thisis577
 
 favicon: /profile.png
 logo: /profile.png
 
-# Siderbar
-# sidbar: right
-# widgets:
-# - category
-# - tag
-# - tagCloud
+# social_icons
+# social_icons:
+#   enable: true
+#   GitHub: github
+#   CodePen: codepen
 
 # Comment
 # e.g disqus: seansun
@@ -25,3 +24,4 @@ ga: UA-81119231-1
 
 # Copyright Infomation
 startyear: 2016
+
