@@ -1,11 +1,10 @@
 ---
 title: 404 - Page not found
-toc: false
 permalink: /404
 ---
 
 Oops! This page is not exist.
-Please go back to [Home page](http://thisis577.github.io).
+Please go back to ![Home page](http://thisis577.github.io).
 
 <style>
 	header ul.nav.nav-list, .post-info, .logo-link .subtitle {
