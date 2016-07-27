@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hello Front-End</title>
+  <title>A little bird on coding</title>
   <subtitle>A little front-end desinger say little things</subtitle>
   <link href="/atom.xml" rel="self"/>
   
@@ -150,7 +150,7 @@
     <link href="http://yoursite.com/2016/07/26/SEO-note/"/>
     <id>http://yoursite.com/2016/07/26/SEO-note/</id>
     <published>2016-07-26T07:45:02.203Z</published>
-    <updated>2016-07-27T05:28:54.497Z</updated>
+    <updated>2016-07-27T09:43:11.718Z</updated>
     
     <content type="html"><![CDATA[<h1 id="網頁配置"><a href="#網頁配置" class="headerlink" title="網頁配置"></a>網頁配置</h1><p>CTA = Call to Actions</p>
 <ul>
@@ -165,6 +165,19 @@
 <li>Additional service only £x extra</li>
 <li>See others in this category/brand</li>
 </ul>
+<h1 id="On-site-SEO"><a href="#On-site-SEO" class="headerlink" title="On-site SEO"></a>On-site SEO</h1><ol>
+<li><p>Contextual links should be semantically relevant and beneficial to the user, and can also be used to upsell or cross-sell products.</p>
+</li>
+<li><p>Title tag</p>
+<ul>
+<li>Your Title Tag should be 70 characters or less, and each page title should be unique at least for every page you wish to rank.</li>
+</ul>
+</li>
+<li><p>Use one H1 tag per page, to include your primary keyword, and use secondary keywords or synonyms in H2/H3/H4 tags.</p>
+</li>
+<li><p>Image 加上 alt tag 讓搜尋引擎認識</p>
+</li>
+</ol>
 <a id="more"></a>
 <p>Ref: <a href="https://www.hitreach.com/perfect-web-page/#top" target="_blank" rel="external">The Anatomy of a Perfect Web Page</a></p>
 <p>&nbsp;</p>
@@ -193,6 +206,19 @@
 &lt;li&gt;Additional service only £x extra&lt;/li&gt;
 &lt;li&gt;See others in this category/brand&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h1 id=&quot;On-site-SEO&quot;&gt;&lt;a href=&quot;#On-site-SEO&quot; class=&quot;headerlink&quot; title=&quot;On-site SEO&quot;&gt;&lt;/a&gt;On-site SEO&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Contextual links should be semantically relevant and beneficial to the user, and can also be used to upsell or cross-sell products.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Title tag&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Your Title Tag should be 70 characters or less, and each page title should be unique at least for every page you wish to rank.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Use one H1 tag per page, to include your primary keyword, and use secondary keywords or synonyms in H2/H3/H4 tags.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Image 加上 alt tag 讓搜尋引擎認識&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
     
     </summary>
     
@@ -329,11 +355,11 @@
     </summary>
     
     
+      <category term="github" scheme="http://yoursite.com/tags/github/"/>
+    
       <category term="bourbon" scheme="http://yoursite.com/tags/bourbon/"/>
     
       <category term="neat" scheme="http://yoursite.com/tags/neat/"/>
-    
-      <category term="github" scheme="http://yoursite.com/tags/github/"/>
     
   </entry>
   
@@ -361,9 +387,9 @@
       <category term="tech" scheme="http://yoursite.com/categories/tech/"/>
     
     
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
-    
       <category term="git" scheme="http://yoursite.com/tags/git/"/>
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
   </entry>
   
