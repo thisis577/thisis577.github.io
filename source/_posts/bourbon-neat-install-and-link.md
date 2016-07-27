@@ -1,8 +1,9 @@
 ---
 title: Bourbon & Neat install
 tags:
-- Bourbon
-- Neat
+- bourbon
+- neat
+- github
 ---
 
 編輯 `bower.json`

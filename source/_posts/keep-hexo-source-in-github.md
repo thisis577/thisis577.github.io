@@ -3,8 +3,8 @@ title: 把 hexo 原始碼也放到 github 遠端保存
 categories:
 - tech
 tags:
-- Hexo
-- Git
+- hexo
+- git
 ---
 
 在 hexo 資料夾下初始化 git，並做第一次 commit

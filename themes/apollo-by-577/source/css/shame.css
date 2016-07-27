@@ -96,6 +96,7 @@ code, pre {
 	padding: 0 .5em .16em .5em;
 	min-width: 1.5em;
 	text-align: center;
+	text-transform: capitalize;
 }
 
 .post-tag:hover {

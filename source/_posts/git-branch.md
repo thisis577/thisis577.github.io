@@ -1,7 +1,7 @@
 ---
 title: Git branch
 tags:
-- Git
+- git
 ---
 
 第一次推branch:

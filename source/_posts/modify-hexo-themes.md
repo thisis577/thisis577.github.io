@@ -1,7 +1,7 @@
 ---
 title: 修改 Hexo 主題(懶人法)
 tags:
-- Hexo
+- hexo
 ---
 
 # 不是秘技的秘技

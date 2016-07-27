@@ -1,8 +1,8 @@
 ---
 title: 建立 Hexo 環境
 tags:
-- Github
-- Hexo
+- github
+- hexo
 ---
 
 # 1. 安裝 [Github Desktop](https://desktop.github.com/)
@@ -86,5 +86,5 @@ tags:
 	```
 
 <div class="tip">
-若項目4.5連結失效可至 [#Hexo](/tags/Hexo/) 搜尋該主題
+若項目4.5連結失效可至 [#Hexo](/tags/hexo/) 搜尋該主題
 </div>

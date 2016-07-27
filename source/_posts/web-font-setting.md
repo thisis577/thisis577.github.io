@@ -2,7 +2,7 @@
 title: Font note
 tags:
 - UI
-- Font
+- font
 ---
 
 # Fallback
