@@ -1,5 +1,6 @@
 ---
 title: Font note
+date: 2016-07-26
 tags:
 - UI
 - font

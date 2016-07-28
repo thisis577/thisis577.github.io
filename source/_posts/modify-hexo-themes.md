@@ -1,5 +1,6 @@
 ---
-title: 修改 Hexo 主題(懶人法)
+title: 修改 Hexo 主題
+date: 2016-07-28 09:25:44
 tags:
 - hexo
 ---
@@ -30,7 +31,63 @@ npm install hexo-renderer-jade --save
 也可以另外插入 css 去修改了
 
 <div class="tip">
-	凡是有修改 `.jade` 建議關掉重開 hexo 比較好，以確保有吃到變更
+	凡是有修改 `*.jade` 建議關掉重開 hexo 比較好，以確保有吃到變更。
 </div>
 
 jade theme 寫法參考: [hexo-theme-pure](https://github.com/saintwinkle/hexo-theme-pure)
+
+&nbsp;
+
+# 編譯 SASS
+
+## 在 themes 底下安裝 gulp
+
+``` yml
+cd themes/[your-themes]
+# 裝原主題的 package
+npm install
+# 裝 gulp
+gulp install gulp -g
+```
+
+## 編輯 `gulpfile.js` (此處改自[hexo-theme-apollo](https://github.com/pinggod/hexo-theme-apollo/blob/master/gulpfile.js))
+``` js
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
+
+// 一次性編譯 Sass
+gulp.task('sass', function() {
+    // 原主題使用 scss, 因個人習慣新增 *.sass (多個 src 可用 array[] 方式塞入)
+    return gulp.src(['./source/scss/*.scss', './source/scss/*.sass'])
+        .pipe(sass({outputStyle: 'compressed'}))
+        .pipe(autoprefixer())
+        .pipe(gulp.dest('./source/css'));
+});
+
+// 即時編譯
+gulp.task('default', ['sass'], function() {
+    gulp.watch('./source/scss/_partial/*.scss', ['sass']);
+    // 同時 watch scss & sass
+    gulp.watch(['./source/scss/*.scss', './source/scss/*.sass'], ['sass']);
+});
+```
+
+照著下指令
+``` yml
+# 一次性編譯
+gulp sass
+# 或者
+# always watch
+gulp
+```
+
+&nbsp;
+
+# Tags
+
+需安裝 `hexo-generate-tags`
+
+<div class="tip">
+	注意 tag 大小寫，會造成資料夾目錄連不進去
+</div>

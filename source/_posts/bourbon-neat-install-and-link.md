@@ -1,5 +1,6 @@
 ---
 title: Bourbon & Neat install
+date: 2016-07-26
 tags:
 - bourbon
 - neat
@@ -20,7 +21,7 @@ bower install
 
 <!-- more -->
 
-再把它們 link 到 styles/import/ 底下
+再把它們 link 到 `styles/import/` 底下
 ``` yaml
 cd styles/import
 ln -s ../../vender/bower/bourbon/app/assets/stylesheets bourbon # link過來並命名為bourbon

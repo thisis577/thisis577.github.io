@@ -1,8 +1,10 @@
 ---
 title: SEO note
+date: 2016-07-27
 tags:
 - SEO
 - UI
+- note
 ---
 
 

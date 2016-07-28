@@ -1,17 +1,24 @@
 ---
-title: Custom 404 page
-date: 2016-07-27 21:13:39
+title: Custom 404 page for github page
+date: 2016-07-28 10:38:39
 tags:
 - github
 - hexo
 ---
 
-創建要給 404 的新頁面
+# 本站的 404 page
+![404-page](http://imgur.com/Lg9AMHO.png)
+
+
+<!-- more -->
+
+## 創建要給 404 的新頁面
+
 ``` yml
 hexo new page 404
 ```
 
-編輯 `source/404/index.md`
+## 編輯 `source/404/index.md`
 ``` yml
 ---
 title: 404
@@ -24,7 +31,6 @@ permalink: /404 # 指定固定連結為 http://your_account.github.io/404.html
 
 ```
 
-<!-- more -->
 
 
 <div class="tip">

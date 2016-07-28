@@ -32,7 +32,7 @@ mixin posts()
 mixin postList()
     .archive
         if !is_archive()
-            a.post-tag # #{page.tag}
+            a.post-tag.current-tag # #{page.tag}
         if is_archive()
             //span.post-tags
             //    - site.tags.each(function (tag) {
@@ -40,7 +40,7 @@ mixin postList()
             //        #{tag.name}
             //    - })
             .tag-cloud
-                != tagcloud({ min_font: 20 })
+                != tagcloud({ min_font: 12 })
         - var year = 0;
         - var change = false;
         - page.posts.each(function (item) {
@@ -53,8 +53,8 @@ mixin postList()
                 +postInfo(item, false)
                 a.post-title-link(href= url_for(item.path))
                     != item.title
-                //if is_archive()
-                +postTags(item)
+                if is_tag()
+                    +postTags(item)
         - })
 
 //- Post Page

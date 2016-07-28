@@ -1,5 +1,6 @@
 ---
 title: 建立 Hexo 環境
+date: 2016-07-28 10:20:39
 tags:
 - github
 - hexo
@@ -26,19 +27,26 @@ tags:
 
 1. 打開 Github Desktop
 2. 設定 > options > Default Shell > 選擇 `Git Bash`
+	<div class="tip">
+		步驟2可不做，我挑 Git Bash 只是因為介面比較順眼而已XD
+	</div>
 3. 設定 > Open in Git shell
 4. 然後 Github Desktop 就可以功成身退惹
 
 <div class="tip">
-	步驟2可不做，我挑 Git Bash 只是因為介面比較順眼而已XD
+	這個 Git shell 只是 GitHub Desktop 由指令建出來的捷徑，並沒有實體位置。
+	真正的 git.exe 放在 `C:\Users\[username]\AppData\Local\GitHub\PortableGit_...\` 底下，
+	需由此處才能右鍵以管理員身份開啟。
 </div>
+
+
 
 # 4. 建立 Hexo 環境
 
 1. [照著 Hexo 官方安裝教學走吧XD](https://hexo.io/zh-tw/docs/)
 	<div class="tip">
-		需要在 Github 上開一個名為 `your_account.github.io` 的 repo，
-		這樣在推出去之後網頁(`http://your_account.github.io`)才會動。
+		需要在 Github 上開一個名為 `[your_account].github.io` 的 repo，
+		這樣在推出去之後網頁(`http://[your_account].github.io`)才會動。
 	</div>
 
 2. 設定 root `_config.yml`
@@ -49,7 +57,7 @@ tags:
 	# 設定 deploy
 	deploy:
 	    type: git
-	    repo: git@github.com:your_account/your_account.github.io.git
+	    repo: git@github.com:[your_account]/[your_account].github.io.git
 	    branch: master
 	```
 3. 基本操作指令
@@ -59,7 +67,7 @@ tags:
 	hexo deploy	# = hexo d, 將 publish 的檔案推到第二點設定的 repo 上
 	```
 
-4. [修改 Hexo 主題 (懶人法)](../modify-hexo-themes)
+4. [修改 Hexo 主題](../modify-hexo-themes)
 
 	若遇到 deploy 完 style 卻不對的情況: [(deploy后style.css不对)](https://github.com/hexojs/hexo/issues/579)
 
@@ -78,7 +86,7 @@ tags:
 
 	``` yml
 		# clone repo 到指定目錄
-		git clone http://github.com/your_account/your_account.github.io target_dir
+		git clone http://github.com/[your_account]/[your_account].github.io target_dir
 		# 切換到保存 hexo 原始碼的 branch
 		git checkout hexo_branch
 		# 將該裝的東西都裝一裝
