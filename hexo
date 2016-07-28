@@ -3,13 +3,10 @@
 # Usage
 if [ "$1" == "" ];
 then
-	echo "Usage: `basename $0` [deploy] [COMMENT]"
-	echo "[COMMENT] is for commit hexo source code, need to connet by '-'"
-	echo "ex: this-is-a-commit-msg"
+	echo "Usage: `basename $0` [deploy|push] [comment]"
+	echo "[comment] should use double quotes"
 	exit 0
 fi
-
-echo $2
 
 if [ $1 == "deploy" ];
 then
@@ -23,6 +20,7 @@ fi
 # push hexo source
 if [ $1 != "" ];
 then
+	# use double qoutes to quote all sentence in $2
 	if [ "$2" != "" ];
 	then
 		echo "push start:"

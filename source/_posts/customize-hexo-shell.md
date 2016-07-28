@@ -15,16 +15,12 @@ tags:
 # Usage
 if [ "$1" == "" ];
 then
-	echo "Usage: `basename $0` [deploy] [COMMENT]"
-	echo "[COMMENT] is for commit hexo source code, need to connet by '-'"
-	echo "ex: this-is-a-commit-msg"
+	echo "Usage: `basename $0` [deploy|push] [comment]"
+	echo "[comment] should use double quotes"
 	exit 0
 fi
 
-ACTION=$1
-COMMENT=$2
-
-if [ ${ACTION} == "deploy" ];
+if [ $1 == "deploy" ];
 then
 	# Hexo modify themes and deploy all (themes + post)
 	echo "deploy start:"
@@ -34,13 +30,14 @@ then
 fi
 
 # push hexo source
-if [ ${ACTION} != "" ];
+if [ $1 != "" ];
 then
-	if [ ${COMMENT} != "" ];
+	# use double qoutes to quote all sentence in $2
+	if [ "$2" != "" ];
 	then
 		echo "push start:"
 		git add .
-		git commit -m ${COMMENT}
+		git commit -m "$2"
 		git push
 	fi
 fi
@@ -50,11 +47,11 @@ fi
 
 ``` yml
 # deploy + push
-./hexo deploy "give-some-comment"
+./hexo deploy "give some comment"
 # only push
-./hexo push "give-some-comment"
+./hexo push "give some comment"
 ```
 
 <div class="tip">
-	comment 的部分必須用 - 連接，不然指令吃不到... 待解決
+	`"$2"` 只要用雙引號刮起來就可以吃含有空格的句子
 </div>
