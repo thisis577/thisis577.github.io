@@ -7,6 +7,7 @@ $green: #42b983;
 $red: #E36B6B;
 $green-light: #89c997;
 $red-light: #F66;
+$text-color: #34495e;
 $post-info-width: 100px;
 
 // Styles
@@ -61,18 +62,19 @@ p img
 			left: 0
 			opacity: .9
 
-.home.post-list .post-content h2:before, .home.post-list .post-content h3:before, .home.post-list .post-content h4:before, .home.post-list .post-content h5:before, .home.post-list .post-content h6:before
+.home.post-list .post-content h2:before, .home.post-list .post-content h3:before
 	content: '#'
 
 .post-content
 	h1
 		font-size: 1.5em
-		font-weight: 600
 	h2, h3
 		margin-left: 1em
 		font-size: 1.2em
-		font-weight: 500
-
+	h3
+		font-size: 1.1em
+	h4, h5, h6
+		font-size: 1em
 
 .post-content
 	a
@@ -80,7 +82,24 @@ p img
 		&:hover
 			border-bottom: 1px solid $green
 	.tip
+		margin: 1em 0
 		margin-left: .75em
+		.murmur
+			margin: 3em .5em 0 .5em
+	.murmur
+		display: block
+		margin: 1em 1.3em
+		position: relative
+		&:before
+			@extend .post-tag
+			border-color: #AAA !important
+			content: 'MURMUR'
+			color: #AAA !important
+			position: absolute
+			top: -2.3em
+			left: -5px
+		&:hover:before
+			background: none !important
 
 code, pre
 	font-family: 'consolas', 'play', 'Noto Sans TC', sans-serif
