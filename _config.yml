@@ -84,3 +84,10 @@ deploy:
     type: git
     repo: git@github.com:thisis577/thisis577.github.io.git
     branch: master
+
+
+# SASS
+node_sass:
+  outputStyle: nested
+  precision: 5
+  sourceComments: false

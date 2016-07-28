@@ -64,3 +64,22 @@ tags:
 </div>
 ```
 
+# 新大陸 泥馬
+
+## Markdown 格式
+Ref: [Hexo 官網教學](https://hexo.io/docs/tag-plugins.html) - 不是 `.ejs` 阿阿
+
+``` md test.md https://hexo.io/docs/tag-plugins.html#Backtick-Code-Block #Backtick-Code-Block
+    ''' [language] [title] [url] [link text] code snippet '''
+
+```
+
+``` html test.html
+<div class="tip">
+
+</div>
+```
+
+{% blockquote Seth Godin http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html Welcome to Island Marketing %}
+Every interaction is both precious and an opportunity to delight.
+{% endblockquote %}
