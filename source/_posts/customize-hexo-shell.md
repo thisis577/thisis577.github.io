@@ -9,6 +9,8 @@ tags:
 
 # 可以自動 deploy hexo 並 push source code
 
+<!-- more -->
+
 ``` bash
 #!/usr/bin/env bash
 

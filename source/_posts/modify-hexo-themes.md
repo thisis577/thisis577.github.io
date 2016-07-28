@@ -47,10 +47,9 @@ jade theme 寫法參考: [hexo-theme-pure](https://github.com/saintwinkle/hexo-t
 
 ``` yml
 cd themes/[your-themes]
-# 裝原主題的 package
-npm install
 # 裝 gulp
-gulp install gulp -g
+npm install gulp -g
+npm install gulp-sass
 ```
 
 ## 編輯 `gulpfile.js` (此處改自[hexo-theme-apollo](https://github.com/pinggod/hexo-theme-apollo/blob/master/gulpfile.js))
