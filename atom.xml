@@ -354,62 +354,36 @@
     </summary>
     
     
-      <category term="SEO" scheme="http://yoursite.com/tags/SEO/"/>
-    
       <category term="UI" scheme="http://yoursite.com/tags/UI/"/>
     
       <category term="note" scheme="http://yoursite.com/tags/note/"/>
     
+      <category term="SEO" scheme="http://yoursite.com/tags/SEO/"/>
+    
   </entry>
   
   <entry>
-    <title>Font note</title>
-    <link href="http://yoursite.com/2016/07/26/web-font-setting/"/>
-    <id>http://yoursite.com/2016/07/26/web-font-setting/</id>
+    <title>Git branch</title>
+    <link href="http://yoursite.com/2016/07/26/git-branch/"/>
+    <id>http://yoursite.com/2016/07/26/git-branch/</id>
     <published>2016-07-25T16:00:00.000Z</published>
-    <updated>2016-07-28T04:56:08.754Z</updated>
+    <updated>2016-07-28T04:56:08.736Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Fallback"><a href="#Fallback" class="headerlink" title="Fallback"></a>Fallback</h1><ul>
-<li>web font loader to fallbacks the webfont (if font loading is not compeleted</li>
-</ul>
-<h1 id="單位"><a href="#單位" class="headerlink" title="單位"></a>單位</h1><ul>
-<li>1em = 16px</li>
-<li>font-size: rem.em</li>
-<li>padding / margin: 用相對單位(rem.em.%)</li>
-<li>media query: em</li>
-<li>少用vw&amp;vh (支援不足</li>
-</ul>
+    <content type="html"><![CDATA[<p>第一次推branch:</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 在該branch下</span></div><div class="line">git push -u origin [branch-name]</div><div class="line"><span class="comment"># 因遠端尚未有這支branch, 所以需要下此指令建立</span></div><div class="line"><span class="comment"># -u: 與遠端建立關連, 這樣下次才不需要又打長長的指令</span></div><div class="line"><span class="comment"># 之後就可以直接在 branch 下 git push 就好</span></div></pre></td></tr></table></figure>
 <a id="more"></a>
-<h1 id="設定字形大小"><a href="#設定字形大小" class="headerlink" title="設定字形大小"></a>設定字形大小</h1><figure class="highlight scss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">html</span></div><div class="line">	<span class="attribute">font-size</span>: <span class="number">100%</span></div><div class="line">@media (min-width: <span class="number">64em</span>)</div><div class="line">	html</div><div class="line">		font-size: <span class="number">112.5%</span></div></pre></td></tr></table></figure>
-<h1 id="containers-設定-border-box"><a href="#containers-設定-border-box" class="headerlink" title="containers 設定 border-box"></a>containers 設定 border-box</h1><figure class="highlight scss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 讓它在parent內,且padding是width往內推，而不是加寬</span></div><div class="line"><span class="selector-tag">html</span></div><div class="line">	<span class="attribute">box-sizing</span>: border-box</div><div class="line">*, *:before, *:after</div><div class="line">	box-sizing: inherit</div></pre></td></tr></table></figure>
-<figure class="highlight scss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// max-width is good for mobile</span></div><div class="line"><span class="selector-class">.container</span></div><div class="line">	<span class="attribute">max-width</span>: <span class="number">67rem</span></div></pre></td></tr></table></figure>
-<h1 id="Responsive-Modular-Scale"><a href="#Responsive-Modular-Scale" class="headerlink" title="Responsive Modular Scale"></a>Responsive Modular Scale</h1><ul>
-<li>single direction margin - margin-bottom</li>
-<li>vertical margin 會被 font-size 影響, 使用 em</li>
-<li>horizontal margin 不會，所以用 rem</li>
-</ul>
-<p>Ref: <a href="http://typographyhandbook.com/" target="_blank" rel="external">Typography Handbook</a></p>
+<p>到別人推的branch:<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 在master:</span></div><div class="line">git fetch</div><div class="line">git checkout [branch-name]</div></pre></td></tr></table></figure></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;Fallback&quot;&gt;&lt;a href=&quot;#Fallback&quot; class=&quot;headerlink&quot; title=&quot;Fallback&quot;&gt;&lt;/a&gt;Fallback&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;web font loader to fallbacks the webfont (if font loading is not compeleted&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&quot;單位&quot;&gt;&lt;a href=&quot;#單位&quot; class=&quot;headerlink&quot; title=&quot;單位&quot;&gt;&lt;/a&gt;單位&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;1em = 16px&lt;/li&gt;
-&lt;li&gt;font-size: rem.em&lt;/li&gt;
-&lt;li&gt;padding / margin: 用相對單位(rem.em.%)&lt;/li&gt;
-&lt;li&gt;media query: em&lt;/li&gt;
-&lt;li&gt;少用vw&amp;amp;vh (支援不足&lt;/li&gt;
-&lt;/ul&gt;
+      &lt;p&gt;第一次推branch:&lt;/p&gt;
+&lt;figure class=&quot;highlight yml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 在該branch下&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;git push -u origin [branch-name]&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 因遠端尚未有這支branch, 所以需要下此指令建立&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# -u: 與遠端建立關連, 這樣下次才不需要又打長長的指令&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 之後就可以直接在 branch 下 git push 就好&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
     
-      <category term="UI" scheme="http://yoursite.com/tags/UI/"/>
-    
-      <category term="font" scheme="http://yoursite.com/tags/font/"/>
+      <category term="git" scheme="http://yoursite.com/tags/git/"/>
     
   </entry>
   
@@ -481,27 +455,53 @@
   </entry>
   
   <entry>
-    <title>Git branch</title>
-    <link href="http://yoursite.com/2016/07/26/git-branch/"/>
-    <id>http://yoursite.com/2016/07/26/git-branch/</id>
+    <title>Font note</title>
+    <link href="http://yoursite.com/2016/07/26/web-font-setting/"/>
+    <id>http://yoursite.com/2016/07/26/web-font-setting/</id>
     <published>2016-07-25T16:00:00.000Z</published>
-    <updated>2016-07-28T04:56:08.736Z</updated>
+    <updated>2016-07-28T04:56:08.754Z</updated>
     
-    <content type="html"><![CDATA[<p>第一次推branch:</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 在該branch下</span></div><div class="line">git push -u origin [branch-name]</div><div class="line"><span class="comment"># 因遠端尚未有這支branch, 所以需要下此指令建立</span></div><div class="line"><span class="comment"># -u: 與遠端建立關連, 這樣下次才不需要又打長長的指令</span></div><div class="line"><span class="comment"># 之後就可以直接在 branch 下 git push 就好</span></div></pre></td></tr></table></figure>
+    <content type="html"><![CDATA[<h1 id="Fallback"><a href="#Fallback" class="headerlink" title="Fallback"></a>Fallback</h1><ul>
+<li>web font loader to fallbacks the webfont (if font loading is not compeleted</li>
+</ul>
+<h1 id="單位"><a href="#單位" class="headerlink" title="單位"></a>單位</h1><ul>
+<li>1em = 16px</li>
+<li>font-size: rem.em</li>
+<li>padding / margin: 用相對單位(rem.em.%)</li>
+<li>media query: em</li>
+<li>少用vw&amp;vh (支援不足</li>
+</ul>
 <a id="more"></a>
-<p>到別人推的branch:<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 在master:</span></div><div class="line">git fetch</div><div class="line">git checkout [branch-name]</div></pre></td></tr></table></figure></p>
+<h1 id="設定字形大小"><a href="#設定字形大小" class="headerlink" title="設定字形大小"></a>設定字形大小</h1><figure class="highlight scss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">html</span></div><div class="line">	<span class="attribute">font-size</span>: <span class="number">100%</span></div><div class="line">@media (min-width: <span class="number">64em</span>)</div><div class="line">	html</div><div class="line">		font-size: <span class="number">112.5%</span></div></pre></td></tr></table></figure>
+<h1 id="containers-設定-border-box"><a href="#containers-設定-border-box" class="headerlink" title="containers 設定 border-box"></a>containers 設定 border-box</h1><figure class="highlight scss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 讓它在parent內,且padding是width往內推，而不是加寬</span></div><div class="line"><span class="selector-tag">html</span></div><div class="line">	<span class="attribute">box-sizing</span>: border-box</div><div class="line">*, *:before, *:after</div><div class="line">	box-sizing: inherit</div></pre></td></tr></table></figure>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// max-width is good for mobile</span></div><div class="line"><span class="selector-class">.container</span></div><div class="line">	<span class="attribute">max-width</span>: <span class="number">67rem</span></div></pre></td></tr></table></figure>
+<h1 id="Responsive-Modular-Scale"><a href="#Responsive-Modular-Scale" class="headerlink" title="Responsive Modular Scale"></a>Responsive Modular Scale</h1><ul>
+<li>single direction margin - margin-bottom</li>
+<li>vertical margin 會被 font-size 影響, 使用 em</li>
+<li>horizontal margin 不會，所以用 rem</li>
+</ul>
+<p>Ref: <a href="http://typographyhandbook.com/" target="_blank" rel="external">Typography Handbook</a></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;第一次推branch:&lt;/p&gt;
-&lt;figure class=&quot;highlight yml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 在該branch下&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;git push -u origin [branch-name]&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 因遠端尚未有這支branch, 所以需要下此指令建立&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# -u: 與遠端建立關連, 這樣下次才不需要又打長長的指令&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 之後就可以直接在 branch 下 git push 就好&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+      &lt;h1 id=&quot;Fallback&quot;&gt;&lt;a href=&quot;#Fallback&quot; class=&quot;headerlink&quot; title=&quot;Fallback&quot;&gt;&lt;/a&gt;Fallback&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;web font loader to fallbacks the webfont (if font loading is not compeleted&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;單位&quot;&gt;&lt;a href=&quot;#單位&quot; class=&quot;headerlink&quot; title=&quot;單位&quot;&gt;&lt;/a&gt;單位&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;1em = 16px&lt;/li&gt;
+&lt;li&gt;font-size: rem.em&lt;/li&gt;
+&lt;li&gt;padding / margin: 用相對單位(rem.em.%)&lt;/li&gt;
+&lt;li&gt;media query: em&lt;/li&gt;
+&lt;li&gt;少用vw&amp;amp;vh (支援不足&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
     
-      <category term="git" scheme="http://yoursite.com/tags/git/"/>
+      <category term="UI" scheme="http://yoursite.com/tags/UI/"/>
+    
+      <category term="font" scheme="http://yoursite.com/tags/font/"/>
     
   </entry>
   
