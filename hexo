@@ -11,10 +11,11 @@ fi
 if [ $1 == "deploy" ];
 then
 	# Hexo modify themes and deploy all (themes + post)
-	echo "deploy start:"
+	echo "Deploy start ----------------"
 	hexo clean
 	hexo generate
 	hexo deploy
+	echo "---------------- Deploy successfully"
 fi
 
 # push hexo source
@@ -23,10 +24,12 @@ then
 	# use double qoutes to quote all sentence in $2
 	if [ "$2" != "" ];
 	then
-		echo "push start:"
+		echo "Push start -----------------------"
 		git add .
 		git commit -m "$2"
 		git push
+
+		echo "--------------- Push successfully!"
 	fi
 fi
 
