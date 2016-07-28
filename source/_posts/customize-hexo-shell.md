@@ -7,9 +7,14 @@ tags:
 ---
 
 
+
 # 可以自動 deploy hexo 並 push source code
 
+
 <!-- more -->
+
+## 在 root 編寫檔案，此處檔名為 `hexo`
+(shell 可不需副檔名)
 
 ``` bash
 #!/usr/bin/env bash
