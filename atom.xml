@@ -415,11 +415,11 @@
     </summary>
     
     
+      <category term="github" scheme="http://yoursite.com/tags/github/"/>
+    
       <category term="bourbon" scheme="http://yoursite.com/tags/bourbon/"/>
     
       <category term="neat" scheme="http://yoursite.com/tags/neat/"/>
-    
-      <category term="github" scheme="http://yoursite.com/tags/github/"/>
     
   </entry>
   
