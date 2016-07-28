@@ -12,192 +12,198 @@ $post-info-width: 100px;
 
 // Styles
 body
-	font-family: 'sourcesanspro', 'Play', 'Noto Sans TC', '微軟正黑體', 'Helvetica Neue', Arial, sans-serif
-	font-weight: 300
-	min-width: 320px
+    font-family: 'sourcesanspro', 'Play', 'Noto Sans TC', '微軟正黑體', 'Helvetica Neue', Arial, sans-serif
+    font-weight: 300
+    min-width: 320px
 
 header
-	min-height: 120px
-	margin-top: 20px
-	padding: 20px 0px
-	.logo-link img
-		height: 120px
-		transform: scaleX(-1)
+    min-height: 120px
+    margin-top: 20px
+    padding: 20px 0px
+    .logo-link img
+        height: 120px
+        transform: scaleX(-1)
 
 .logo-link .subtitle
-	color: $green-light
-	display: inline-block
-	font-size: .8rem
-	font-family: 'Play', consolas, sans-serif
-	margin-left: 10px
-	text-align: left
-	vertical-align: 35px
-	width: 140px
-	word-break: break-word
+    color: $green-light
+    display: inline-block
+    font-size: .8rem
+    font-family: 'Play', consolas, sans-serif
+    margin-left: 10px
+    text-align: left
+    vertical-align: 35px
+    width: 140px
+    word-break: break-word
 
 
 .wrap
-	width: 640px
+    width: 640px
 
 p img
-	border: 1px solid #efefef
-	box-shadow: 0 2px 2px rgba(black, .1)
+    border: 1px solid #efefef
+    box-shadow: 0 2px 2px rgba(black, .1)
 
 .post-block
-	.post-title
-		font-size: 2em
-		margin-bottom: 0
+    .post-title
+        font-size: 2em
+        margin-bottom: 0
 
-	.post-info
-		margin-top: .5em
-		margin-bottom: 3em
-		position: relative
-		&:after
-			content: ''
-			width: 1em
-			height: 2px
-			background-color: $green
-			position: absolute
-			bottom: -.5em
-			left: 0
-			opacity: .9
+    .post-info
+        margin-top: .5em
+        margin-bottom: 3em
+        position: relative
+        &:after
+            content: ''
+            width: 1em
+            height: 2px
+            background-color: $green
+            position: absolute
+            bottom: -.5em
+            left: 0
+            opacity: .9
 
 .home.post-list .post-content h2:before, .home.post-list .post-content h3:before
-	content: '#'
+    content: '#'
 
 .post-content
-	h1
-		font-size: 1.5em
-	h2, h3
-		margin-left: 1em
-		font-size: 1.2em
-	h3
-		font-size: 1.1em
-	h4, h5, h6
-		font-size: 1em
+    h1
+        font-size: 1.5em
+    h2, h3
+        margin-left: 1em
+        font-size: 1.3em
+    h3
+        font-size: 1.2em
+    h4, h5, h6
+        font-size: 1em
+    h2:before, h3:before
+        top: -3px
+
 
 .post-content
-	a
-		border-bottom: 1px dotted $green
-		&:hover
-			border-bottom: 1px solid $green
-	.tip
-		margin: 1em 0
-		margin-left: .75em
-		.murmur
-			margin: 3em .5em 0 .5em
-	.murmur
-		display: block
-		margin: 1em 1.3em
-		position: relative
-		&:before
-			@extend .post-tag
-			border-color: #AAA !important
-			content: 'MURMUR'
-			color: #AAA !important
-			position: absolute
-			top: -2.3em
-			left: -5px
-		&:hover:before
-			background: none !important
+    a
+        border-bottom: 1px dotted $green
+        &:hover
+            border-bottom: 1px solid $green
+    .tip + br, .highlight + br, .murmur + br
+        display: none // remove over space
+    .tip
+        margin: 1em 0
+        margin-left: .75em
+        .murmur
+            margin: 0 .5em
+    .murmur
+        display: block
+        margin: 1em 1.3em
+        padding-top: 3em
+        position: relative
+        &:before
+            @extend .post-tag
+            border-color: #AAA !important
+            content: 'MURMUR'
+            color: #AAA !important
+            position: absolute
+            top: .75em
+            left: -5px
+        &:hover:before
+            background: none !important
 
 code, pre
-	font-family: 'consolas', 'play', 'Noto Sans TC', sans-serif
-	word-break: break-all
+    font-family: 'consolas', 'play', 'Noto Sans TC', sans-serif
+    word-break: break-all
 
 // ARCHIVE
 .archive
-	.post-info
-		width: $post-info-width
-	.post-title-link
-		margin-left: $post-info-width
+    .post-info
+        width: $post-info-width
+    .post-title-link
+        margin-left: $post-info-width
 
 
 // TAGS
 .tag-cloud
-	text-align: center
-	border: 2px solid $red
-	border-radius: 50em
-	padding: 1em 2em
-	a
-		margin-right: .5em
-		color: $red
-		display: inline-block
-		line-height: 1.3
-		padding-left: .75em
-		position: relative
-		text-transform: capitalize
-		font-family: 'Play', sans-serif
-		&:hover
-			border-bottom: 1px solid $red
-		&:before
-			content: '#'
-			color: $red
-			position: absolute
-			top: 50%
-			left: 0
-			transform: translateY(-50%)
+    text-align: center
+    border: 2px solid $red
+    border-radius: 50em
+    padding: 1em 2em
+    a
+        margin-right: .5em
+        color: $red
+        display: inline-block
+        line-height: 1.3
+        padding-left: .75em
+        position: relative
+        text-transform: capitalize
+        font-family: 'Play', sans-serif
+        &:hover
+            border-bottom: 1px solid $red
+        &:before
+            content: '#'
+            color: $red
+            position: absolute
+            top: 50%
+            left: 0
+            transform: translateY(-50%)
 
 .post-info .post-tags
-	display: inline-block
-	font-size: .9em
-	margin-left: 1em !important
+    display: inline-block
+    font-size: .9em
+    margin-left: 1em !important
 
 .post-tag
-	color: $red
-	border: 1px solid $red
-	border-radius: 1.5em
-	display: inline-block
-	font-size: .9em
-	font-family: 'Play', sans-serif
-	line-height: 1.4
-	padding: .1em .5em .15em .5em
-	min-width: 1.5em
-	text-align: center
-	text-transform: capitalize
-	&:hover, &.current-tag
-		background: $red
-		border-color: $red
-		color: white
-	&:not(:last-child)
-		margin-right: .75em
+    color: $red
+    border: 1px solid $red
+    border-radius: 1.5em
+    display: inline-block
+    font-size: .9em
+    font-family: 'Play', sans-serif
+    line-height: 1.4
+    padding: .1em .5em .15em .5em
+    min-width: 1.5em
+    text-align: center
+    text-transform: capitalize
+    &:hover, &.current-tag
+        background: $red
+        border-color: $red
+        color: white
+    &:not(:last-child)
+        margin-right: .75em
 
 
 // in archive
 .post-item
-	.post-tags
-		margin-left: $post-info-width
-		margin-bottom: .75em
-		display: block
-	.post-tag
-		font-size: .8em
+    .post-tags
+        margin-left: $post-info-width
+        margin-bottom: .75em
+        display: block
+    .post-tag
+        font-size: .8em
 
 
 // DESKTOP //
 @media screen and (min-width: 700px)
-	header .nav
-		line-height: 120px
-	.archive
-		margin-top: 3em
+    header .nav
+        line-height: 120px
+    .archive
+        margin-top: 3em
 
 
 // MOBILE //
 @media screen and (max-width: 700px)
-	.wrap
-		width: 100%
-		box-sizing: border-box
-		margin: auto
-		padding: 0 1em
+    .wrap
+        width: 100%
+        box-sizing: border-box
+        margin: auto
+        padding: 0 1em
 
-	.logo-link .subtitle
-		display: block
-		margin-left: 0
-		text-align: center
-		width: 100%
-	.post-content
-		h2, h3, h4, h5, .tip
-			margin-left: 0
-	.archive
-		margin-top: 1em
-		.post-item
-			padding-left: 10px
+    .logo-link .subtitle
+        display: block
+        margin-left: 0
+        text-align: center
+        width: 100%
+    .post-content
+        h2, h3, h4, h5, .tip
+            margin-left: 0
+    .archive
+        margin-top: 1em
+        .post-item
+            padding-left: 10px
