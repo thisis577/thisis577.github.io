@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-07-27T06:16:01.532Z</updated>
+  <updated>2016-07-28T04:59:22.531Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,66 +16,59 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>md 基本使用注意事項</title>
-    <link href="http://yoursite.com/2016/07/27/hexo-md-usage/"/>
-    <id>http://yoursite.com/2016/07/27/hexo-md-usage/</id>
-    <published>2016-07-27T06:10:08.114Z</published>
-    <updated>2016-07-27T06:16:01.532Z</updated>
+    <title>自己寫 Hexo shell</title>
+    <link href="http://yoursite.com/2016/07/28/customize-hexo-shell/"/>
+    <id>http://yoursite.com/2016/07/28/customize-hexo-shell/</id>
+    <published>2016-07-28T03:09:25.000Z</published>
+    <updated>2016-07-28T04:59:22.531Z</updated>
     
-    <content type="html"><![CDATA[<p>tags 格式</p>
-<ul>
-<li>全小寫: 一般名詞，如 <code>hexo</code></li>
-<li>全大寫: 特定縮寫，如 <code>SEO</code></li>
-</ul>
-<div class="tip"><br>    統一格式是為了 tag 連結，但在顯示時皆會以字首大寫呈現。<br></div>
-
-<a id="more"></a>
-<h1 id="h1"><a href="#h1" class="headerlink" title="h1"></a>h1</h1><h2 id="h2-h6"><a href="#h2-h6" class="headerlink" title="h2~h6"></a>h2~h6</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"tip"</span>&gt;</span></div><div class="line">	警告區塊</div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
-]]></content>
+    <content type="html"><![CDATA[<h1 id="可以自動-deploy-hexo-並-push-source-code"><a href="#可以自動-deploy-hexo-並-push-source-code" class="headerlink" title="可以自動 deploy hexo 並 push source code"></a>可以自動 deploy hexo 並 push source code</h1><a id="more"></a>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#!/usr/bin/env bash</span></div><div class="line"></div><div class="line"><span class="comment"># Usage</span></div><div class="line"><span class="keyword">if</span> [ <span class="string">"<span class="variable">$1</span>"</span> == <span class="string">""</span> ];</div><div class="line"><span class="keyword">then</span></div><div class="line">	<span class="built_in">echo</span> <span class="string">"Usage: `basename <span class="variable">$0</span>` [deploy|push] [comment]"</span></div><div class="line">	<span class="built_in">echo</span> <span class="string">"[comment] should use double quotes"</span></div><div class="line">	<span class="built_in">exit</span> 0</div><div class="line"><span class="keyword">fi</span></div><div class="line"></div><div class="line"><span class="keyword">if</span> [ <span class="variable">$1</span> == <span class="string">"deploy"</span> ];</div><div class="line"><span class="keyword">then</span></div><div class="line">	<span class="comment"># Hexo modify themes and deploy all (themes + post)</span></div><div class="line">	<span class="built_in">echo</span> <span class="string">"deploy start:"</span></div><div class="line">	hexo clean</div><div class="line">	hexo generate</div><div class="line">	hexo deploy</div><div class="line"><span class="keyword">fi</span></div><div class="line"></div><div class="line"><span class="comment"># push hexo source</span></div><div class="line"><span class="keyword">if</span> [ <span class="variable">$1</span> != <span class="string">""</span> ];</div><div class="line"><span class="keyword">then</span></div><div class="line">	<span class="comment"># use double qoutes to quote all sentence in $2</span></div><div class="line">	<span class="keyword">if</span> [ <span class="string">"<span class="variable">$2</span>"</span> != <span class="string">""</span> ];</div><div class="line">	<span class="keyword">then</span></div><div class="line">		<span class="built_in">echo</span> <span class="string">"push start:"</span></div><div class="line">		git add .</div><div class="line">		git commit -m <span class="string">"<span class="variable">$2</span>"</span></div><div class="line">		git push</div><div class="line">	<span class="keyword">fi</span></div><div class="line"><span class="keyword">fi</span></div></pre></td></tr></table></figure>
+<h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># deploy + push</span></div><div class="line">./hexo deploy <span class="string">"give some comment"</span></div><div class="line"><span class="comment"># only push</span></div><div class="line">./hexo push <span class="string">"give some comment"</span></div></pre></td></tr></table></figure>
+<div class="tip"><br>    <code>&quot;$2&quot;</code> 只要用雙引號刮起來就可以吃含有空格的句子<br></div>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;tags 格式&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;全小寫: 一般名詞，如 &lt;code&gt;hexo&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;全大寫: 特定縮寫，如 &lt;code&gt;SEO&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;tip&quot;&gt;&lt;br&gt;    統一格式是為了 tag 連結，但在顯示時皆會以字首大寫呈現。&lt;br&gt;&lt;/div&gt;
+      &lt;h1 id=&quot;可以自動-deploy-hexo-並-push-source-code&quot;&gt;&lt;a href=&quot;#可以自動-deploy-hexo-並-push-source-code&quot; class=&quot;headerlink&quot; title=&quot;可以自動 deploy hexo 並 push source code&quot;&gt;&lt;/a&gt;可以自動 deploy hexo 並 push source code&lt;/h1&gt;
     
     </summary>
     
     
       <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
+      <category term="shell" scheme="http://yoursite.com/tags/shell/"/>
+    
   </entry>
   
   <entry>
-    <title>修改 Hexo 主題(懶人法)</title>
-    <link href="http://yoursite.com/2016/07/27/modify-hexo-themes/"/>
-    <id>http://yoursite.com/2016/07/27/modify-hexo-themes/</id>
-    <published>2016-07-27T04:34:45.329Z</published>
-    <updated>2016-07-27T06:05:38.643Z</updated>
+    <title>Custom 404 page for github page</title>
+    <link href="http://yoursite.com/2016/07/28/custom-404-page/"/>
+    <id>http://yoursite.com/2016/07/28/custom-404-page/</id>
+    <published>2016-07-28T02:38:39.000Z</published>
+    <updated>2016-07-28T04:56:08.727Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="不是秘技的秘技"><a href="#不是秘技的秘技" class="headerlink" title="不是秘技的秘技"></a>不是秘技的秘技</h1><p>將 themes 資料夾複製一份出來，這樣就可以自由修改la~ O_&lt;</p>
-<div class="tip"><br><div>記得將 themes 資料夾底下的 .git 資料夾砍掉</div><br><div><code>(Windows 檢視需開啟隱藏資料夾才看得到)</code></div><br><code>這樣自己的 git 才 track 到 themes 底下的所有變更</code><br></div>
-
+    <content type="html"><![CDATA[<h1 id="本站的-404-page"><a href="#本站的-404-page" class="headerlink" title="本站的 404 page"></a>本站的 404 page</h1><p><img src="http://imgur.com/Lg9AMHO.png" alt="404-page"></p>
 <a id="more"></a>
-<p>&nbsp;</p>
-<h1 id="很難懂的-Jade"><a href="#很難懂的-Jade" class="headerlink" title="很難懂的 Jade"></a>很難懂的 Jade</h1><p>Hexo-theme-apollo 模版是以 <code>Jade</code> 寫的，與官方使用的 <code>ejs</code> 不同<br>但只需要另外安裝 <code>Jade</code> 外掛 <a href="https://github.com/hexojs/hexo-renderer-jade" target="_blank" rel="external">hexo-render-jade</a></p>
-<h2 id="其實只需要一行指令"><a href="#其實只需要一行指令" class="headerlink" title="其實只需要一行指令"></a>其實只需要一行指令</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 安裝 Jade 外掛</span></div><div class="line">npm install hexo-renderer-jade --save</div></pre></td></tr></table></figure>
-<p>如此一來只要下 <code>hexo server</code> 就會自動幫你 compile<br>也可以另外插入 css 去修改了</p>
-<div class="tip"><br>    凡是有修改 <code>.jade</code> 建議關掉重開 hexo 比較好，以確保有吃到變更<br></div>
+<h2 id="創建要給-404-的新頁面"><a href="#創建要給-404-的新頁面" class="headerlink" title="創建要給 404 的新頁面"></a>創建要給 404 的新頁面</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new page <span class="number">404</span></div></pre></td></tr></table></figure>
+<h2 id="編輯-source-404-index-md"><a href="#編輯-source-404-index-md" class="headerlink" title="編輯 source/404/index.md"></a>編輯 <code>source/404/index.md</code></h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">---</span></div><div class="line"><span class="attr">title:</span> <span class="number">404</span></div><div class="line"><span class="attr">permalink:</span> /<span class="number">404</span> <span class="comment"># 指定固定連結為 http://your_account.github.io/404.html</span></div><div class="line"><span class="meta">---</span></div><div class="line"><span class="comment"># Write inline style</span></div><div class="line">&lt;style<span class="string">&gt;</span></div><div class="line">...</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
+<div class="tip"><br>    若要在 local 端測試的話，需將 permalink 拿掉<br>    <div>測試網址為 <code>http://localhost:4000/404</code></div><br></div>
 
-<p>jade theme 寫法參考: <a href="https://github.com/saintwinkle/hexo-theme-pure" target="_blank" rel="external">hexo-theme-pure</a></p>
+
+<p>Ref:</p>
+<ul>
+<li><a href="http://moxfive.xyz/2015/10/16/hexo-404-page/" target="_blank" rel="external">在 Hexo 中创建匹配主题的404页面</a></li>
+<li><a href="https://help.github.com/articles/creating-a-custom-404-page-for-your-github-pages-site/" target="_blank" rel="external">Creating a custom 404 page for your GitHub Pages site</a></li>
+</ul>
 ]]></content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;不是秘技的秘技&quot;&gt;&lt;a href=&quot;#不是秘技的秘技&quot; class=&quot;headerlink&quot; title=&quot;不是秘技的秘技&quot;&gt;&lt;/a&gt;不是秘技的秘技&lt;/h1&gt;&lt;p&gt;將 themes 資料夾複製一份出來，這樣就可以自由修改la~ O_&amp;lt;&lt;/p&gt;
-&lt;div class=&quot;tip&quot;&gt;&lt;br&gt;&lt;div&gt;記得將 themes 資料夾底下的 .git 資料夾砍掉&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;code&gt;(Windows 檢視需開啟隱藏資料夾才看得到)&lt;/code&gt;&lt;/div&gt;&lt;br&gt;&lt;code&gt;這樣自己的 git 才 track 到 themes 底下的所有變更&lt;/code&gt;&lt;br&gt;&lt;/div&gt;
+      &lt;h1 id=&quot;本站的-404-page&quot;&gt;&lt;a href=&quot;#本站的-404-page&quot; class=&quot;headerlink&quot; title=&quot;本站的 404 page&quot;&gt;&lt;/a&gt;本站的 404 page&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://imgur.com/Lg9AMHO.png&quot; alt=&quot;404-page&quot;&gt;&lt;/p&gt;
     
     </summary>
     
+    
+      <category term="github" scheme="http://yoursite.com/tags/github/"/>
     
       <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
@@ -83,10 +76,10 @@
   
   <entry>
     <title>建立 Hexo 環境</title>
-    <link href="http://yoursite.com/2016/07/27/construct-hexo-with-github/"/>
-    <id>http://yoursite.com/2016/07/27/construct-hexo-with-github/</id>
-    <published>2016-07-27T04:34:45.314Z</published>
-    <updated>2016-07-27T06:08:59.784Z</updated>
+    <link href="http://yoursite.com/2016/07/28/construct-hexo-with-github/"/>
+    <id>http://yoursite.com/2016/07/28/construct-hexo-with-github/</id>
+    <published>2016-07-28T02:20:39.000Z</published>
+    <updated>2016-07-28T05:06:52.981Z</updated>
     
     <content type="html"><![CDATA[<h1 id="1-安裝-Github-Desktop"><a href="#1-安裝-Github-Desktop" class="headerlink" title="1. 安裝 Github Desktop"></a>1. 安裝 <a href="https://desktop.github.com/" target="_blank" rel="external">Github Desktop</a></h1><p>優點</p>
 <ul>
@@ -99,29 +92,30 @@
 <h1 id="2-安裝-Node-js"><a href="#2-安裝-Node-js" class="headerlink" title="2. 安裝 Node.js"></a>2. 安裝 <a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a></h1><p>照著安裝步驟走就好，沒啥好說的。</p>
 <h1 id="3-選擇-Git-Shell-類型"><a href="#3-選擇-Git-Shell-類型" class="headerlink" title="3. 選擇 Git Shell 類型"></a>3. 選擇 Git Shell 類型</h1><ol>
 <li>打開 Github Desktop</li>
-<li>設定 &gt; options &gt; Default Shell &gt; 選擇 <code>Git Bash</code></li>
+<li>設定 &gt; options &gt; Default Shell &gt; 選擇 <code>Git Bash</code> <div class="tip"><br>     步驟2可不做，我挑 Git Bash 只是因為介面比較順眼而已XD<br> </div></li>
 <li>設定 &gt; Open in Git shell</li>
 <li>然後 Github Desktop 就可以功成身退惹</li>
 </ol>
-<div class="tip"><br>    步驟2可不做，我挑 Git Bash 只是因為介面比較順眼而已XD<br></div>
+<div class="tip"><br>    這個 Git shell 只是 GitHub Desktop 由指令建出來的捷徑，並沒有實體位置。<br>    真正的 <code>git.exe</code> 放在 <code>C:\Users\[username]\AppData\Local\GitHub\PortableGit_...\</code> 底下，<br>    需由此處才能右鍵以管理員身份開啟。<br>    若以管理員身份開啟 <code>git-bash.exe</code>，因為不是透過 GitHub Desktop 打開的，<br>    它不會記得你的身分認證，在做 push 的時候會需要重新輸入帳號密碼。<br></div>
+
 
 <h1 id="4-建立-Hexo-環境"><a href="#4-建立-Hexo-環境" class="headerlink" title="4. 建立 Hexo 環境"></a>4. 建立 Hexo 環境</h1><ol>
 <li><p><a href="https://hexo.io/zh-tw/docs/" target="_blank" rel="external">照著 Hexo 官方安裝教學走吧XD</a></p>
- <div class="tip"><br>     需要在 Github 上開一個名為 <code>your_account.github.io</code> 的 repo，<br>     這樣在推出去之後網頁(<code>http://your_account.github.io</code>)才會動。<br> </div>
+ <div class="tip"><br>     需要在 Github 上開一個名為 <code>[your_account].github.io</code> 的 repo，<br>     這樣在推出去之後網頁(<code>http://[your_account].github.io</code>)才會動。<br> </div>
 </li>
 <li><p>設定 root <code>_config.yml</code></p>
- <figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 選擇主題</span></div><div class="line"><span class="attr">theme:</span> theme-name</div><div class="line"></div><div class="line"><span class="comment"># 設定 deploy</span></div><div class="line"><span class="attr">deploy:</span></div><div class="line"><span class="attr">    type:</span> git</div><div class="line"><span class="attr">    repo:</span> git@github.com:your_account/your_account.github.io.git</div><div class="line"><span class="attr">    branch:</span> master</div></pre></td></tr></table></figure>
+ <figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 選擇主題</span></div><div class="line"><span class="attr">theme:</span> theme-name</div><div class="line"></div><div class="line"><span class="comment"># 設定 deploy</span></div><div class="line"><span class="attr">deploy:</span></div><div class="line"><span class="attr">    type:</span> git</div><div class="line"><span class="attr">    repo:</span> git@github.com:[your_account]/[your_account].github.io.git</div><div class="line"><span class="attr">    branch:</span> master</div></pre></td></tr></table></figure>
 </li>
 <li><p>基本操作指令</p>
  <figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo server 	<span class="comment"># = hexo s, 進行 compile</span></div><div class="line">hexo generate 	<span class="comment"># = hexo g, 建立 publish 檔案</span></div><div class="line">hexo deploy	<span class="comment"># = hexo d, 將 publish 的檔案推到第二點設定的 repo 上</span></div></pre></td></tr></table></figure>
 </li>
-<li><p><a href="../modify-hexo-themes">修改 Hexo 主題 (懶人法)</a></p>
+<li><p><a href="../modify-hexo-themes">修改 Hexo 主題</a></p>
 <p> 若遇到 deploy 完 style 卻不對的情況: <a href="https://github.com/hexojs/hexo/issues/579" target="_blank" rel="external">(deploy后style.css不对)</a></p>
  <figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Make theme changes &amp; deploy</span></div><div class="line">hexo clean</div><div class="line">hexo generate</div><div class="line">hexo deploy</div></pre></td></tr></table></figure>
 </li>
 <li><p><a href="../keep-hexo-source-in-github">把 Hexo 原始碼也放到 github 遠端保存</a></p>
 <p> 延伸: 在別的地方 clone 既有的 hexo repo</p>
- <figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># clone repo 到指定目錄</span></div><div class="line">git clone http://github.com/your_account/your_account.github.io target_dir</div><div class="line"><span class="comment"># 切換到保存 hexo 原始碼的 branch</span></div><div class="line">git checkout hexo_branch</div><div class="line"><span class="comment"># 將該裝的東西都裝一裝</span></div><div class="line">npm install</div></pre></td></tr></table></figure>
+ <figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># clone repo 到指定目錄</span></div><div class="line">git clone http://github.com/[your_account]/[your_account].github.io target_dir</div><div class="line"><span class="comment"># 切換到保存 hexo 原始碼的 branch</span></div><div class="line">git checkout hexo_branch</div><div class="line"><span class="comment"># 將該裝的東西都裝一裝</span></div><div class="line">npm install</div></pre></td></tr></table></figure>
 </li>
 </ol>
 <div class="tip"><br>若項目4.5連結失效可至 <a href="/tags/hexo/">#Hexo</a> 搜尋該主題<br></div>
@@ -146,11 +140,117 @@
   </entry>
   
   <entry>
+    <title>修改 Hexo 主題</title>
+    <link href="http://yoursite.com/2016/07/28/modify-hexo-themes/"/>
+    <id>http://yoursite.com/2016/07/28/modify-hexo-themes/</id>
+    <published>2016-07-28T01:25:44.000Z</published>
+    <updated>2016-07-28T05:25:47.919Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="不是秘技的秘技"><a href="#不是秘技的秘技" class="headerlink" title="不是秘技的秘技"></a>不是秘技的秘技</h1><p>將 themes 資料夾複製一份出來，這樣就可以自由修改la~ O_&lt;</p>
+<div class="tip"><br><div>記得將 themes 資料夾底下的 .git 資料夾砍掉</div><br><div><code>(Windows 檢視需開啟隱藏資料夾才看得到)</code></div><br><code>這樣自己的 git 才 track 到 themes 底下的所有變更</code><br></div>
+
+<a id="more"></a>
+<p>&nbsp;</p>
+<h1 id="很難懂的-Jade"><a href="#很難懂的-Jade" class="headerlink" title="很難懂的 Jade"></a>很難懂的 Jade</h1><p>Hexo-theme-apollo 模版是以 <code>Jade</code> 寫的，與官方使用的 <code>ejs</code> 不同<br>但只需要另外安裝 <code>Jade</code> 外掛 <a href="https://github.com/hexojs/hexo-renderer-jade" target="_blank" rel="external">hexo-render-jade</a></p>
+<h2 id="其實只需要一行指令"><a href="#其實只需要一行指令" class="headerlink" title="其實只需要一行指令"></a>其實只需要一行指令</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 安裝 Jade 外掛</span></div><div class="line">npm install hexo-renderer-jade --save</div></pre></td></tr></table></figure>
+<p>如此一來只要下 <code>hexo server</code> 就會自動幫你 compile<br>也可以另外插入 css 去修改了</p>
+<div class="tip"><br>    凡是有修改 <code>*.jade</code> 建議關掉重開 hexo 比較好，以確保有吃到變更。<br></div>
+
+<p>jade theme 寫法參考: <a href="https://github.com/saintwinkle/hexo-theme-pure" target="_blank" rel="external">hexo-theme-pure</a></p>
+<p>&nbsp;</p>
+<h1 id="編譯-SASS"><a href="#編譯-SASS" class="headerlink" title="編譯 SASS"></a>編譯 SASS</h1><h2 id="在-themes-底下安裝-gulp"><a href="#在-themes-底下安裝-gulp" class="headerlink" title="在 themes 底下安裝 gulp"></a>在 themes 底下安裝 gulp</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">cd themes/[your-themes]</div><div class="line"><span class="comment"># 裝 gulp</span></div><div class="line">npm install gulp -g</div><div class="line">npm install gulp-sass</div></pre></td></tr></table></figure>
+<h2 id="編輯-gulpfile-js-此處改自hexo-theme-apollo"><a href="#編輯-gulpfile-js-此處改自hexo-theme-apollo" class="headerlink" title="編輯 gulpfile.js (此處改自hexo-theme-apollo)"></a>編輯 <code>gulpfile.js</code> (此處改自<a href="https://github.com/pinggod/hexo-theme-apollo/blob/master/gulpfile.js" target="_blank" rel="external">hexo-theme-apollo</a>)</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> gulp = <span class="built_in">require</span>(<span class="string">'gulp'</span>);</div><div class="line"><span class="keyword">var</span> sass = <span class="built_in">require</span>(<span class="string">'gulp-sass'</span>);</div><div class="line"><span class="keyword">var</span> autoprefixer = <span class="built_in">require</span>(<span class="string">'gulp-autoprefixer'</span>);</div><div class="line"></div><div class="line"><span class="comment">// 一次性編譯 Sass</span></div><div class="line">gulp.task(<span class="string">'sass'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="comment">// 原主題使用 scss, 因個人習慣新增 *.sass (多個 src 可用 array[] 方式塞入)</span></div><div class="line">    <span class="keyword">return</span> gulp.src([<span class="string">'./source/scss/*.scss'</span>, <span class="string">'./source/scss/*.sass'</span>])</div><div class="line">        .pipe(sass(&#123;outputStyle: <span class="string">'compressed'</span>&#125;))</div><div class="line">        .pipe(autoprefixer())</div><div class="line">        .pipe(gulp.dest(<span class="string">'./source/css'</span>));</div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="comment">// 即時編譯</span></div><div class="line">gulp.task(<span class="string">'default'</span>, [<span class="string">'sass'</span>], <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    gulp.watch(<span class="string">'./source/scss/_partial/*.scss'</span>, [<span class="string">'sass'</span>]);</div><div class="line">    <span class="comment">// 同時 watch scss &amp; sass</span></div><div class="line">    gulp.watch([<span class="string">'./source/scss/*.scss'</span>, <span class="string">'./source/scss/*.sass'</span>], [<span class="string">'sass'</span>]);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>照著下指令<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 一次性編譯</span></div><div class="line">gulp sass</div><div class="line"><span class="comment"># 或者</span></div><div class="line"><span class="comment"># always watch</span></div><div class="line">gulp</div></pre></td></tr></table></figure></p>
+<p>&nbsp;</p>
+<h1 id="Tags"><a href="#Tags" class="headerlink" title="Tags"></a>Tags</h1><p>需安裝 <code>hexo-generate-tags</code></p>
+<div class="tip"><br>    注意 tag 大小寫，會造成資料夾目錄連不進去<br></div>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;不是秘技的秘技&quot;&gt;&lt;a href=&quot;#不是秘技的秘技&quot; class=&quot;headerlink&quot; title=&quot;不是秘技的秘技&quot;&gt;&lt;/a&gt;不是秘技的秘技&lt;/h1&gt;&lt;p&gt;將 themes 資料夾複製一份出來，這樣就可以自由修改la~ O_&amp;lt;&lt;/p&gt;
+&lt;div class=&quot;tip&quot;&gt;&lt;br&gt;&lt;div&gt;記得將 themes 資料夾底下的 .git 資料夾砍掉&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;code&gt;(Windows 檢視需開啟隱藏資料夾才看得到)&lt;/code&gt;&lt;/div&gt;&lt;br&gt;&lt;code&gt;這樣自己的 git 才 track 到 themes 底下的所有變更&lt;/code&gt;&lt;br&gt;&lt;/div&gt;
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="jade" scheme="http://yoursite.com/tags/jade/"/>
+    
+      <category term="SASS" scheme="http://yoursite.com/tags/SASS/"/>
+    
+      <category term="gulp" scheme="http://yoursite.com/tags/gulp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo markdown note</title>
+    <link href="http://yoursite.com/2016/07/27/hexo-md-usage/"/>
+    <id>http://yoursite.com/2016/07/27/hexo-md-usage/</id>
+    <published>2016-07-27T14:20:18.000Z</published>
+    <updated>2016-07-28T04:56:08.741Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="tags-格式"><a href="#tags-格式" class="headerlink" title="tags 格式"></a>tags 格式</h2><ul>
+<li>全小寫: 一般名詞，如 <code>hexo</code></li>
+<li>全大寫: 特定縮寫，如 <code>SEO</code></li>
+</ul>
+<div class="tip"><br>    統一格式是為了 tag 連結，但在顯示時皆會以字首大寫呈現。<br>    <div><code>text-transform: captialize</code></div><br></div>
+
+<a id="more"></a>
+<h1 id="h1"><a href="#h1" class="headerlink" title="h1"></a>h1</h1><h2 id="h2-h6"><a href="#h2-h6" class="headerlink" title="h2~h6"></a>h2~h6</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"tip"</span>&gt;</span></div><div class="line">	警告區塊</div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;tags-格式&quot;&gt;&lt;a href=&quot;#tags-格式&quot; class=&quot;headerlink&quot; title=&quot;tags 格式&quot;&gt;&lt;/a&gt;tags 格式&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;全小寫: 一般名詞，如 &lt;code&gt;hexo&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;全大寫: 特定縮寫，如 &lt;code&gt;SEO&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;tip&quot;&gt;&lt;br&gt;    統一格式是為了 tag 連結，但在顯示時皆會以字首大寫呈現。&lt;br&gt;    &lt;div&gt;&lt;code&gt;text-transform: captialize&lt;/code&gt;&lt;/div&gt;&lt;br&gt;&lt;/div&gt;
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>把 Hexo 原始碼也放到 Github 遠端保存</title>
+    <link href="http://yoursite.com/2016/07/27/keep-hexo-source-in-github/"/>
+    <id>http://yoursite.com/2016/07/27/keep-hexo-source-in-github/</id>
+    <published>2016-07-27T03:32:55.000Z</published>
+    <updated>2016-07-28T04:56:08.745Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="新-Project"><a href="#新-Project" class="headerlink" title="新 Project"></a>新 Project</h2><p>在 hexo 資料夾下初始化 git，並做第一次 commit</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git init</div><div class="line">git commit -a</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<p>將 branch 改名並推至遠端</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git branch -m hexo-article <span class="comment"># 更名為 hexo-article</span></div><div class="line">git remote add origin https://github.com/[your-account]/[your-account].github.io</div><div class="line">git fetch origin <span class="comment"># 檢查遠端是否有新東西</span></div><div class="line">git push origin hexo-article -u</div></pre></td></tr></table></figure>
+<p>&nbsp;</p>
+<h2 id="既有-project"><a href="#既有-project" class="headerlink" title="既有 project"></a>既有 project</h2><p>原本怎麼做就怎麼做…<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git commit -am <span class="string">"some comment"</span></div></pre></td></tr></table></figure></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;新-Project&quot;&gt;&lt;a href=&quot;#新-Project&quot; class=&quot;headerlink&quot; title=&quot;新 Project&quot;&gt;&lt;/a&gt;新 Project&lt;/h2&gt;&lt;p&gt;在 hexo 資料夾下初始化 git，並做第一次 commit&lt;/p&gt;
+&lt;figure class=&quot;highlight yml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;git init&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;git commit -a&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="git" scheme="http://yoursite.com/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
     <title>SEO note</title>
-    <link href="http://yoursite.com/2016/07/26/SEO-note/"/>
-    <id>http://yoursite.com/2016/07/26/SEO-note/</id>
-    <published>2016-07-26T07:45:02.203Z</published>
-    <updated>2016-07-27T09:43:11.718Z</updated>
+    <link href="http://yoursite.com/2016/07/27/SEO-note/"/>
+    <id>http://yoursite.com/2016/07/27/SEO-note/</id>
+    <published>2016-07-26T16:00:00.000Z</published>
+    <updated>2016-07-28T04:56:08.711Z</updated>
     
     <content type="html"><![CDATA[<h1 id="網頁配置"><a href="#網頁配置" class="headerlink" title="網頁配置"></a>網頁配置</h1><p>CTA = Call to Actions</p>
 <ul>
@@ -227,14 +327,108 @@
     
       <category term="UI" scheme="http://yoursite.com/tags/UI/"/>
     
+      <category term="note" scheme="http://yoursite.com/tags/note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git branch</title>
+    <link href="http://yoursite.com/2016/07/26/git-branch/"/>
+    <id>http://yoursite.com/2016/07/26/git-branch/</id>
+    <published>2016-07-25T16:00:00.000Z</published>
+    <updated>2016-07-28T04:56:08.736Z</updated>
+    
+    <content type="html"><![CDATA[<p>第一次推branch:</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 在該branch下</span></div><div class="line">git push -u origin [branch-name]</div><div class="line"><span class="comment"># 因遠端尚未有這支branch, 所以需要下此指令建立</span></div><div class="line"><span class="comment"># -u: 與遠端建立關連, 這樣下次才不需要又打長長的指令</span></div><div class="line"><span class="comment"># 之後就可以直接在 branch 下 git push 就好</span></div></pre></td></tr></table></figure>
+<a id="more"></a>
+<p>到別人推的branch:<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 在master:</span></div><div class="line">git fetch</div><div class="line">git checkout [branch-name]</div></pre></td></tr></table></figure></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;第一次推branch:&lt;/p&gt;
+&lt;figure class=&quot;highlight yml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 在該branch下&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;git push -u origin [branch-name]&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 因遠端尚未有這支branch, 所以需要下此指令建立&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# -u: 與遠端建立關連, 這樣下次才不需要又打長長的指令&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 之後就可以直接在 branch 下 git push 就好&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="git" scheme="http://yoursite.com/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>UI 筆記 from 如何修正壞UI</title>
+    <link href="http://yoursite.com/2016/07/26/UI-state-note/"/>
+    <id>http://yoursite.com/2016/07/26/UI-state-note/</id>
+    <published>2016-07-25T16:00:00.000Z</published>
+    <updated>2016-07-28T05:32:37.718Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="產品的五個狀態"><a href="#產品的五個狀態" class="headerlink" title="產品的五個狀態"></a>產品的五個狀態</h1><a id="more"></a>
+<h2 id="理想狀態（Ideal-State）"><a href="#理想狀態（Ideal-State）" class="headerlink" title="理想狀態（Ideal State）"></a>理想狀態（Ideal State）</h2><h2 id="空白狀態（Empty-State）"><a href="#空白狀態（Empty-State）" class="headerlink" title="空白狀態（Empty State）"></a>空白狀態（Empty State）</h2><ul>
+<li>首次使用</li>
+<li>User 清除導致全空</li>
+<li>找不到資料</li>
+</ul>
+<h2 id="錯誤狀態（Error-State）"><a href="#錯誤狀態（Error-State）" class="headerlink" title="錯誤狀態（Error State）"></a>錯誤狀態（Error State）</h2><div class="tip"><br>    不要嚇到 User<br></div>
+
+<h2 id="局部資料狀態（Partial-State）"><a href="#局部資料狀態（Partial-State）" class="headerlink" title="局部資料狀態（Partial State）"></a>局部資料狀態（Partial State）</h2><ul>
+<li>讓 User 知道離完美狀態有多遠</li>
+<li>如「個人檔案完成度」</li>
+</ul>
+<h2 id="載入中狀態（Loading-State）"><a href="#載入中狀態（Loading-State）" class="headerlink" title="載入中狀態（Loading State）"></a>載入中狀態（Loading State）</h2><ul>
+<li>可先載入框架，讓 User 知道這一頁會長什麼樣子</li>
+</ul>
+<div class="tip"><br>    不要讓 User 撞牆，要他有用的建議或不一樣的途徑<br></div>
+
+<p>Ref: <a href="https://medium.com/@zonble/%E7%BF%BB%E8%AD%AF-%E5%A6%82%E4%BD%95%E4%BF%AE%E6%AD%A3%E5%A3%9E-ui-2f972da15d5b#.n50384v8h" target="_blank" rel="external">如何修正壞UI</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;產品的五個狀態&quot;&gt;&lt;a href=&quot;#產品的五個狀態&quot; class=&quot;headerlink&quot; title=&quot;產品的五個狀態&quot;&gt;&lt;/a&gt;產品的五個狀態&lt;/h1&gt;
+    
+    </summary>
+    
+    
+      <category term="UI" scheme="http://yoursite.com/tags/UI/"/>
+    
+      <category term="note" scheme="http://yoursite.com/tags/note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Bourbon &amp; Neat install</title>
+    <link href="http://yoursite.com/2016/07/26/bourbon-neat-install-and-link/"/>
+    <id>http://yoursite.com/2016/07/26/bourbon-neat-install-and-link/</id>
+    <published>2016-07-25T16:00:00.000Z</published>
+    <updated>2016-07-28T04:56:08.719Z</updated>
+    
+    <content type="html"><![CDATA[<p>編輯 <code>bower.json</code><br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 加入 depenencies (後面為版本號)</span></div><div class="line"><span class="attr">"dependencies":</span> &#123;</div><div class="line"><span class="attr">    "bourbon":</span> <span class="string">"4.2.7"</span>,</div><div class="line"><span class="attr">    "neat":</span> <span class="string">"1.8.0"</span></div><div class="line">  &#125;</div><div class="line"></div><div class="line"><span class="comment"># 進行安裝</span></div><div class="line">bower install</div></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<p>再把它們 link 到 <code>styles/import/</code> 底下<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">cd styles/import</div><div class="line">ln -s ../../vender/bower/bourbon/app/assets/stylesheets bourbon <span class="comment"># link過來並命名為bourbon</span></div><div class="line">ln -s ../../vender/bower/neat/app/assets/stylesheets neat <span class="comment"># link過來並命名為neat</span></div></pre></td></tr></table></figure></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;編輯 &lt;code&gt;bower.json&lt;/code&gt;&lt;br&gt;&lt;figure class=&quot;highlight yaml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 加入 depenencies (後面為版本號)&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;&quot;dependencies&quot;:&lt;/span&gt; &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;    &quot;bourbon&quot;:&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;4.2.7&quot;&lt;/span&gt;,&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;    &quot;neat&quot;:&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;1.8.0&quot;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 進行安裝&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;bower install&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="bourbon" scheme="http://yoursite.com/tags/bourbon/"/>
+    
+      <category term="neat" scheme="http://yoursite.com/tags/neat/"/>
+    
+      <category term="github" scheme="http://yoursite.com/tags/github/"/>
+    
   </entry>
   
   <entry>
     <title>Font note</title>
     <link href="http://yoursite.com/2016/07/26/web-font-setting/"/>
     <id>http://yoursite.com/2016/07/26/web-font-setting/</id>
-    <published>2016-07-26T05:57:57.240Z</published>
-    <updated>2016-07-27T06:09:15.664Z</updated>
+    <published>2016-07-25T16:00:00.000Z</published>
+    <updated>2016-07-28T04:56:08.754Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Fallback"><a href="#Fallback" class="headerlink" title="Fallback"></a>Fallback</h1><ul>
 <li>web font loader to fallbacks the webfont (if font loading is not compeleted</li>
@@ -277,119 +471,6 @@
       <category term="UI" scheme="http://yoursite.com/tags/UI/"/>
     
       <category term="font" scheme="http://yoursite.com/tags/font/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git branch</title>
-    <link href="http://yoursite.com/2016/07/26/git-branch/"/>
-    <id>http://yoursite.com/2016/07/26/git-branch/</id>
-    <published>2016-07-26T05:55:25.448Z</published>
-    <updated>2016-07-27T06:09:02.690Z</updated>
-    
-    <content type="html"><![CDATA[<p>第一次推branch:</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 在該branch下</span></div><div class="line">git push -u origin BRANCH_NAME</div><div class="line"><span class="comment"># 因遠端尚未有這支branch, 所以需要下此指令建立</span></div><div class="line"><span class="comment"># -u: 與遠端建立關連, 這樣下次才不需要又打長長的指令</span></div><div class="line"><span class="comment"># 之後就可以直接在 branch 下 git push 就好</span></div></pre></td></tr></table></figure>
-<a id="more"></a>
-<p>到別人推的branch:<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 在master:</span></div><div class="line">git fetch</div><div class="line">git checkout BRANCH_NAME</div></pre></td></tr></table></figure></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;第一次推branch:&lt;/p&gt;
-&lt;figure class=&quot;highlight yml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 在該branch下&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;git push -u origin BRANCH_NAME&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 因遠端尚未有這支branch, 所以需要下此指令建立&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# -u: 與遠端建立關連, 這樣下次才不需要又打長長的指令&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 之後就可以直接在 branch 下 git push 就好&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-    
-      <category term="git" scheme="http://yoursite.com/tags/git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>UI 筆記 from 如何修正壞UI</title>
-    <link href="http://yoursite.com/2016/07/26/UI-state-note/"/>
-    <id>http://yoursite.com/2016/07/26/UI-state-note/</id>
-    <published>2016-07-26T05:44:59.099Z</published>
-    <updated>2016-07-26T06:12:37.726Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="產品的五個狀態"><a href="#產品的五個狀態" class="headerlink" title="產品的五個狀態"></a>產品的五個狀態</h1><a id="more"></a>
-<h2 id="理想狀態（Ideal-State）"><a href="#理想狀態（Ideal-State）" class="headerlink" title="理想狀態（Ideal State）"></a>理想狀態（Ideal State）</h2><h2 id="空白狀態（Empty-State）"><a href="#空白狀態（Empty-State）" class="headerlink" title="空白狀態（Empty State）"></a>空白狀態（Empty State）</h2><ul>
-<li>首次使用</li>
-<li>User 清除導致全空</li>
-<li>找不到資料</li>
-</ul>
-<h2 id="錯誤狀態（Error-State）"><a href="#錯誤狀態（Error-State）" class="headerlink" title="錯誤狀態（Error State）"></a>錯誤狀態（Error State）</h2><div class="tip"><br>    不要嚇到 User<br></div>
-
-<h2 id="局部資料狀態（Partial-State）"><a href="#局部資料狀態（Partial-State）" class="headerlink" title="局部資料狀態（Partial State）"></a>局部資料狀態（Partial State）</h2><h2 id="載入中狀態（Loading-State）"><a href="#載入中狀態（Loading-State）" class="headerlink" title="載入中狀態（Loading State）"></a>載入中狀態（Loading State）</h2><div class="tip"><br>    不要讓User撞牆，要他有用的建議或不一樣的途徑<br></div>
-
-<p>Ref: <a href="https://medium.com/@zonble/%E7%BF%BB%E8%AD%AF-%E5%A6%82%E4%BD%95%E4%BF%AE%E6%AD%A3%E5%A3%9E-ui-2f972da15d5b#.n50384v8h" target="_blank" rel="external">如何修正壞UI</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;產品的五個狀態&quot;&gt;&lt;a href=&quot;#產品的五個狀態&quot; class=&quot;headerlink&quot; title=&quot;產品的五個狀態&quot;&gt;&lt;/a&gt;產品的五個狀態&lt;/h1&gt;
-    
-    </summary>
-    
-    
-      <category term="UI" scheme="http://yoursite.com/tags/UI/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Bourbon &amp; Neat install</title>
-    <link href="http://yoursite.com/2016/07/26/bourbon-neat-install-and-link/"/>
-    <id>http://yoursite.com/2016/07/26/bourbon-neat-install-and-link/</id>
-    <published>2016-07-26T05:38:06.609Z</published>
-    <updated>2016-07-27T06:08:56.464Z</updated>
-    
-    <content type="html"><![CDATA[<p>編輯 <code>bower.json</code><br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 加入 depenencies (後面為版本號)</span></div><div class="line"><span class="attr">"dependencies":</span> &#123;</div><div class="line"><span class="attr">    "bourbon":</span> <span class="string">"4.2.7"</span>,</div><div class="line"><span class="attr">    "neat":</span> <span class="string">"1.8.0"</span></div><div class="line">  &#125;</div><div class="line"></div><div class="line"><span class="comment"># 進行安裝</span></div><div class="line">bower install</div></pre></td></tr></table></figure></p>
-<a id="more"></a>
-<p>再把它們 link 到 styles/import/ 底下<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">cd styles/import</div><div class="line">ln -s ../../vender/bower/bourbon/app/assets/stylesheets bourbon <span class="comment"># link過來並命名為bourbon</span></div><div class="line">ln -s ../../vender/bower/neat/app/assets/stylesheets neat <span class="comment"># link過來並命名為neat</span></div></pre></td></tr></table></figure></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;編輯 &lt;code&gt;bower.json&lt;/code&gt;&lt;br&gt;&lt;figure class=&quot;highlight yml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 加入 depenencies (後面為版本號)&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;&quot;dependencies&quot;:&lt;/span&gt; &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;    &quot;bourbon&quot;:&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;4.2.7&quot;&lt;/span&gt;,&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;    &quot;neat&quot;:&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;1.8.0&quot;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 進行安裝&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;bower install&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="github" scheme="http://yoursite.com/tags/github/"/>
-    
-      <category term="bourbon" scheme="http://yoursite.com/tags/bourbon/"/>
-    
-      <category term="neat" scheme="http://yoursite.com/tags/neat/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>把 hexo 原始碼也放到 github 遠端保存</title>
-    <link href="http://yoursite.com/2016/07/21/keep-hexo-source-in-github/"/>
-    <id>http://yoursite.com/2016/07/21/keep-hexo-source-in-github/</id>
-    <published>2016-07-21T07:21:32.045Z</published>
-    <updated>2016-07-27T06:09:08.455Z</updated>
-    
-    <content type="html"><![CDATA[<p>在 hexo 資料夾下初始化 git，並做第一次 commit</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git init</div><div class="line">git commit -a</div></pre></td></tr></table></figure>
-<a id="more"></a>
-<p>將 branch 改名並推至遠端</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git branch -m hexo-article <span class="comment"># 更名為 hexo-article</span></div><div class="line">git remote add origin https://github.com/thisis577/thisis577.github.io</div><div class="line">git fetch origin <span class="comment"># 檢查遠端是否有新東西</span></div><div class="line">git push origin hexo-article -u</div></pre></td></tr></table></figure>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;在 hexo 資料夾下初始化 git，並做第一次 commit&lt;/p&gt;
-&lt;figure class=&quot;highlight yml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;git init&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;git commit -a&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-      <category term="tech" scheme="http://yoursite.com/categories/tech/"/>
-    
-    
-      <category term="git" scheme="http://yoursite.com/tags/git/"/>
-    
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
   </entry>
   

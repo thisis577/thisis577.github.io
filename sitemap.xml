@@ -2,65 +2,86 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2016/07/26/SEO-note/</loc>
+    <loc>http://yoursite.com/2016/07/26/UI-state-note/</loc>
     
-    <lastmod>2016-07-27T09:43:11.718Z</lastmod>
+    <lastmod>2016-07-28T05:32:37.718Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2016/07/27/hexo-md-usage/</loc>
+    <loc>http://yoursite.com/2016/07/28/modify-hexo-themes/</loc>
     
-    <lastmod>2016-07-27T06:16:01.532Z</lastmod>
+    <lastmod>2016-07-28T05:25:47.919Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/07/28/construct-hexo-with-github/</loc>
+    
+    <lastmod>2016-07-28T05:06:52.981Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/07/28/customize-hexo-shell/</loc>
+    
+    <lastmod>2016-07-28T04:59:22.531Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/2016/07/26/web-font-setting/</loc>
     
-    <lastmod>2016-07-27T06:09:15.664Z</lastmod>
+    <lastmod>2016-07-28T04:56:08.754Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2016/07/21/keep-hexo-source-in-github/</loc>
+    <loc>http://yoursite.com/2016/07/27/keep-hexo-source-in-github/</loc>
     
-    <lastmod>2016-07-27T06:09:08.455Z</lastmod>
+    <lastmod>2016-07-28T04:56:08.745Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/07/27/hexo-md-usage/</loc>
+    
+    <lastmod>2016-07-28T04:56:08.741Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/2016/07/26/git-branch/</loc>
     
-    <lastmod>2016-07-27T06:09:02.690Z</lastmod>
+    <lastmod>2016-07-28T04:56:08.736Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2016/07/27/construct-hexo-with-github/</loc>
+    <loc>http://yoursite.com/2016/07/28/custom-404-page/</loc>
     
-    <lastmod>2016-07-27T06:08:59.784Z</lastmod>
+    <lastmod>2016-07-28T04:56:08.727Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/2016/07/26/bourbon-neat-install-and-link/</loc>
     
-    <lastmod>2016-07-27T06:08:56.464Z</lastmod>
+    <lastmod>2016-07-28T04:56:08.719Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2016/07/27/modify-hexo-themes/</loc>
+    <loc>http://yoursite.com/2016/07/27/SEO-note/</loc>
     
-    <lastmod>2016-07-27T06:05:38.643Z</lastmod>
+    <lastmod>2016-07-28T04:56:08.711Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2016/07/26/UI-state-note/</loc>
+    <loc>http://yoursite.com//404.html</loc>
     
-    <lastmod>2016-07-26T06:12:37.726Z</lastmod>
+    <lastmod>2016-07-28T04:56:08.706Z</lastmod>
     
   </url>
   
