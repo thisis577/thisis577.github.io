@@ -28,7 +28,7 @@ then
 		echo "push start:"
 		git add .
 		git commit -m "$2"
-		# git push
+		git push
 	fi
 fi
 
