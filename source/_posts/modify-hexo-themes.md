@@ -3,6 +3,9 @@ title: 修改 Hexo 主題
 date: 2016-07-28 09:25:44
 tags:
 - hexo
+- jade
+- SASS
+- gulp
 ---
 
 # 不是秘技的秘技

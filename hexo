@@ -9,12 +9,11 @@ then
 	exit 0
 fi
 
-ACTION=$1
-COMMENT=$2
+echo $2
 
-if [ ${ACTION} == "deploy" ];
+if [ $1 == "deploy" ];
 then
-	# Hexo modify themes and deploy
+	# Hexo modify themes and deploy all (themes + post)
 	echo "deploy start:"
 	hexo clean
 	hexo generate
@@ -22,14 +21,14 @@ then
 fi
 
 # push hexo source
-if [ ${ACTION} != "" ];
+if [ $1 != "" ];
 then
-	if [ ${COMMENT} != "" ];
+	if [ "$2" != "" ];
 	then
 		echo "push start:"
 		git add .
-		git commit -m ${COMMENT}
-		git push
+		git commit -m "$2"
+		# git push
 	fi
 fi
 

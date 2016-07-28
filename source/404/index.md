@@ -4,7 +4,7 @@ permalink: /404
 ---
 
 Oops! This page is not exist.
-Please click the site-logo to jump to <a href="http://thisis577.github.io" target="_parent">Home page</a>.
+Please click the site-logo or <a href="http://thisis577.github.io" target="_parent">here</a> to return site home.
 
 <style>
 	header ul.nav.nav-list, .post-info, .logo-link .subtitle {

@@ -38,7 +38,10 @@ tags:
 	真正的 git.exe 放在 `C:\Users\[username]\AppData\Local\GitHub\PortableGit_...\` 底下，
 	需由此處才能右鍵以管理員身份開啟。
 </div>
-
+<div class="tip">
+	若以管理員身份開啟 git-bash.ex，因為不是透過 GitHub Desktop 打開的，
+	它不會記得你的身分認證，在做 commit 的時候會需要重新輸入帳號密碼。
+</div>
 
 
 # 4. 建立 Hexo 環境
