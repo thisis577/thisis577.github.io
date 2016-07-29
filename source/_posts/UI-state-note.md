@@ -2,8 +2,8 @@
 title: UI 筆記 from 如何修正壞UI
 date: 2016-07-26
 tags:
+- reading
 - UI
-- note
 ---
 
 # 產品的五個狀態

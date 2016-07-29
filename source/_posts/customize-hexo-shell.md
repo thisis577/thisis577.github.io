@@ -16,7 +16,7 @@ tags:
 ## 在 root 編寫檔案，此處檔名為 `hexo`
 (shell 可不需副檔名)
 
-``` bash
+``` bash hexo
 #!/usr/bin/env bash
 
 # Usage

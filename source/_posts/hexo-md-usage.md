@@ -5,18 +5,20 @@ tags:
 - hexo
 ---
 
-## tags 格式
-- 全小寫: 一般名詞，如 `hexo`
-- 全大寫: 特定縮寫，如 `SEO`
-
 <div class="tip">
-    統一格式是為了 tag 連結，但在顯示時皆會以字首大寫呈現。
-    <div>`text-transform: captialize`</div>
+    為個人規範跟一些使用方式的範例筆記
 </div>
 
 <!-- more -->
 
-## 標題
+# tags 格式
+- 全小寫: 一般名詞，如 `hexo`
+- 全大寫: 特定縮寫，如 `SEO`
+- 按照英文字母順序排列
+
+<hr>
+
+# 標題
 
 # h1
 ## h2
@@ -29,57 +31,88 @@ tags:
 ### h3
 #### h4
 ```
+<hr>
 
+# 特殊區塊
 
-## 特殊區塊
-
-### 提示區塊
+## 提示區塊
 
 <div class="tip">
    提示區塊
 </div>
+
 ``` html
 <div class="tip">
     提示區塊
 </div>
 ```
 
-### murmur 區塊
+## 評論區塊
 
 <small class="murmur">murmur區塊</small>
+
 ``` html
 <small class="murmur">murmur區塊</small>
 ```
 
-### murmur in tip
+## murmur in tip
 
 <div class="tip">
     提示區塊
-    <small class="murmur">在提示區塊 murmur</small>
+    <small class="murmur">
+        在提示區塊 murmur
+    </small>
 </div>
+
 ``` html
 <div class="tip">
     提示區塊
-    <small class="murmur">在提示區塊 murmur</small>
+    <small class="murmur">
+        在提示區塊 murmur
+    </small>
 </div>
 ```
 
-# 新大陸 泥馬
+<hr>
 
-## Markdown 格式
-Ref: [Hexo 官網教學](https://hexo.io/docs/tag-plugins.html) - 不是 `.ejs` 阿阿
+# Markdown 新大陸
+
+## Code Block
+
+``` md
+{% codeblock [title] [lang:language] [url] [link text] %}
+code snippet
+{% endcodeblock %}
+```
+
+<small class="murmur">
+    我一直把那個格式當成是 `ejs` 的格式 囧
+</small>
+
+
+## Backtick Code Block
 
 ``` md test.md https://hexo.io/docs/tag-plugins.html#Backtick-Code-Block #Backtick-Code-Block
     ''' [language] [title] [url] [link text] code snippet '''
 
 ```
 
-``` html test.html
 <div class="tip">
-
+    <ol>
+        <li>Code block 與 Backtick Code Block 不能混用</li>
+        <li>Block 與上下文必須有空行不能連在一起</li>
+    </ol>
 </div>
-```
+
+### Blockquote
 
 {% blockquote Seth Godin http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html Welcome to Island Marketing %}
 Every interaction is both precious and an opportunity to delight.
 {% endblockquote %}
+
+``` md
+{% blockquote Seth Godin http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html Welcome to Island Marketing %}
+Every interaction is both precious and an opportunity to delight.
+{% endblockquote %}
+```
+

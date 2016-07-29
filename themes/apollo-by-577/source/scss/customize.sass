@@ -78,12 +78,14 @@ p img
     h2:before, h3:before
         top: -3px
 
+.home.post-list .read-more:hover
+    border-bottom: 1px solid $green
 
 .post-content
     a
-        border-bottom: 1px dotted $green
+        // border-bottom: 1px dotted $green
         &:hover
-            border-bottom: 1px solid $green
+            border-bottom: 2px solid $green
     .tip + br, .highlight + br, .murmur + br
         display: none // remove over space
     .tip
@@ -106,19 +108,24 @@ p img
             left: -5px
         &:hover:before
             background: none !important
+        & > br:first-of-type
+            display: none // remove first br's space, let this tag can be writed readiable (can break line)
 
 code, pre
     font-family: 'consolas', 'play', 'Noto Sans TC', sans-serif
     word-break: break-all
 
 blockquote
-    h2
-        font-weight: normal
-        // margin-left: 0
-        // &:before
-        //     display: none
-    footer cite
-        margin-left: .5em
+    font-size: 1.1em
+    footer
+        font-size: .85rem
+        cite
+            margin-left: .5em
+
+hr
+    border: 1px solid #FAFAFA
+    margin: 2em 0
+    display: block
 
 // ARCHIVE
 .archive

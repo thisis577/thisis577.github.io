@@ -4,6 +4,7 @@ date: 2016-07-28 22:22:23
 tags:
 - CSS
 - practice
+- UI
 ---
 
 # 放一些想要練習的目標清單在這裡
@@ -11,6 +12,10 @@ tags:
 <div class="tip">
 	皆為看著成品做一遍練習技巧，非本人原創。
 </div>
+
+<!-- more -->
+
+# 練習目標
 
 ## 練習3 - [Hover button](https://lichin.me/hoverbtn2/)
 <small>Ref: [hover-button-animation3](https://lichin.me/css/2016/07/28/hover-button-animation3)</small>
@@ -22,9 +27,7 @@ Tool: [錄製網頁GIF的工具](http://www.cockos.com/licecap/)
 
 ## 練習4 - [Error Message](https://dribbble.com/shots/2818079-Error-Message)
 
-<!-- more -->
-
--
+<hr>
 
 # 先前的練習
 

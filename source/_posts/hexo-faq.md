@@ -18,7 +18,8 @@ Error: EMFILE, too many open files
 ## 解法
 <div class="tip">
 	<div>自力救濟法：`打開工作管理員，把 Node.js 砍掉`，接下來重新跑 hexo 指令就好了</div>
-	<small class="murmur">[官方解法](https://hexo.io/zh-tw/docs/troubleshooting.html#EMFILE-錯誤) 是下 `ulimit -n 10000`，但 10000 好像太大了，我只有設定在 2048 時有成功， BUT！ 只順暢了一下子就又噴相同錯誤了= =
+	<small class="murmur">
+	[官方解法](https://hexo.io/zh-tw/docs/troubleshooting.html#EMFILE-錯誤) 是下 `ulimit -n 10000`，但 10000 好像太大了，我只有設定在 2048 時有成功， BUT！ 只順暢了一下子就又噴相同錯誤了= =
 	</small>
 </div>
 

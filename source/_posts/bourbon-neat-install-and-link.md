@@ -4,7 +4,6 @@ date: 2016-07-26
 tags:
 - bourbon
 - neat
-- github
 ---
 
 編輯 `bower.json`

@@ -2,8 +2,8 @@
 title: 把 Hexo 原始碼也放到 Github 遠端保存
 date: 2016-07-27 11:32:55
 tags:
-- hexo
 - git
+- hexo
 ---
 
 ## 新 Project
@@ -33,4 +33,5 @@ git push origin hexo-article -u
 原本怎麼做就怎麼做...
 ``` yml
 git commit -am "some comment"
+git push
 ```

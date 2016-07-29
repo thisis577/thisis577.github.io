@@ -2,9 +2,9 @@
 title: SEO note
 date: 2016-07-27
 tags:
+- reading
 - SEO
 - UI
-- note
 ---
 
 
