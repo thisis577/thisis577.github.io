@@ -23,7 +23,9 @@ tags:
 
 # 練習目標
 
-## 練習3 - [Hover button](https://lichin.me/hoverbtn2/)
+## 練習3 - 打字機效果
+
+## 練習4 - [Hover button](https://lichin.me/hoverbtn2/)
 <small>Ref: [hover-button-animation3](https://lichin.me/css/2016/07/28/hover-button-animation3)</small>
 <small>Author: Lichin</small>
 
@@ -31,7 +33,7 @@ tags:
 Tool: [錄製網頁GIF的工具](http://www.cockos.com/licecap/)
 
 
-## 練習4 - [Error Message](https://dribbble.com/shots/2818079-Error-Message)
+## 練習5 - [Error Message](https://dribbble.com/shots/2818079-Error-Message)
 
 ----
 

@@ -19,7 +19,7 @@ tags:
 
 <!-- more -->
 
-&nbsp;
+----
 
 # 很難懂的 Jade
 Hexo-theme-apollo 模版是以 `Jade` 寫的，與官方使用的 `ejs` 不同
@@ -74,7 +74,7 @@ npm install
 ```
 
 ## 編輯 `gulpfile.js` (此處改自[hexo-theme-apollo](https://github.com/pinggod/hexo-theme-apollo/blob/master/gulpfile.js))
-``` js themes/gulpfile.js
+``` js themes/[your-themes]/gulpfile.js
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
@@ -96,7 +96,8 @@ gulp.task('default', ['sass'], function() {
 });
 ```
 
-``` yml @themes/
+``` yml themes/[your-themes]/
+# 需在與 gulpfile 同一層才能跑
 # 一次性編譯
 gulp sass
 # 或者

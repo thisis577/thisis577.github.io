@@ -12,6 +12,8 @@ tags:
 
 <!-- more -->
 
+----
+
 ## 創建要給 404 的新頁面
 
 ``` yml
@@ -19,7 +21,8 @@ hexo new page 404
 ```
 
 ## 編輯 `source/404/index.md`
-``` yml
+
+``` md source/404/index.md
 ---
 title: 404
 permalink: /404 # 指定固定連結為 http://your_account.github.io/404.html

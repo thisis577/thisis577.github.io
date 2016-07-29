@@ -7,6 +7,14 @@ tags:
 - UI
 ---
 
+# Search Engine Land’s Guide To SEO
+
+[![SEO periodic table](http://searchengineland.com/figz/wp-content/seloads/2011/06/periodic-table-of-seo-2015.png)](http://searchengineland.com/guide/seo)
+
+
+跟 HTML 有關的只有 [Chapter 4](http://searchengineland.com/guide/seo/html-code-search-engine-ranking)
+
+----
 
 # 網頁配置
 

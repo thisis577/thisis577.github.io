@@ -32,7 +32,7 @@ header
     margin-left: 10px
     text-align: left
     vertical-align: 35px
-    width: 140px
+    width: 160px
     word-break: break-word
 
 
@@ -117,8 +117,7 @@ p img
             background: none !important
         & > br:first-of-type
             display: none // remove first br's space, let this tag can be writed readiable (can break line)
-        div&
-            margin: 1em .3em
+
 
 code, pre
     font-family: 'consolas', 'play', 'Noto Sans TC', sans-serif
@@ -140,9 +139,15 @@ hr
 .archive
     .post-info
         width: $post-info-width
+    .post-tags
+        margin-bottom: 1em
     .post-title-link
+        @extend h3
+        font-weight: 400
         margin-left: $post-info-width
-
+        &:hover
+            color: $text-color
+            // color: $green
 
 // TAGS
 .tag-cloud
