@@ -34,12 +34,12 @@ npm install hexo-renderer-jade --save
 也可以另外插入 css 去修改了
 
 <div class="tip">
-	凡是有修改 `*.jade` 建議關掉重開 hexo 比較好，以確保有吃到變更。
+    凡是有修改 `*.jade` 建議關掉重開 hexo 比較好，以確保有吃到變更。
 </div>
 
 jade theme 寫法參考: [hexo-theme-pure](https://github.com/saintwinkle/hexo-theme-pure)
 
-&nbsp;
+----
 
 # 編譯 SASS
 
@@ -47,13 +47,34 @@ jade theme 寫法參考: [hexo-theme-pure](https://github.com/saintwinkle/hexo-t
 
 ``` yml
 cd themes/[your-themes]
+# 裝 themes 裡面的 package
+npm install
 # 裝 gulp
 npm install gulp -g
 npm install gulp-sass
 ```
 
+<small class="murmur">
+    因為我在 themes 底下裝一直會噴 Error: EMFILE, too many open files 的錯誤，
+    所以我乾脆把 gulp 裝在 root 底下
+</small>
+
+``` json /package.json
+"dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.6.0"
+}
+```
+
+``` yml
+# 直接用 npm 裝一次
+npm install
+```
+
 ## 編輯 `gulpfile.js` (此處改自[hexo-theme-apollo](https://github.com/pinggod/hexo-theme-apollo/blob/master/gulpfile.js))
-``` js
+``` js themes/gulpfile.js
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
@@ -75,8 +96,7 @@ gulp.task('default', ['sass'], function() {
 });
 ```
 
-照著下指令
-``` yml
+``` yml @themes/
 # 一次性編譯
 gulp sass
 # 或者
@@ -84,12 +104,12 @@ gulp sass
 gulp
 ```
 
-&nbsp;
+----
 
 # Tags
 
 需安裝 `hexo-generate-tags`
 
 <div class="tip">
-	注意 tag 大小寫，會造成資料夾目錄連不進去
+    注意 tag 大小寫，會造成資料夾目錄連不進去
 </div>

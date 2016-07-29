@@ -20,6 +20,10 @@
     "hexo-renderer-marked": "^0.2.10",
     "hexo-renderer-sass": "^0.2.0",
     "hexo-renderer-stylus": "^0.3.1",
-    "hexo-server": "^0.2.0"
+    "hexo-server": "^0.2.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.6.0"
   }
 }
