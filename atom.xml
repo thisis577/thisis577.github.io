@@ -45,9 +45,9 @@
     </summary>
     
     
-      <category term="practice" scheme="http://yoursite.com/tags/practice/"/>
-    
       <category term="UI" scheme="http://yoursite.com/tags/UI/"/>
+    
+      <category term="practice" scheme="http://yoursite.com/tags/practice/"/>
     
   </entry>
   
@@ -56,7 +56,7 @@
     <link href="http://yoursite.com/2016/07/28/CSS3-practice-list/"/>
     <id>http://yoursite.com/2016/07/28/CSS3-practice-list/</id>
     <published>2016-07-28T14:22:23.000Z</published>
-    <updated>2016-07-29T07:12:18.155Z</updated>
+    <updated>2016-07-29T09:43:07.047Z</updated>
     
     <content type="html"><![CDATA[<h1 id="放一些想要練習的目標清單在這裡"><a href="#放一些想要練習的目標清單在這裡" class="headerlink" title="放一些想要練習的目標清單在這裡"></a>放一些想要練習的目標清單在這裡</h1><div class="tip"><br>    皆為看著成品做一遍練習技巧，非本人原創。<br></div>
 
@@ -66,9 +66,9 @@
 </ul>
 <a id="more"></a>
 <hr>
-<h1 id="練習目標"><a href="#練習目標" class="headerlink" title="練習目標"></a>練習目標</h1><h2 id="練習3-Hover-button"><a href="#練習3-Hover-button" class="headerlink" title="練習3 - Hover button"></a>練習3 - <a href="https://lichin.me/hoverbtn2/" target="_blank" rel="external">Hover button</a></h2><p><small>Ref: <a href="https://lichin.me/css/2016/07/28/hover-button-animation3" target="_blank" rel="external">hover-button-animation3</a></small><br><small>Author: Lichin</small></p>
+<h1 id="練習目標"><a href="#練習目標" class="headerlink" title="練習目標"></a>練習目標</h1><h2 id="練習3-打字機效果"><a href="#練習3-打字機效果" class="headerlink" title="練習3 - 打字機效果"></a>練習3 - 打字機效果</h2><h2 id="練習4-Hover-button"><a href="#練習4-Hover-button" class="headerlink" title="練習4 - Hover button"></a>練習4 - <a href="https://lichin.me/hoverbtn2/" target="_blank" rel="external">Hover button</a></h2><p><small>Ref: <a href="https://lichin.me/css/2016/07/28/hover-button-animation3" target="_blank" rel="external">hover-button-animation3</a></small><br><small>Author: Lichin</small></p>
 <p>Tool: <a href="http://www.cockos.com/licecap/" target="_blank" rel="external">錄製網頁GIF的工具</a></p>
-<h2 id="練習4-Error-Message"><a href="#練習4-Error-Message" class="headerlink" title="練習4 - Error Message"></a>練習4 - <a href="https://dribbble.com/shots/2818079-Error-Message" target="_blank" rel="external">Error Message</a></h2><hr>
+<h2 id="練習5-Error-Message"><a href="#練習5-Error-Message" class="headerlink" title="練習5 - Error Message"></a>練習5 - <a href="https://dribbble.com/shots/2818079-Error-Message" target="_blank" rel="external">Error Message</a></h2><hr>
 <h1 id="先前的練習"><a href="#先前的練習" class="headerlink" title="先前的練習"></a>先前的練習</h1><h2 id="練習2-搜尋效果"><a href="#練習2-搜尋效果" class="headerlink" title="練習2 - 搜尋效果"></a>練習2 - 搜尋效果</h2><p><img src="https://d262ilb51hltx0.cloudfront.net/max/800/1*1PijTRGwpdBDO4yQPJCBjA.gif" alt="Search"><br><small class="img-description">Author: 不知道作者是誰QQ，待查</small></p>
 <h4 id="成果：codepen"><a href="#成果：codepen" class="headerlink" title="成果：codepen"></a>成果：<a href="http://codepen.io/thisis577/pen/jAGmyR/" target="_blank" rel="external">codepen</a></h4><p><small class="murmur"><br>    用 SVG 可以辦到好多事情阿！<br>    但是這一頁在舊版 chrome &amp; 手機上一開就 Crash，一定有哪裡寫錯吧…QQ<br>    （因為會 crash 暫時不放 embed)<br></small></p>
 <h2 id="練習1-切換日夜"><a href="#練習1-切換日夜" class="headerlink" title="練習1 - 切換日夜"></a>練習1 - 切換日夜</h2><p><img src="https://d262ilb51hltx0.cloudfront.net/max/800/1*Na6uh-8wut97eVoIABslMA.gif" alt="Switch day and night"><br><small class="img-description">Author: 不知道作者是誰，待查</small></p>
@@ -91,11 +91,11 @@
     </summary>
     
     
+      <category term="UI" scheme="http://yoursite.com/tags/UI/"/>
+    
       <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
     
       <category term="practice" scheme="http://yoursite.com/tags/practice/"/>
-    
-      <category term="UI" scheme="http://yoursite.com/tags/UI/"/>
     
   </entry>
   
@@ -157,12 +157,13 @@
     <link href="http://yoursite.com/2016/07/28/custom-404-page/"/>
     <id>http://yoursite.com/2016/07/28/custom-404-page/</id>
     <published>2016-07-28T02:38:39.000Z</published>
-    <updated>2016-07-28T04:56:08.727Z</updated>
+    <updated>2016-07-29T09:42:18.707Z</updated>
     
     <content type="html"><![CDATA[<h1 id="本站的-404-page"><a href="#本站的-404-page" class="headerlink" title="本站的 404 page"></a>本站的 404 page</h1><p><img src="http://imgur.com/Lg9AMHO.png" alt="404-page"></p>
 <a id="more"></a>
+<hr>
 <h2 id="創建要給-404-的新頁面"><a href="#創建要給-404-的新頁面" class="headerlink" title="創建要給 404 的新頁面"></a>創建要給 404 的新頁面</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new page <span class="number">404</span></div></pre></td></tr></table></figure>
-<h2 id="編輯-source-404-index-md"><a href="#編輯-source-404-index-md" class="headerlink" title="編輯 source/404/index.md"></a>編輯 <code>source/404/index.md</code></h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">---</span></div><div class="line"><span class="attr">title:</span> <span class="number">404</span></div><div class="line"><span class="attr">permalink:</span> /<span class="number">404</span> <span class="comment"># 指定固定連結為 http://your_account.github.io/404.html</span></div><div class="line"><span class="meta">---</span></div><div class="line"><span class="comment"># Write inline style</span></div><div class="line">&lt;style<span class="string">&gt;</span></div><div class="line">...</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
+<h2 id="編輯-source-404-index-md"><a href="#編輯-source-404-index-md" class="headerlink" title="編輯 source/404/index.md"></a>編輯 <code>source/404/index.md</code></h2><figure class="highlight md"><figcaption><span>source/404/index.md</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: 404</div><div class="line"><span class="section">permalink: /404 # 指定固定連結為 http://your_account.github.io/404.html</span></div><div class="line">---</div><div class="line"><span class="section"># Write inline style</span></div><div class="line">&lt;style&gt;</div><div class="line">...</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
 <div class="tip"><br>    若要在 local 端測試的話，需將 permalink 拿掉<br>    <div>測試網址為 <code>http://localhost:4000/404</code></div><br></div>
 
 
@@ -256,13 +257,13 @@
     <link href="http://yoursite.com/2016/07/28/modify-hexo-themes/"/>
     <id>http://yoursite.com/2016/07/28/modify-hexo-themes/</id>
     <published>2016-07-28T01:25:44.000Z</published>
-    <updated>2016-07-29T06:56:23.313Z</updated>
+    <updated>2016-07-29T09:51:00.965Z</updated>
     
     <content type="html"><![CDATA[<h1 id="不是秘技的秘技"><a href="#不是秘技的秘技" class="headerlink" title="不是秘技的秘技"></a>不是秘技的秘技</h1><p>將 themes 資料夾複製一份出來，這樣就可以自由修改la~ O_&lt;</p>
 <div class="tip"><br><div>記得將 themes 資料夾底下的 .git 資料夾砍掉</div><br><div><code>(Windows 檢視需開啟隱藏資料夾才看得到)</code></div><br><code>這樣自己的 git 才 track 到 themes 底下的所有變更</code><br></div>
 
 <a id="more"></a>
-<p>&nbsp;</p>
+<hr>
 <h1 id="很難懂的-Jade"><a href="#很難懂的-Jade" class="headerlink" title="很難懂的 Jade"></a>很難懂的 Jade</h1><p>Hexo-theme-apollo 模版是以 <code>Jade</code> 寫的，與官方使用的 <code>ejs</code> 不同<br>但只需要另外安裝 <code>Jade</code> 外掛 <a href="https://github.com/hexojs/hexo-renderer-jade" target="_blank" rel="external">hexo-render-jade</a></p>
 <h2 id="其實只需要一行指令"><a href="#其實只需要一行指令" class="headerlink" title="其實只需要一行指令"></a>其實只需要一行指令</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 安裝 Jade 外掛</span></div><div class="line">npm install hexo-renderer-jade --save</div></pre></td></tr></table></figure>
 <p>如此一來只要下 <code>hexo server</code> 就會自動幫你 compile<br>也可以另外插入 css 去修改了</p>
@@ -274,8 +275,8 @@
 <p><small class="murmur"><br>    因為我在 themes 底下裝一直會噴 Error: EMFILE, too many open files 的錯誤，<br>    所以我乾脆把 gulp 裝在 root 底下<br></small></p>
 <figure class="highlight"><figcaption><span>/package.json</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">"dependencies": &#123;</div><div class="line">    "gulp": "^3.9.0",</div><div class="line">    "gulp-autoprefixer": "^3.0.2",</div><div class="line">    "gulp-sass": "^2.0.4",</div><div class="line">    "gulp-sourcemaps": "^1.6.0"</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 直接用 npm 裝一次</span></div><div class="line">npm install</div></pre></td></tr></table></figure>
-<h2 id="編輯-gulpfile-js-此處改自hexo-theme-apollo"><a href="#編輯-gulpfile-js-此處改自hexo-theme-apollo" class="headerlink" title="編輯 gulpfile.js (此處改自hexo-theme-apollo)"></a>編輯 <code>gulpfile.js</code> (此處改自<a href="https://github.com/pinggod/hexo-theme-apollo/blob/master/gulpfile.js" target="_blank" rel="external">hexo-theme-apollo</a>)</h2><figure class="highlight js"><figcaption><span>themes/gulpfile.js</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> gulp = <span class="built_in">require</span>(<span class="string">'gulp'</span>);</div><div class="line"><span class="keyword">var</span> sass = <span class="built_in">require</span>(<span class="string">'gulp-sass'</span>);</div><div class="line"><span class="keyword">var</span> autoprefixer = <span class="built_in">require</span>(<span class="string">'gulp-autoprefixer'</span>);</div><div class="line"></div><div class="line"><span class="comment">// 一次性編譯 Sass</span></div><div class="line">gulp.task(<span class="string">'sass'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="comment">// 原主題使用 scss, 因個人習慣新增 *.sass (多個 src 可用 array[] 方式塞入)</span></div><div class="line">    <span class="keyword">return</span> gulp.src([<span class="string">'./source/scss/*.scss'</span>, <span class="string">'./source/scss/*.sass'</span>])</div><div class="line">        .pipe(sass(&#123;outputStyle: <span class="string">'compressed'</span>&#125;))</div><div class="line">        .pipe(autoprefixer())</div><div class="line">        .pipe(gulp.dest(<span class="string">'./source/css'</span>));</div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="comment">// 即時編譯</span></div><div class="line">gulp.task(<span class="string">'default'</span>, [<span class="string">'sass'</span>], <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    gulp.watch(<span class="string">'./source/scss/_partial/*.scss'</span>, [<span class="string">'sass'</span>]);</div><div class="line">    <span class="comment">// 同時 watch scss &amp; sass</span></div><div class="line">    gulp.watch([<span class="string">'./source/scss/*.scss'</span>, <span class="string">'./source/scss/*.sass'</span>], [<span class="string">'sass'</span>]);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-<figure class="highlight yml"><figcaption><span>@themes/</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 一次性編譯</span></div><div class="line">gulp sass</div><div class="line"><span class="comment"># 或者</span></div><div class="line"><span class="comment"># always watch</span></div><div class="line">gulp</div></pre></td></tr></table></figure>
+<h2 id="編輯-gulpfile-js-此處改自hexo-theme-apollo"><a href="#編輯-gulpfile-js-此處改自hexo-theme-apollo" class="headerlink" title="編輯 gulpfile.js (此處改自hexo-theme-apollo)"></a>編輯 <code>gulpfile.js</code> (此處改自<a href="https://github.com/pinggod/hexo-theme-apollo/blob/master/gulpfile.js" target="_blank" rel="external">hexo-theme-apollo</a>)</h2><figure class="highlight js"><figcaption><span>themes/[your-themes]/gulpfile.js</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> gulp = <span class="built_in">require</span>(<span class="string">'gulp'</span>);</div><div class="line"><span class="keyword">var</span> sass = <span class="built_in">require</span>(<span class="string">'gulp-sass'</span>);</div><div class="line"><span class="keyword">var</span> autoprefixer = <span class="built_in">require</span>(<span class="string">'gulp-autoprefixer'</span>);</div><div class="line"></div><div class="line"><span class="comment">// 一次性編譯 Sass</span></div><div class="line">gulp.task(<span class="string">'sass'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="comment">// 原主題使用 scss, 因個人習慣新增 *.sass (多個 src 可用 array[] 方式塞入)</span></div><div class="line">    <span class="keyword">return</span> gulp.src([<span class="string">'./source/scss/*.scss'</span>, <span class="string">'./source/scss/*.sass'</span>])</div><div class="line">        .pipe(sass(&#123;outputStyle: <span class="string">'compressed'</span>&#125;))</div><div class="line">        .pipe(autoprefixer())</div><div class="line">        .pipe(gulp.dest(<span class="string">'./source/css'</span>));</div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="comment">// 即時編譯</span></div><div class="line">gulp.task(<span class="string">'default'</span>, [<span class="string">'sass'</span>], <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    gulp.watch(<span class="string">'./source/scss/_partial/*.scss'</span>, [<span class="string">'sass'</span>]);</div><div class="line">    <span class="comment">// 同時 watch scss &amp; sass</span></div><div class="line">    gulp.watch([<span class="string">'./source/scss/*.scss'</span>, <span class="string">'./source/scss/*.sass'</span>], [<span class="string">'sass'</span>]);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<figure class="highlight yml"><figcaption><span>themes/[your-themes]/</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 需在與 gulpfile 同一層才能跑</span></div><div class="line"><span class="comment"># 一次性編譯</span></div><div class="line">gulp sass</div><div class="line"><span class="comment"># 或者</span></div><div class="line"><span class="comment"># always watch</span></div><div class="line">gulp</div></pre></td></tr></table></figure>
 <hr>
 <h1 id="Tags"><a href="#Tags" class="headerlink" title="Tags"></a>Tags</h1><p>需安裝 <code>hexo-generate-tags</code></p>
 <div class="tip"><br>    注意 tag 大小寫，會造成資料夾目錄連不進去<br></div>]]></content>
@@ -393,9 +394,12 @@
     <link href="http://yoursite.com/2016/07/27/SEO-note/"/>
     <id>http://yoursite.com/2016/07/27/SEO-note/</id>
     <published>2016-07-26T16:00:00.000Z</published>
-    <updated>2016-07-29T05:24:30.443Z</updated>
+    <updated>2016-07-29T09:06:46.090Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="網頁配置"><a href="#網頁配置" class="headerlink" title="網頁配置"></a>網頁配置</h1><p>CTA = Call to Actions</p>
+    <content type="html"><![CDATA[<h1 id="Search-Engine-Land’s-Guide-To-SEO"><a href="#Search-Engine-Land’s-Guide-To-SEO" class="headerlink" title="Search Engine Land’s Guide To SEO"></a>Search Engine Land’s Guide To SEO</h1><p><a href="http://searchengineland.com/guide/seo" target="_blank" rel="external"><img src="http://searchengineland.com/figz/wp-content/seloads/2011/06/periodic-table-of-seo-2015.png" alt="SEO periodic table"></a></p>
+<p>跟 HTML 有關的只有 <a href="http://searchengineland.com/guide/seo/html-code-search-engine-ranking" target="_blank" rel="external">Chapter 4</a></p>
+<hr>
+<h1 id="網頁配置"><a href="#網頁配置" class="headerlink" title="網頁配置"></a>網頁配置</h1><p>CTA = Call to Actions</p>
 <ul>
 <li>button</li>
 <li>Main CTA 要夠大夠醒目讓 user 一眼就能看到</li>
@@ -436,7 +440,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;網頁配置&quot;&gt;&lt;a href=&quot;#網頁配置&quot; class=&quot;headerlink&quot; title=&quot;網頁配置&quot;&gt;&lt;/a&gt;網頁配置&lt;/h1&gt;&lt;p&gt;CTA = Call to Actions&lt;/p&gt;
+      &lt;h1 id=&quot;Search-Engine-Land’s-Guide-To-SEO&quot;&gt;&lt;a href=&quot;#Search-Engine-Land’s-Guide-To-SEO&quot; class=&quot;headerlink&quot; title=&quot;Search Engine Land’s Guide To SEO&quot;&gt;&lt;/a&gt;Search Engine Land’s Guide To SEO&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;http://searchengineland.com/guide/seo&quot;&gt;&lt;img src=&quot;http://searchengineland.com/figz/wp-content/seloads/2011/06/periodic-table-of-seo-2015.png&quot; alt=&quot;SEO periodic table&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;跟 HTML 有關的只有 &lt;a href=&quot;http://searchengineland.com/guide/seo/html-code-search-engine-ranking&quot;&gt;Chapter 4&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;網頁配置&quot;&gt;&lt;a href=&quot;#網頁配置&quot; class=&quot;headerlink&quot; title=&quot;網頁配置&quot;&gt;&lt;/a&gt;網頁配置&lt;/h1&gt;&lt;p&gt;CTA = Call to Actions&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;button&lt;/li&gt;
 &lt;li&gt;Main CTA 要夠大夠醒目讓 user 一眼就能看到&lt;/li&gt;
@@ -466,76 +473,11 @@
     </summary>
     
     
-      <category term="UI" scheme="http://yoursite.com/tags/UI/"/>
-    
       <category term="reading" scheme="http://yoursite.com/tags/reading/"/>
     
       <category term="SEO" scheme="http://yoursite.com/tags/SEO/"/>
     
-  </entry>
-  
-  <entry>
-    <title>Bourbon &amp; Neat install</title>
-    <link href="http://yoursite.com/2016/07/26/bourbon-neat-install-and-link/"/>
-    <id>http://yoursite.com/2016/07/26/bourbon-neat-install-and-link/</id>
-    <published>2016-07-25T16:00:00.000Z</published>
-    <updated>2016-07-29T05:24:30.455Z</updated>
-    
-    <content type="html"><![CDATA[<p>編輯 <code>bower.json</code><br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 加入 depenencies (後面為版本號)</span></div><div class="line"><span class="attr">"dependencies":</span> &#123;</div><div class="line"><span class="attr">    "bourbon":</span> <span class="string">"4.2.7"</span>,</div><div class="line"><span class="attr">    "neat":</span> <span class="string">"1.8.0"</span></div><div class="line">  &#125;</div><div class="line"></div><div class="line"><span class="comment"># 進行安裝</span></div><div class="line">bower install</div></pre></td></tr></table></figure></p>
-<a id="more"></a>
-<p>再把它們 link 到 <code>styles/import/</code> 底下<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">cd styles/import</div><div class="line">ln -s ../../vender/bower/bourbon/app/assets/stylesheets bourbon <span class="comment"># link過來並命名為bourbon</span></div><div class="line">ln -s ../../vender/bower/neat/app/assets/stylesheets neat <span class="comment"># link過來並命名為neat</span></div></pre></td></tr></table></figure></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;編輯 &lt;code&gt;bower.json&lt;/code&gt;&lt;br&gt;&lt;figure class=&quot;highlight yaml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 加入 depenencies (後面為版本號)&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;&quot;dependencies&quot;:&lt;/span&gt; &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;    &quot;bourbon&quot;:&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;4.2.7&quot;&lt;/span&gt;,&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;    &quot;neat&quot;:&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;1.8.0&quot;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 進行安裝&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;bower install&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="bourbon" scheme="http://yoursite.com/tags/bourbon/"/>
-    
-      <category term="neat" scheme="http://yoursite.com/tags/neat/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>UI 筆記 from 如何修正壞UI</title>
-    <link href="http://yoursite.com/2016/07/26/UI-state-note/"/>
-    <id>http://yoursite.com/2016/07/26/UI-state-note/</id>
-    <published>2016-07-25T16:00:00.000Z</published>
-    <updated>2016-07-29T05:24:30.447Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="產品的五個狀態"><a href="#產品的五個狀態" class="headerlink" title="產品的五個狀態"></a>產品的五個狀態</h1><a id="more"></a>
-<h2 id="理想狀態（Ideal-State）"><a href="#理想狀態（Ideal-State）" class="headerlink" title="理想狀態（Ideal State）"></a>理想狀態（Ideal State）</h2><h2 id="空白狀態（Empty-State）"><a href="#空白狀態（Empty-State）" class="headerlink" title="空白狀態（Empty State）"></a>空白狀態（Empty State）</h2><ul>
-<li>首次使用</li>
-<li>User 清除導致全空</li>
-<li>找不到資料</li>
-</ul>
-<h2 id="錯誤狀態（Error-State）"><a href="#錯誤狀態（Error-State）" class="headerlink" title="錯誤狀態（Error State）"></a>錯誤狀態（Error State）</h2><div class="tip"><br>    不要嚇到 User<br></div>
-
-<h2 id="局部資料狀態（Partial-State）"><a href="#局部資料狀態（Partial-State）" class="headerlink" title="局部資料狀態（Partial State）"></a>局部資料狀態（Partial State）</h2><ul>
-<li>讓 User 知道離完美狀態有多遠</li>
-<li>如「個人檔案完成度」</li>
-</ul>
-<h2 id="載入中狀態（Loading-State）"><a href="#載入中狀態（Loading-State）" class="headerlink" title="載入中狀態（Loading State）"></a>載入中狀態（Loading State）</h2><ul>
-<li>可先載入框架，讓 User 知道這一頁會長什麼樣子</li>
-</ul>
-<div class="tip"><br>    不要讓 User 撞牆，要他有用的建議或不一樣的途徑<br></div>
-
-<p>Ref: <a href="https://medium.com/@zonble/%E7%BF%BB%E8%AD%AF-%E5%A6%82%E4%BD%95%E4%BF%AE%E6%AD%A3%E5%A3%9E-ui-2f972da15d5b#.n50384v8h" target="_blank" rel="external">如何修正壞UI</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;產品的五個狀態&quot;&gt;&lt;a href=&quot;#產品的五個狀態&quot; class=&quot;headerlink&quot; title=&quot;產品的五個狀態&quot;&gt;&lt;/a&gt;產品的五個狀態&lt;/h1&gt;
-    
-    </summary>
-    
-    
       <category term="UI" scheme="http://yoursite.com/tags/UI/"/>
-    
-      <category term="reading" scheme="http://yoursite.com/tags/reading/"/>
     
   </entry>
   
@@ -561,6 +503,31 @@
     
     
       <category term="git" scheme="http://yoursite.com/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Bourbon &amp; Neat install</title>
+    <link href="http://yoursite.com/2016/07/26/bourbon-neat-install-and-link/"/>
+    <id>http://yoursite.com/2016/07/26/bourbon-neat-install-and-link/</id>
+    <published>2016-07-25T16:00:00.000Z</published>
+    <updated>2016-07-29T05:24:30.455Z</updated>
+    
+    <content type="html"><![CDATA[<p>編輯 <code>bower.json</code><br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 加入 depenencies (後面為版本號)</span></div><div class="line"><span class="attr">"dependencies":</span> &#123;</div><div class="line"><span class="attr">    "bourbon":</span> <span class="string">"4.2.7"</span>,</div><div class="line"><span class="attr">    "neat":</span> <span class="string">"1.8.0"</span></div><div class="line">  &#125;</div><div class="line"></div><div class="line"><span class="comment"># 進行安裝</span></div><div class="line">bower install</div></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<p>再把它們 link 到 <code>styles/import/</code> 底下<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">cd styles/import</div><div class="line">ln -s ../../vender/bower/bourbon/app/assets/stylesheets bourbon <span class="comment"># link過來並命名為bourbon</span></div><div class="line">ln -s ../../vender/bower/neat/app/assets/stylesheets neat <span class="comment"># link過來並命名為neat</span></div></pre></td></tr></table></figure></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;編輯 &lt;code&gt;bower.json&lt;/code&gt;&lt;br&gt;&lt;figure class=&quot;highlight yaml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 加入 depenencies (後面為版本號)&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;&quot;dependencies&quot;:&lt;/span&gt; &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;    &quot;bourbon&quot;:&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;4.2.7&quot;&lt;/span&gt;,&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;    &quot;neat&quot;:&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;1.8.0&quot;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 進行安裝&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;bower install&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="bourbon" scheme="http://yoursite.com/tags/bourbon/"/>
+    
+      <category term="neat" scheme="http://yoursite.com/tags/neat/"/>
     
   </entry>
   
@@ -609,11 +576,51 @@
     </summary>
     
     
+      <category term="reading" scheme="http://yoursite.com/tags/reading/"/>
+    
       <category term="UI" scheme="http://yoursite.com/tags/UI/"/>
+    
+      <category term="font" scheme="http://yoursite.com/tags/font/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>UI 筆記 from 如何修正壞UI</title>
+    <link href="http://yoursite.com/2016/07/26/UI-state-note/"/>
+    <id>http://yoursite.com/2016/07/26/UI-state-note/</id>
+    <published>2016-07-25T16:00:00.000Z</published>
+    <updated>2016-07-29T05:24:30.447Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="產品的五個狀態"><a href="#產品的五個狀態" class="headerlink" title="產品的五個狀態"></a>產品的五個狀態</h1><a id="more"></a>
+<h2 id="理想狀態（Ideal-State）"><a href="#理想狀態（Ideal-State）" class="headerlink" title="理想狀態（Ideal State）"></a>理想狀態（Ideal State）</h2><h2 id="空白狀態（Empty-State）"><a href="#空白狀態（Empty-State）" class="headerlink" title="空白狀態（Empty State）"></a>空白狀態（Empty State）</h2><ul>
+<li>首次使用</li>
+<li>User 清除導致全空</li>
+<li>找不到資料</li>
+</ul>
+<h2 id="錯誤狀態（Error-State）"><a href="#錯誤狀態（Error-State）" class="headerlink" title="錯誤狀態（Error State）"></a>錯誤狀態（Error State）</h2><div class="tip"><br>    不要嚇到 User<br></div>
+
+<h2 id="局部資料狀態（Partial-State）"><a href="#局部資料狀態（Partial-State）" class="headerlink" title="局部資料狀態（Partial State）"></a>局部資料狀態（Partial State）</h2><ul>
+<li>讓 User 知道離完美狀態有多遠</li>
+<li>如「個人檔案完成度」</li>
+</ul>
+<h2 id="載入中狀態（Loading-State）"><a href="#載入中狀態（Loading-State）" class="headerlink" title="載入中狀態（Loading State）"></a>載入中狀態（Loading State）</h2><ul>
+<li>可先載入框架，讓 User 知道這一頁會長什麼樣子</li>
+</ul>
+<div class="tip"><br>    不要讓 User 撞牆，要他有用的建議或不一樣的途徑<br></div>
+
+<p>Ref: <a href="https://medium.com/@zonble/%E7%BF%BB%E8%AD%AF-%E5%A6%82%E4%BD%95%E4%BF%AE%E6%AD%A3%E5%A3%9E-ui-2f972da15d5b#.n50384v8h" target="_blank" rel="external">如何修正壞UI</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;產品的五個狀態&quot;&gt;&lt;a href=&quot;#產品的五個狀態&quot; class=&quot;headerlink&quot; title=&quot;產品的五個狀態&quot;&gt;&lt;/a&gt;產品的五個狀態&lt;/h1&gt;
+    
+    </summary>
+    
     
       <category term="reading" scheme="http://yoursite.com/tags/reading/"/>
     
-      <category term="font" scheme="http://yoursite.com/tags/font/"/>
+      <category term="UI" scheme="http://yoursite.com/tags/UI/"/>
     
   </entry>
   
