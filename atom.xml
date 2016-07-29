@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-07-28T07:23:36.183Z</updated>
+  <updated>2016-07-29T05:24:30.438Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,16 +16,100 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Daily UI 挑戰</title>
+    <link href="http://yoursite.com/2016/07/29/Daily-UI/"/>
+    <id>http://yoursite.com/2016/07/29/Daily-UI/</id>
+    <published>2016-07-29T01:32:37.000Z</published>
+    <updated>2016-07-29T05:24:30.438Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="DayilUI-其他人的作品"><a href="#DayilUI-其他人的作品" class="headerlink" title="DayilUI 其他人的作品"></a>DayilUI <a href="http://collectui.com/challenges/sign-up" target="_blank" rel="external">其他人的作品</a></h2><p><small class="murmur"><br>暫時這些應該夠練死我了…<br>我應該沒辦法每天一個，一週一個可能就了不起了 囧<br></small></p>
+<a id="more"></a>
+<ol>
+<li>Sign Up</li>
+<li>Checkout</li>
+<li>Landing Page</li>
+<li>Calculator</li>
+<li>App Icon</li>
+<li>User Profile</li>
+<li>Settings</li>
+<li>404 Page</li>
+<li>Music Player</li>
+<li>Social Share</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;DayilUI-其他人的作品&quot;&gt;&lt;a href=&quot;#DayilUI-其他人的作品&quot; class=&quot;headerlink&quot; title=&quot;DayilUI 其他人的作品&quot;&gt;&lt;/a&gt;DayilUI &lt;a href=&quot;http://collectui.com/challenges/sign-up&quot;&gt;其他人的作品&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;small class=&quot;murmur&quot;&gt;&lt;br&gt;暫時這些應該夠練死我了…&lt;br&gt;我應該沒辦法每天一個，一週一個可能就了不起了 囧&lt;br&gt;&lt;/small&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="practice" scheme="http://yoursite.com/tags/practice/"/>
+    
+      <category term="UI" scheme="http://yoursite.com/tags/UI/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS3 實作練習清單</title>
+    <link href="http://yoursite.com/2016/07/28/CSS3-practice-list/"/>
+    <id>http://yoursite.com/2016/07/28/CSS3-practice-list/</id>
+    <published>2016-07-28T14:22:23.000Z</published>
+    <updated>2016-07-29T07:12:18.155Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="放一些想要練習的目標清單在這裡"><a href="#放一些想要練習的目標清單在這裡" class="headerlink" title="放一些想要練習的目標清單在這裡"></a>放一些想要練習的目標清單在這裡</h1><div class="tip"><br>    皆為看著成品做一遍練習技巧，非本人原創。<br></div>
+
+<h2 id="待讀："><a href="#待讀：" class="headerlink" title="待讀："></a>待讀：</h2><ul>
+<li><a href="https://developers.google.com/web/fundamentals/design-and-ui/animations/css-vs-javascript?hl=en" target="_blank" rel="external">CSS vs JavaScript animations</a></li>
+<li><a href="https://css-tricks.com/myth-busting-css-animations-vs-javascript/" target="_blank" rel="external">Myth Busting: CSS Animations vs. JavaScript | CSS-Tricks</a></li>
+</ul>
+<a id="more"></a>
+<hr>
+<h1 id="練習目標"><a href="#練習目標" class="headerlink" title="練習目標"></a>練習目標</h1><h2 id="練習3-Hover-button"><a href="#練習3-Hover-button" class="headerlink" title="練習3 - Hover button"></a>練習3 - <a href="https://lichin.me/hoverbtn2/" target="_blank" rel="external">Hover button</a></h2><p><small>Ref: <a href="https://lichin.me/css/2016/07/28/hover-button-animation3" target="_blank" rel="external">hover-button-animation3</a></small><br><small>Author: Lichin</small></p>
+<p>Tool: <a href="http://www.cockos.com/licecap/" target="_blank" rel="external">錄製網頁GIF的工具</a></p>
+<h2 id="練習4-Error-Message"><a href="#練習4-Error-Message" class="headerlink" title="練習4 - Error Message"></a>練習4 - <a href="https://dribbble.com/shots/2818079-Error-Message" target="_blank" rel="external">Error Message</a></h2><hr>
+<h1 id="先前的練習"><a href="#先前的練習" class="headerlink" title="先前的練習"></a>先前的練習</h1><h2 id="練習2-搜尋效果"><a href="#練習2-搜尋效果" class="headerlink" title="練習2 - 搜尋效果"></a>練習2 - 搜尋效果</h2><p><img src="https://d262ilb51hltx0.cloudfront.net/max/800/1*1PijTRGwpdBDO4yQPJCBjA.gif" alt="Search"><br><small class="img-description">Author: 不知道作者是誰QQ，待查</small></p>
+<h4 id="成果：codepen"><a href="#成果：codepen" class="headerlink" title="成果：codepen"></a>成果：<a href="http://codepen.io/thisis577/pen/jAGmyR/" target="_blank" rel="external">codepen</a></h4><p><small class="murmur"><br>    用 SVG 可以辦到好多事情阿！<br>    但是這一頁在舊版 chrome &amp; 手機上一開就 Crash，一定有哪裡寫錯吧…QQ<br>    （因為會 crash 暫時不放 embed)<br></small></p>
+<h2 id="練習1-切換日夜"><a href="#練習1-切換日夜" class="headerlink" title="練習1 - 切換日夜"></a>練習1 - 切換日夜</h2><p><img src="https://d262ilb51hltx0.cloudfront.net/max/800/1*Na6uh-8wut97eVoIABslMA.gif" alt="Switch day and night"><br><small class="img-description">Author: 不知道作者是誰，待查</small></p>
+<h4 id="成果："><a href="#成果：" class="headerlink" title="成果："></a>成果：</h4><p></p><p data-height="397" data-theme-id="light" data-slug-hash="wWAgmr" data-default-tab="result" data-user="thisis577" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/thisis577/pen/wWAgmr/" target="_blank" rel="external">UI example practice - switch day and night</a> by 577 (<a href="http://codepen.io/thisis577" target="_blank" rel="external">@thisis577</a>) on <a href="http://codepen.io" target="_blank" rel="external">CodePen</a>.</p><p></p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+<p>知道怎麼用動畫拼出來就沒有再細刻了，細節沒有做到完全一模一樣。<br>因為是第一個練習，沒有用到 SVG，感覺用了很多不必要的 div，有點笨啊…<br>CSS3 的貝茲曲線沒有辦法做出 bounce 的效果，太陽跟月亮的那個「ㄉㄨㄞ妖妖」的感覺可能需要用 SVG 的動畫或者 JS 來做吧 @@</p>
+<p>Ref: <a href="http://easings.net/zh-tw" target="_blank" rel="external">Easing 函數速查表</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;放一些想要練習的目標清單在這裡&quot;&gt;&lt;a href=&quot;#放一些想要練習的目標清單在這裡&quot; class=&quot;headerlink&quot; title=&quot;放一些想要練習的目標清單在這裡&quot;&gt;&lt;/a&gt;放一些想要練習的目標清單在這裡&lt;/h1&gt;&lt;div class=&quot;tip&quot;&gt;&lt;br&gt;    皆為看著成品做一遍練習技巧，非本人原創。&lt;br&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;待讀：&quot;&gt;&lt;a href=&quot;#待讀：&quot; class=&quot;headerlink&quot; title=&quot;待讀：&quot;&gt;&lt;/a&gt;待讀：&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://developers.google.com/web/fundamentals/design-and-ui/animations/css-vs-javascript?hl=en&quot;&gt;CSS vs JavaScript animations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://css-tricks.com/myth-busting-css-animations-vs-javascript/&quot;&gt;Myth Busting: CSS Animations vs. JavaScript | CSS-Tricks&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
+    
+      <category term="practice" scheme="http://yoursite.com/tags/practice/"/>
+    
+      <category term="UI" scheme="http://yoursite.com/tags/UI/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo 疑難雜症</title>
     <link href="http://yoursite.com/2016/07/28/hexo-faq/"/>
     <id>http://yoursite.com/2016/07/28/hexo-faq/</id>
     <published>2016-07-28T06:31:28.000Z</published>
-    <updated>2016-07-28T07:23:36.183Z</updated>
+    <updated>2016-07-29T05:24:30.462Z</updated>
     
     <content type="html"><![CDATA[<h4 id="純粹記錄我遇到的各種問題"><a href="#純粹記錄我遇到的各種問題" class="headerlink" title="純粹記錄我遇到的各種問題"></a>純粹記錄我遇到的各種問題</h4><a id="more"></a>
 <p>&nbsp;</p>
 <h1 id="EMFILE-錯誤"><a href="#EMFILE-錯誤" class="headerlink" title="EMFILE 錯誤"></a>EMFILE 錯誤</h1><figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attr">Error:</span> EMFILE, too many open files</div></pre></td></tr></table></figure>
-<h2 id="解法"><a href="#解法" class="headerlink" title="解法"></a>解法</h2><div class="tip"><br>    <div>自力救濟法：<code>打開工作管理員，把 Node.js 砍掉</code>，接下來重新跑 hexo 指令就好了</div><br>    <small class="murmur"><a href="https://hexo.io/zh-tw/docs/troubleshooting.html#EMFILE-錯誤" target="_blank" rel="external">官方解法</a> 是下 <code>ulimit -n 10000</code>，但 10000 好像太大了，我只有設定在 2048 時有成功， BUT！ 只順暢了一下子就又噴相同錯誤了= =<br>    </small><br></div>
+<h2 id="解法"><a href="#解法" class="headerlink" title="解法"></a>解法</h2><div class="tip"><br>    <div>自力救濟法：<code>打開工作管理員，把 Node.js 砍掉</code>，接下來重新跑 hexo 指令就好了</div><br>    <small class="murmur"><br>    <a href="https://hexo.io/zh-tw/docs/troubleshooting.html#EMFILE-錯誤" target="_blank" rel="external">官方解法</a> 是下 <code>ulimit -n 10000</code>，但 10000 好像太大了，我只有設定在 2048 時有成功， BUT！ 只順暢了一下子就又噴相同錯誤了= =<br>    </small><br></div>
 
 <p>&nbsp;</p>
 <h1 id="Error-Media-query-expression"><a href="#Error-Media-query-expression" class="headerlink" title="Error: Media query expression"></a>Error: Media query expression</h1><figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="attr">Error:</span> media query expression must begin with <span class="string">'('</span></div><div class="line">ERROR Asset render failed: scss/customize.css</div><div class="line"><span class="attr">Error:</span> media query expression must begin with <span class="string">'('</span></div><div class="line">...</div></pre></td></tr></table></figure>
@@ -47,11 +131,11 @@
     <link href="http://yoursite.com/2016/07/28/customize-hexo-shell/"/>
     <id>http://yoursite.com/2016/07/28/customize-hexo-shell/</id>
     <published>2016-07-28T03:09:25.000Z</published>
-    <updated>2016-07-28T06:54:04.755Z</updated>
+    <updated>2016-07-29T05:24:30.459Z</updated>
     
     <content type="html"><![CDATA[<h4 id="可以自動-deploy-hexo-並-push-source-code"><a href="#可以自動-deploy-hexo-並-push-source-code" class="headerlink" title="可以自動 deploy hexo 並 push source code"></a>可以自動 deploy hexo 並 push source code</h4><a id="more"></a>
 <h2 id="在-root-編寫檔案，此處檔名為-hexo"><a href="#在-root-編寫檔案，此處檔名為-hexo" class="headerlink" title="在 root 編寫檔案，此處檔名為 hexo"></a>在 root 編寫檔案，此處檔名為 <code>hexo</code></h2><p>(shell 可不需副檔名)</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#!/usr/bin/env bash</span></div><div class="line"></div><div class="line"><span class="comment"># Usage</span></div><div class="line"><span class="keyword">if</span> [ <span class="string">"<span class="variable">$1</span>"</span> == <span class="string">""</span> ];</div><div class="line"><span class="keyword">then</span></div><div class="line">	<span class="built_in">echo</span> <span class="string">"Usage: `basename <span class="variable">$0</span>` [deploy|push] [comment]"</span></div><div class="line">	<span class="built_in">echo</span> <span class="string">"[comment] should use double quotes"</span></div><div class="line">	<span class="built_in">exit</span> 0</div><div class="line"><span class="keyword">fi</span></div><div class="line"></div><div class="line"><span class="keyword">if</span> [ <span class="variable">$1</span> == <span class="string">"deploy"</span> ];</div><div class="line"><span class="keyword">then</span></div><div class="line">	<span class="comment"># Hexo modify themes and deploy all (themes + post)</span></div><div class="line">	<span class="built_in">echo</span> <span class="string">"deploy start:"</span></div><div class="line">	hexo clean</div><div class="line">	hexo generate</div><div class="line">	hexo deploy</div><div class="line"><span class="keyword">fi</span></div><div class="line"></div><div class="line"><span class="comment"># push hexo source</span></div><div class="line"><span class="keyword">if</span> [ <span class="variable">$1</span> != <span class="string">""</span> ];</div><div class="line"><span class="keyword">then</span></div><div class="line">	<span class="comment"># use double qoutes to quote all sentence in $2</span></div><div class="line">	<span class="keyword">if</span> [ <span class="string">"<span class="variable">$2</span>"</span> != <span class="string">""</span> ];</div><div class="line">	<span class="keyword">then</span></div><div class="line">		<span class="built_in">echo</span> <span class="string">"push start:"</span></div><div class="line">		git add .</div><div class="line">		git commit -m <span class="string">"<span class="variable">$2</span>"</span></div><div class="line">		git push</div><div class="line">	<span class="keyword">fi</span></div><div class="line"><span class="keyword">fi</span></div></pre></td></tr></table></figure>
+<figure class="highlight bash"><figcaption><span>hexo</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#!/usr/bin/env bash</span></div><div class="line"></div><div class="line"><span class="comment"># Usage</span></div><div class="line"><span class="keyword">if</span> [ <span class="string">"<span class="variable">$1</span>"</span> == <span class="string">""</span> ];</div><div class="line"><span class="keyword">then</span></div><div class="line">	<span class="built_in">echo</span> <span class="string">"Usage: `basename <span class="variable">$0</span>` [deploy|push] [comment]"</span></div><div class="line">	<span class="built_in">echo</span> <span class="string">"[comment] should use double quotes"</span></div><div class="line">	<span class="built_in">exit</span> 0</div><div class="line"><span class="keyword">fi</span></div><div class="line"></div><div class="line"><span class="keyword">if</span> [ <span class="variable">$1</span> == <span class="string">"deploy"</span> ];</div><div class="line"><span class="keyword">then</span></div><div class="line">	<span class="comment"># Hexo modify themes and deploy all (themes + post)</span></div><div class="line">	<span class="built_in">echo</span> <span class="string">"deploy start:"</span></div><div class="line">	hexo clean</div><div class="line">	hexo generate</div><div class="line">	hexo deploy</div><div class="line"><span class="keyword">fi</span></div><div class="line"></div><div class="line"><span class="comment"># push hexo source</span></div><div class="line"><span class="keyword">if</span> [ <span class="variable">$1</span> != <span class="string">""</span> ];</div><div class="line"><span class="keyword">then</span></div><div class="line">	<span class="comment"># use double qoutes to quote all sentence in $2</span></div><div class="line">	<span class="keyword">if</span> [ <span class="string">"<span class="variable">$2</span>"</span> != <span class="string">""</span> ];</div><div class="line">	<span class="keyword">then</span></div><div class="line">		<span class="built_in">echo</span> <span class="string">"push start:"</span></div><div class="line">		git add .</div><div class="line">		git commit -m <span class="string">"<span class="variable">$2</span>"</span></div><div class="line">		git push</div><div class="line">	<span class="keyword">fi</span></div><div class="line"><span class="keyword">fi</span></div></pre></td></tr></table></figure>
 <h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># deploy + push</span></div><div class="line">./hexo deploy <span class="string">"give some comment"</span></div><div class="line"><span class="comment"># only push</span></div><div class="line">./hexo push <span class="string">"give some comment"</span></div></pre></td></tr></table></figure>
 <div class="tip"><br>    <code>&quot;$2&quot;</code> 只要用雙引號刮起來就可以吃含有空格的句子<br></div>]]></content>
     
@@ -172,7 +256,7 @@
     <link href="http://yoursite.com/2016/07/28/modify-hexo-themes/"/>
     <id>http://yoursite.com/2016/07/28/modify-hexo-themes/</id>
     <published>2016-07-28T01:25:44.000Z</published>
-    <updated>2016-07-28T05:25:47.919Z</updated>
+    <updated>2016-07-29T06:56:23.313Z</updated>
     
     <content type="html"><![CDATA[<h1 id="不是秘技的秘技"><a href="#不是秘技的秘技" class="headerlink" title="不是秘技的秘技"></a>不是秘技的秘技</h1><p>將 themes 資料夾複製一份出來，這樣就可以自由修改la~ O_&lt;</p>
 <div class="tip"><br><div>記得將 themes 資料夾底下的 .git 資料夾砍掉</div><br><div><code>(Windows 檢視需開啟隱藏資料夾才看得到)</code></div><br><code>這樣自己的 git 才 track 到 themes 底下的所有變更</code><br></div>
@@ -185,11 +269,14 @@
 <div class="tip"><br>    凡是有修改 <code>*.jade</code> 建議關掉重開 hexo 比較好，以確保有吃到變更。<br></div>
 
 <p>jade theme 寫法參考: <a href="https://github.com/saintwinkle/hexo-theme-pure" target="_blank" rel="external">hexo-theme-pure</a></p>
-<p>&nbsp;</p>
-<h1 id="編譯-SASS"><a href="#編譯-SASS" class="headerlink" title="編譯 SASS"></a>編譯 SASS</h1><h2 id="在-themes-底下安裝-gulp"><a href="#在-themes-底下安裝-gulp" class="headerlink" title="在 themes 底下安裝 gulp"></a>在 themes 底下安裝 gulp</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">cd themes/[your-themes]</div><div class="line"><span class="comment"># 裝 gulp</span></div><div class="line">npm install gulp -g</div><div class="line">npm install gulp-sass</div></pre></td></tr></table></figure>
-<h2 id="編輯-gulpfile-js-此處改自hexo-theme-apollo"><a href="#編輯-gulpfile-js-此處改自hexo-theme-apollo" class="headerlink" title="編輯 gulpfile.js (此處改自hexo-theme-apollo)"></a>編輯 <code>gulpfile.js</code> (此處改自<a href="https://github.com/pinggod/hexo-theme-apollo/blob/master/gulpfile.js" target="_blank" rel="external">hexo-theme-apollo</a>)</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> gulp = <span class="built_in">require</span>(<span class="string">'gulp'</span>);</div><div class="line"><span class="keyword">var</span> sass = <span class="built_in">require</span>(<span class="string">'gulp-sass'</span>);</div><div class="line"><span class="keyword">var</span> autoprefixer = <span class="built_in">require</span>(<span class="string">'gulp-autoprefixer'</span>);</div><div class="line"></div><div class="line"><span class="comment">// 一次性編譯 Sass</span></div><div class="line">gulp.task(<span class="string">'sass'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="comment">// 原主題使用 scss, 因個人習慣新增 *.sass (多個 src 可用 array[] 方式塞入)</span></div><div class="line">    <span class="keyword">return</span> gulp.src([<span class="string">'./source/scss/*.scss'</span>, <span class="string">'./source/scss/*.sass'</span>])</div><div class="line">        .pipe(sass(&#123;outputStyle: <span class="string">'compressed'</span>&#125;))</div><div class="line">        .pipe(autoprefixer())</div><div class="line">        .pipe(gulp.dest(<span class="string">'./source/css'</span>));</div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="comment">// 即時編譯</span></div><div class="line">gulp.task(<span class="string">'default'</span>, [<span class="string">'sass'</span>], <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    gulp.watch(<span class="string">'./source/scss/_partial/*.scss'</span>, [<span class="string">'sass'</span>]);</div><div class="line">    <span class="comment">// 同時 watch scss &amp; sass</span></div><div class="line">    gulp.watch([<span class="string">'./source/scss/*.scss'</span>, <span class="string">'./source/scss/*.sass'</span>], [<span class="string">'sass'</span>]);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-<p>照著下指令<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 一次性編譯</span></div><div class="line">gulp sass</div><div class="line"><span class="comment"># 或者</span></div><div class="line"><span class="comment"># always watch</span></div><div class="line">gulp</div></pre></td></tr></table></figure></p>
-<p>&nbsp;</p>
+<hr>
+<h1 id="編譯-SASS"><a href="#編譯-SASS" class="headerlink" title="編譯 SASS"></a>編譯 SASS</h1><h2 id="在-themes-底下安裝-gulp"><a href="#在-themes-底下安裝-gulp" class="headerlink" title="在 themes 底下安裝 gulp"></a>在 themes 底下安裝 gulp</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">cd themes/[your-themes]</div><div class="line"><span class="comment"># 裝 themes 裡面的 package</span></div><div class="line">npm install</div><div class="line"><span class="comment"># 裝 gulp</span></div><div class="line">npm install gulp -g</div><div class="line">npm install gulp-sass</div></pre></td></tr></table></figure>
+<p><small class="murmur"><br>    因為我在 themes 底下裝一直會噴 Error: EMFILE, too many open files 的錯誤，<br>    所以我乾脆把 gulp 裝在 root 底下<br></small></p>
+<figure class="highlight"><figcaption><span>/package.json</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">"dependencies": &#123;</div><div class="line">    "gulp": "^3.9.0",</div><div class="line">    "gulp-autoprefixer": "^3.0.2",</div><div class="line">    "gulp-sass": "^2.0.4",</div><div class="line">    "gulp-sourcemaps": "^1.6.0"</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 直接用 npm 裝一次</span></div><div class="line">npm install</div></pre></td></tr></table></figure>
+<h2 id="編輯-gulpfile-js-此處改自hexo-theme-apollo"><a href="#編輯-gulpfile-js-此處改自hexo-theme-apollo" class="headerlink" title="編輯 gulpfile.js (此處改自hexo-theme-apollo)"></a>編輯 <code>gulpfile.js</code> (此處改自<a href="https://github.com/pinggod/hexo-theme-apollo/blob/master/gulpfile.js" target="_blank" rel="external">hexo-theme-apollo</a>)</h2><figure class="highlight js"><figcaption><span>themes/gulpfile.js</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> gulp = <span class="built_in">require</span>(<span class="string">'gulp'</span>);</div><div class="line"><span class="keyword">var</span> sass = <span class="built_in">require</span>(<span class="string">'gulp-sass'</span>);</div><div class="line"><span class="keyword">var</span> autoprefixer = <span class="built_in">require</span>(<span class="string">'gulp-autoprefixer'</span>);</div><div class="line"></div><div class="line"><span class="comment">// 一次性編譯 Sass</span></div><div class="line">gulp.task(<span class="string">'sass'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="comment">// 原主題使用 scss, 因個人習慣新增 *.sass (多個 src 可用 array[] 方式塞入)</span></div><div class="line">    <span class="keyword">return</span> gulp.src([<span class="string">'./source/scss/*.scss'</span>, <span class="string">'./source/scss/*.sass'</span>])</div><div class="line">        .pipe(sass(&#123;outputStyle: <span class="string">'compressed'</span>&#125;))</div><div class="line">        .pipe(autoprefixer())</div><div class="line">        .pipe(gulp.dest(<span class="string">'./source/css'</span>));</div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="comment">// 即時編譯</span></div><div class="line">gulp.task(<span class="string">'default'</span>, [<span class="string">'sass'</span>], <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    gulp.watch(<span class="string">'./source/scss/_partial/*.scss'</span>, [<span class="string">'sass'</span>]);</div><div class="line">    <span class="comment">// 同時 watch scss &amp; sass</span></div><div class="line">    gulp.watch([<span class="string">'./source/scss/*.scss'</span>, <span class="string">'./source/scss/*.sass'</span>], [<span class="string">'sass'</span>]);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<figure class="highlight yml"><figcaption><span>@themes/</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 一次性編譯</span></div><div class="line">gulp sass</div><div class="line"><span class="comment"># 或者</span></div><div class="line"><span class="comment"># always watch</span></div><div class="line">gulp</div></pre></td></tr></table></figure>
+<hr>
 <h1 id="Tags"><a href="#Tags" class="headerlink" title="Tags"></a>Tags</h1><p>需安裝 <code>hexo-generate-tags</code></p>
 <div class="tip"><br>    注意 tag 大小寫，會造成資料夾目錄連不進去<br></div>]]></content>
     
@@ -203,11 +290,11 @@
     
       <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
+      <category term="gulp" scheme="http://yoursite.com/tags/gulp/"/>
+    
       <category term="jade" scheme="http://yoursite.com/tags/jade/"/>
     
       <category term="SASS" scheme="http://yoursite.com/tags/SASS/"/>
-    
-      <category term="gulp" scheme="http://yoursite.com/tags/gulp/"/>
     
   </entry>
   
@@ -216,33 +303,53 @@
     <link href="http://yoursite.com/2016/07/27/hexo-md-usage/"/>
     <id>http://yoursite.com/2016/07/27/hexo-md-usage/</id>
     <published>2016-07-27T14:20:18.000Z</published>
-    <updated>2016-07-28T09:58:28.831Z</updated>
+    <updated>2016-07-29T06:09:14.703Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="tags-格式"><a href="#tags-格式" class="headerlink" title="tags 格式"></a>tags 格式</h2><ul>
-<li>全小寫: 一般名詞，如 <code>hexo</code></li>
-<li>全大寫: 特定縮寫，如 <code>SEO</code></li>
-</ul>
-<div class="tip"><br>    統一格式是為了 tag 連結，但在顯示時皆會以字首大寫呈現。<br>    <div><code>text-transform: captialize</code></div><br></div>
+    <content type="html"><![CDATA[<div class="tip"><br>    為個人規範跟一些使用方式的範例筆記<br></div>
 
 <a id="more"></a>
-<h2 id="標題"><a href="#標題" class="headerlink" title="標題"></a>標題</h2><h1 id="h1"><a href="#h1" class="headerlink" title="h1"></a>h1</h1><h2 id="h2"><a href="#h2" class="headerlink" title="h2"></a>h2</h2><h3 id="h3"><a href="#h3" class="headerlink" title="h3"></a>h3</h3><h4 id="h4"><a href="#h4" class="headerlink" title="h4"></a>h4</h4><figure class="highlight md"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="section"># h1</span></div><div class="line"><span class="section">## h2</span></div><div class="line"><span class="section">### h3</span></div><div class="line"><span class="section">#### h4</span></div></pre></td></tr></table></figure>
-<h2 id="特殊區塊"><a href="#特殊區塊" class="headerlink" title="特殊區塊"></a>特殊區塊</h2><h3 id="提示區塊"><a href="#提示區塊" class="headerlink" title="提示區塊"></a>提示區塊</h3><p><div class="tip"><br>   提示區塊<br></div><br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"tip"</span>&gt;</span></div><div class="line">    提示區塊</div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure></p>
-<h3 id="murmur-區塊"><a href="#murmur-區塊" class="headerlink" title="murmur 區塊"></a>murmur 區塊</h3><p><small class="murmur">murmur區塊</small><br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">small</span> <span class="attr">class</span>=<span class="string">"murmur"</span>&gt;</span>murmur區塊<span class="tag">&lt;/<span class="name">small</span>&gt;</span></div></pre></td></tr></table></figure></p>
-<h3 id="murmur-in-tip"><a href="#murmur-in-tip" class="headerlink" title="murmur in tip"></a>murmur in tip</h3><p><div class="tip"><br>    提示區塊<br>    <small class="murmur">在提示區塊 murmur</small><br></div><br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"tip"</span>&gt;</span></div><div class="line">    提示區塊</div><div class="line">    <span class="tag">&lt;<span class="name">small</span> <span class="attr">class</span>=<span class="string">"murmur"</span>&gt;</span>在提示區塊 murmur<span class="tag">&lt;/<span class="name">small</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure></p>
-<h1 id="新大陸-泥馬"><a href="#新大陸-泥馬" class="headerlink" title="新大陸 泥馬"></a>新大陸 泥馬</h1><h2 id="Markdown-格式"><a href="#Markdown-格式" class="headerlink" title="Markdown 格式"></a>Markdown 格式</h2><p>Ref: <a href="https://hexo.io/docs/tag-plugins.html" target="_blank" rel="external">Hexo 官網教學</a> - 不是 <code>.ejs</code> 阿阿</p>
-<figure class="highlight md"><figcaption><span>test.md</span><a href="https://hexo.io/docs/tag-plugins.html#Backtick-Code-Block" target="_blank" rel="external">#Backtick-Code-Block</a></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">''' [language] [title] [url] [link text] code snippet '''</div></pre></td></tr></table></figure>
-<figure class="highlight html"><figcaption><span>test.html</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"tip"</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
-<blockquote><p>Every interaction is both precious and an opportunity to delight.</p>
+<h1 id="tags-格式"><a href="#tags-格式" class="headerlink" title="tags 格式"></a>tags 格式</h1><ul>
+<li>全小寫: 一般名詞，如 <code>hexo</code></li>
+<li>全大寫: 特定縮寫，如 <code>SEO</code></li>
+<li>按照英文字母順序排列</li>
+</ul>
+<hr>
+<h1 id="Markdown-基本語法"><a href="#Markdown-基本語法" class="headerlink" title="Markdown 基本語法"></a>Markdown 基本語法</h1><p>水平線</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">----</div></pre></td></tr></table></figure>
+<blockquote>
+<p>右尖括號</p>
+</blockquote>
+<ul>
+<li>星號</li>
+</ul>
+<p><em>星號刮起來變斜體</em></p>
+<p><strong>兩個星號括起來</strong></p>
+<p>Ref: <a href="http://markdown.tw/" target="_blank" rel="external">Markdown 語法說明</a></p>
+<hr>
+<h1 id="標題"><a href="#標題" class="headerlink" title="標題"></a>標題</h1><h1 id="h1"><a href="#h1" class="headerlink" title="h1"></a>h1</h1><h2 id="h2"><a href="#h2" class="headerlink" title="h2"></a>h2</h2><h3 id="h3"><a href="#h3" class="headerlink" title="h3"></a>h3</h3><h4 id="h4"><a href="#h4" class="headerlink" title="h4"></a>h4</h4><figure class="highlight md"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="section"># h1</span></div><div class="line"><span class="section">## h2</span></div><div class="line"><span class="section">### h3</span></div><div class="line"><span class="section">#### h4</span></div></pre></td></tr></table></figure>
+<hr>
+<h1 id="特殊區塊"><a href="#特殊區塊" class="headerlink" title="特殊區塊"></a>特殊區塊</h1><h2 id="提示區塊"><a href="#提示區塊" class="headerlink" title="提示區塊"></a>提示區塊</h2><div class="tip"><br>   提示區塊<br></div>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"tip"</span>&gt;</span></div><div class="line">    提示區塊</div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="評論區塊"><a href="#評論區塊" class="headerlink" title="評論區塊"></a>評論區塊</h2><p><small class="murmur">murmur區塊</small></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">small</span> <span class="attr">class</span>=<span class="string">"murmur"</span>&gt;</span>murmur區塊<span class="tag">&lt;/<span class="name">small</span>&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="murmur-in-tip"><a href="#murmur-in-tip" class="headerlink" title="murmur in tip"></a>murmur in tip</h2><div class="tip"><br>    提示區塊<br>    <small class="murmur"><br>        在提示區塊 murmur<br>    </small><br></div>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"tip"</span>&gt;</span></div><div class="line">    提示區塊</div><div class="line">    <span class="tag">&lt;<span class="name">small</span> <span class="attr">class</span>=<span class="string">"murmur"</span>&gt;</span></div><div class="line">        在提示區塊 murmur</div><div class="line">    <span class="tag">&lt;/<span class="name">small</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<hr>
+<h1 id="Markdown-新大陸"><a href="#Markdown-新大陸" class="headerlink" title="Markdown 新大陸"></a>Markdown 新大陸</h1><h2 id="Code-Block"><a href="#Code-Block" class="headerlink" title="Code Block"></a>Code Block</h2><figure class="highlight md"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;% codeblock [title] [lang:language] [url] [link text] %&#125;</div><div class="line">code snippet</div><div class="line">&#123;% endcodeblock %&#125;</div></pre></td></tr></table></figure>
+<p><small class="murmur"><br>    我一直把那個格式當成是 <code>ejs</code> 的格式 囧<br></small></p>
+<h2 id="Backtick-Code-Block"><a href="#Backtick-Code-Block" class="headerlink" title="Backtick Code Block"></a>Backtick Code Block</h2><figure class="highlight md"><figcaption><span>test.md</span><a href="https://hexo.io/docs/tag-plugins.html#Backtick-Code-Block" target="_blank" rel="external">#Backtick-Code-Block</a></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">''' [language] [title] [url] [link text] code snippet '''</div></pre></td></tr></table></figure>
+<div class="tip"><br>    <ol><br>        <li>Code block 與 Backtick Code Block 不能混用</li><br>        <li>Block 與上下文必須有空行不能連在一起</li><br>    </ol><br></div>
+
+<h3 id="Blockquote"><a href="#Blockquote" class="headerlink" title="Blockquote"></a>Blockquote</h3><blockquote><p>Every interaction is both precious and an opportunity to delight.</p>
 <footer><strong>Seth Godin</strong><cite><a href="http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html" target="_blank" rel="external">Welcome to Island Marketing</a></cite></footer></blockquote>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;% blockquote Seth Godin http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html Welcome to Island Marketing %&#125;</div><div class="line">Every interaction is both precious and an opportunity to delight.</div><div class="line">&#123;% endblockquote %&#125;</div></pre></td></tr></table></figure>
 ]]></content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;tags-格式&quot;&gt;&lt;a href=&quot;#tags-格式&quot; class=&quot;headerlink&quot; title=&quot;tags 格式&quot;&gt;&lt;/a&gt;tags 格式&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;全小寫: 一般名詞，如 &lt;code&gt;hexo&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;全大寫: 特定縮寫，如 &lt;code&gt;SEO&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;tip&quot;&gt;&lt;br&gt;    統一格式是為了 tag 連結，但在顯示時皆會以字首大寫呈現。&lt;br&gt;    &lt;div&gt;&lt;code&gt;text-transform: captialize&lt;/code&gt;&lt;/div&gt;&lt;br&gt;&lt;/div&gt;
+      &lt;div class=&quot;tip&quot;&gt;&lt;br&gt;    為個人規範跟一些使用方式的範例筆記&lt;br&gt;&lt;/div&gt;
     
     </summary>
     
@@ -256,7 +363,7 @@
     <link href="http://yoursite.com/2016/07/27/keep-hexo-source-in-github/"/>
     <id>http://yoursite.com/2016/07/27/keep-hexo-source-in-github/</id>
     <published>2016-07-27T03:32:55.000Z</published>
-    <updated>2016-07-28T04:56:08.745Z</updated>
+    <updated>2016-07-29T05:24:30.475Z</updated>
     
     <content type="html"><![CDATA[<h2 id="新-Project"><a href="#新-Project" class="headerlink" title="新 Project"></a>新 Project</h2><p>在 hexo 資料夾下初始化 git，並做第一次 commit</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git init</div><div class="line">git commit -a</div></pre></td></tr></table></figure>
@@ -264,7 +371,7 @@
 <p>將 branch 改名並推至遠端</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git branch -m hexo-article <span class="comment"># 更名為 hexo-article</span></div><div class="line">git remote add origin https://github.com/[your-account]/[your-account].github.io</div><div class="line">git fetch origin <span class="comment"># 檢查遠端是否有新東西</span></div><div class="line">git push origin hexo-article -u</div></pre></td></tr></table></figure>
 <p>&nbsp;</p>
-<h2 id="既有-project"><a href="#既有-project" class="headerlink" title="既有 project"></a>既有 project</h2><p>原本怎麼做就怎麼做…<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git commit -am <span class="string">"some comment"</span></div></pre></td></tr></table></figure></p>
+<h2 id="既有-project"><a href="#既有-project" class="headerlink" title="既有 project"></a>既有 project</h2><p>原本怎麼做就怎麼做…<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git commit -am <span class="string">"some comment"</span></div><div class="line">git push</div></pre></td></tr></table></figure></p>
 ]]></content>
     
     <summary type="html">
@@ -286,7 +393,7 @@
     <link href="http://yoursite.com/2016/07/27/SEO-note/"/>
     <id>http://yoursite.com/2016/07/27/SEO-note/</id>
     <published>2016-07-26T16:00:00.000Z</published>
-    <updated>2016-07-28T06:04:28.970Z</updated>
+    <updated>2016-07-29T05:24:30.443Z</updated>
     
     <content type="html"><![CDATA[<h1 id="網頁配置"><a href="#網頁配置" class="headerlink" title="網頁配置"></a>網頁配置</h1><p>CTA = Call to Actions</p>
 <ul>
@@ -361,34 +468,34 @@
     
       <category term="UI" scheme="http://yoursite.com/tags/UI/"/>
     
-      <category term="note" scheme="http://yoursite.com/tags/note/"/>
+      <category term="reading" scheme="http://yoursite.com/tags/reading/"/>
     
       <category term="SEO" scheme="http://yoursite.com/tags/SEO/"/>
     
   </entry>
   
   <entry>
-    <title>Git branch</title>
-    <link href="http://yoursite.com/2016/07/26/git-branch/"/>
-    <id>http://yoursite.com/2016/07/26/git-branch/</id>
+    <title>Bourbon &amp; Neat install</title>
+    <link href="http://yoursite.com/2016/07/26/bourbon-neat-install-and-link/"/>
+    <id>http://yoursite.com/2016/07/26/bourbon-neat-install-and-link/</id>
     <published>2016-07-25T16:00:00.000Z</published>
-    <updated>2016-07-28T04:56:08.736Z</updated>
+    <updated>2016-07-29T05:24:30.455Z</updated>
     
-    <content type="html"><![CDATA[<p>第一次推branch:</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 在該branch下</span></div><div class="line">git push -u origin [branch-name]</div><div class="line"><span class="comment"># 因遠端尚未有這支branch, 所以需要下此指令建立</span></div><div class="line"><span class="comment"># -u: 與遠端建立關連, 這樣下次才不需要又打長長的指令</span></div><div class="line"><span class="comment"># 之後就可以直接在 branch 下 git push 就好</span></div></pre></td></tr></table></figure>
+    <content type="html"><![CDATA[<p>編輯 <code>bower.json</code><br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 加入 depenencies (後面為版本號)</span></div><div class="line"><span class="attr">"dependencies":</span> &#123;</div><div class="line"><span class="attr">    "bourbon":</span> <span class="string">"4.2.7"</span>,</div><div class="line"><span class="attr">    "neat":</span> <span class="string">"1.8.0"</span></div><div class="line">  &#125;</div><div class="line"></div><div class="line"><span class="comment"># 進行安裝</span></div><div class="line">bower install</div></pre></td></tr></table></figure></p>
 <a id="more"></a>
-<p>到別人推的branch:<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 在master:</span></div><div class="line">git fetch</div><div class="line">git checkout [branch-name]</div></pre></td></tr></table></figure></p>
+<p>再把它們 link 到 <code>styles/import/</code> 底下<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">cd styles/import</div><div class="line">ln -s ../../vender/bower/bourbon/app/assets/stylesheets bourbon <span class="comment"># link過來並命名為bourbon</span></div><div class="line">ln -s ../../vender/bower/neat/app/assets/stylesheets neat <span class="comment"># link過來並命名為neat</span></div></pre></td></tr></table></figure></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;第一次推branch:&lt;/p&gt;
-&lt;figure class=&quot;highlight yml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 在該branch下&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;git push -u origin [branch-name]&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 因遠端尚未有這支branch, 所以需要下此指令建立&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# -u: 與遠端建立關連, 這樣下次才不需要又打長長的指令&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 之後就可以直接在 branch 下 git push 就好&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+      &lt;p&gt;編輯 &lt;code&gt;bower.json&lt;/code&gt;&lt;br&gt;&lt;figure class=&quot;highlight yaml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 加入 depenencies (後面為版本號)&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;&quot;dependencies&quot;:&lt;/span&gt; &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;    &quot;bourbon&quot;:&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;4.2.7&quot;&lt;/span&gt;,&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;    &quot;neat&quot;:&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;1.8.0&quot;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 進行安裝&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;bower install&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
     
     </summary>
     
     
-      <category term="git" scheme="http://yoursite.com/tags/git/"/>
+      <category term="bourbon" scheme="http://yoursite.com/tags/bourbon/"/>
+    
+      <category term="neat" scheme="http://yoursite.com/tags/neat/"/>
     
   </entry>
   
@@ -397,7 +504,7 @@
     <link href="http://yoursite.com/2016/07/26/UI-state-note/"/>
     <id>http://yoursite.com/2016/07/26/UI-state-note/</id>
     <published>2016-07-25T16:00:00.000Z</published>
-    <updated>2016-07-28T05:32:37.718Z</updated>
+    <updated>2016-07-29T05:24:30.447Z</updated>
     
     <content type="html"><![CDATA[<h1 id="產品的五個狀態"><a href="#產品的五個狀態" class="headerlink" title="產品的五個狀態"></a>產品的五個狀態</h1><a id="more"></a>
 <h2 id="理想狀態（Ideal-State）"><a href="#理想狀態（Ideal-State）" class="headerlink" title="理想狀態（Ideal State）"></a>理想狀態（Ideal State）</h2><h2 id="空白狀態（Empty-State）"><a href="#空白狀態（Empty-State）" class="headerlink" title="空白狀態（Empty State）"></a>空白狀態（Empty State）</h2><ul>
@@ -428,34 +535,32 @@
     
       <category term="UI" scheme="http://yoursite.com/tags/UI/"/>
     
-      <category term="note" scheme="http://yoursite.com/tags/note/"/>
+      <category term="reading" scheme="http://yoursite.com/tags/reading/"/>
     
   </entry>
   
   <entry>
-    <title>Bourbon &amp; Neat install</title>
-    <link href="http://yoursite.com/2016/07/26/bourbon-neat-install-and-link/"/>
-    <id>http://yoursite.com/2016/07/26/bourbon-neat-install-and-link/</id>
+    <title>Git branch</title>
+    <link href="http://yoursite.com/2016/07/26/git-branch/"/>
+    <id>http://yoursite.com/2016/07/26/git-branch/</id>
     <published>2016-07-25T16:00:00.000Z</published>
-    <updated>2016-07-28T09:18:01.705Z</updated>
+    <updated>2016-07-28T04:56:08.736Z</updated>
     
-    <content type="html"><![CDATA[<p>編輯 <code>bower.json</code><br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 加入 depenencies (後面為版本號)</span></div><div class="line"><span class="attr">"dependencies":</span> &#123;</div><div class="line"><span class="attr">    "bourbon":</span> <span class="string">"4.2.7"</span>,</div><div class="line"><span class="attr">    "neat":</span> <span class="string">"1.8.0"</span></div><div class="line">  &#125;</div><div class="line"></div><div class="line"><span class="comment"># 進行安裝</span></div><div class="line">bower install</div></pre></td></tr></table></figure></p>
+    <content type="html"><![CDATA[<p>第一次推branch:</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 在該branch下</span></div><div class="line">git push -u origin [branch-name]</div><div class="line"><span class="comment"># 因遠端尚未有這支branch, 所以需要下此指令建立</span></div><div class="line"><span class="comment"># -u: 與遠端建立關連, 這樣下次才不需要又打長長的指令</span></div><div class="line"><span class="comment"># 之後就可以直接在 branch 下 git push 就好</span></div></pre></td></tr></table></figure>
 <a id="more"></a>
-<p>再把它們 link 到 <code>styles/import/</code> 底下<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">cd styles/import</div><div class="line">ln -s ../../vender/bower/bourbon/app/assets/stylesheets bourbon <span class="comment"># link過來並命名為bourbon</span></div><div class="line">ln -s ../../vender/bower/neat/app/assets/stylesheets neat <span class="comment"># link過來並命名為neat</span></div></pre></td></tr></table></figure></p>
+<p>到別人推的branch:<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 在master:</span></div><div class="line">git fetch</div><div class="line">git checkout [branch-name]</div></pre></td></tr></table></figure></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;編輯 &lt;code&gt;bower.json&lt;/code&gt;&lt;br&gt;&lt;figure class=&quot;highlight yaml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 加入 depenencies (後面為版本號)&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;&quot;dependencies&quot;:&lt;/span&gt; &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;    &quot;bourbon&quot;:&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;4.2.7&quot;&lt;/span&gt;,&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;    &quot;neat&quot;:&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;1.8.0&quot;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 進行安裝&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;bower install&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+      &lt;p&gt;第一次推branch:&lt;/p&gt;
+&lt;figure class=&quot;highlight yml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 在該branch下&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;git push -u origin [branch-name]&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 因遠端尚未有這支branch, 所以需要下此指令建立&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# -u: 與遠端建立關連, 這樣下次才不需要又打長長的指令&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 之後就可以直接在 branch 下 git push 就好&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
     
-      <category term="bourbon" scheme="http://yoursite.com/tags/bourbon/"/>
-    
-      <category term="neat" scheme="http://yoursite.com/tags/neat/"/>
-    
-      <category term="github" scheme="http://yoursite.com/tags/github/"/>
+      <category term="git" scheme="http://yoursite.com/tags/git/"/>
     
   </entry>
   
@@ -464,7 +569,7 @@
     <link href="http://yoursite.com/2016/07/26/web-font-setting/"/>
     <id>http://yoursite.com/2016/07/26/web-font-setting/</id>
     <published>2016-07-25T16:00:00.000Z</published>
-    <updated>2016-07-28T04:56:08.754Z</updated>
+    <updated>2016-07-29T05:24:30.489Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Fallback"><a href="#Fallback" class="headerlink" title="Fallback"></a>Fallback</h1><ul>
 <li>web font loader to fallbacks the webfont (if font loading is not compeleted</li>
@@ -505,6 +610,8 @@
     
     
       <category term="UI" scheme="http://yoursite.com/tags/UI/"/>
+    
+      <category term="reading" scheme="http://yoursite.com/tags/reading/"/>
     
       <category term="font" scheme="http://yoursite.com/tags/font/"/>
     
