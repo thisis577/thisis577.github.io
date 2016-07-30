@@ -1,5 +1,6 @@
 ---
 title: 404 - Page not found
+comments: false
 permalink: /404
 ---
 
