@@ -1,6 +1,5 @@
 ---
 title: 404 - Page not found
-comments: false
 permalink: /404
 ---
 
@@ -76,5 +75,9 @@ Please click the site-logo or <a href="http://thisis577.github.io" target="_pare
 			display: block;
 			margin-left: 1em;
 		}
+	}
+
+	#disqus_thread {
+		display: none;
 	}
 </style>

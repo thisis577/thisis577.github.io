@@ -13,10 +13,6 @@ tags:
 	皆為看著成品做一遍練習技巧，非本人原創。
 </div>
 
-## 待讀：
-- [CSS vs JavaScript animations](https://developers.google.com/web/fundamentals/design-and-ui/animations/css-vs-javascript?hl=en)
-- [Myth Busting: CSS Animations vs. JavaScript | CSS-Tricks](https://css-tricks.com/myth-busting-css-animations-vs-javascript/)
-
 <!-- more -->
 
 ----

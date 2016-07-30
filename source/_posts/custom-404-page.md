@@ -25,7 +25,6 @@ hexo new page 404
 ``` md source/404/index.md
 ---
 title: 404
-comments: false # 若有載入評論外掛的話要關掉
 permalink: /404 # 指定固定連結為 http://your_account.github.io/404.html
 ---
 # Write inline style

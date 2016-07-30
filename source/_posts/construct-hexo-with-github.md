@@ -68,7 +68,7 @@ tags:
 	hexo deploy	# = hexo d, 將 publish 的檔案推到第二點設定的 repo 上
 	```
 
-4. [修改 Hexo 主題](../modify-hexo-themes)
+4. [修改 Hexo 主題](https://thisis577.github.io/2016/07/28/modify-hexo-themes/)
 
 	若遇到 deploy 完 style 卻不對的情況: [(deploy后style.css不对)](https://github.com/hexojs/hexo/issues/579)
 
@@ -81,7 +81,7 @@ tags:
 
 
 
-5. [把 Hexo 原始碼也放到 github 遠端保存](../keep-hexo-source-in-github)
+5. [把 Hexo 原始碼也放到 github 遠端保存](https://thisis577.github.io/2016/07/27/keep-hexo-source-in-github/)
 
 	延伸: 在別的地方 clone 既有的 hexo repo
 
