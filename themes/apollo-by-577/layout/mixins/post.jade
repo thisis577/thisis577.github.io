@@ -13,19 +13,27 @@ mixin postTags(item)
                 a.post-tag(href!=url_for(tag.path)) # #{tag.name}
             - })
 
+mixin postListItem(item)
+    li.post-list-item
+        article.post-block
+            h2.post-title
+                a.post-title-link(href= url_for(item.path))
+                    != item.title
+            +postInfo(item)
+            .post-content
+                != item.excerpt
+            a.read-more(href= url_for(item.path))!= __('more')
+
 //- Index Page
 mixin posts()
+    ul.home.post-list.post-sticky
+        - page.posts.each(function (item) {
+            if item.sticky
+                +postListItem(item)
+        - })
     ul.home.post-list
         - page.posts.each(function (item) {
-            li.post-list-item
-                article.post-block
-                    h2.post-title
-                        a.post-title-link(href= url_for(item.path))
-                            != item.title
-                    +postInfo(item)
-                    .post-content
-                        != item.excerpt
-                    a.read-more(href= url_for(item.path))!= __('more')
+            +postListItem(item)
         - })
 
 //- Archive Page
@@ -34,11 +42,6 @@ mixin postList()
         if !is_archive()
             a.post-tag.current-tag # #{page.tag}
         if is_archive()
-            //span.post-tags
-            //    - site.tags.each(function (tag) {
-            //        a.post-tag # #{tag.slug}
-            //        #{tag.name}
-            //    - })
             .tag-cloud
                 != tagcloud({ min_font: 12 })
         - var year = 0;
@@ -51,8 +54,11 @@ mixin postList()
                 h2.archive-year!= year
             .post-item
                 +postInfo(item, false)
-                a.post-title-link(href= url_for(item.path))
-                    != item.title
+                if item.sticky
+                    a.post-title-link(href= url_for(item.path)) [置頂] #{item.title}
+                else
+                    a.post-title-link(href= url_for(item.path))
+                        != item.title
                 if is_tag()
                     +postTags(item)
         - })

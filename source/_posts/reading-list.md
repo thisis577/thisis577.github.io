@@ -1,6 +1,7 @@
 ---
 title: 待讀清單
 date: 2016-07-31 00:12:09
+sticky: true
 tags:
 - reading
 ---

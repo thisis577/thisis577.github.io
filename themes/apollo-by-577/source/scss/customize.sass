@@ -135,6 +135,94 @@ hr
     margin: 2em 0
     display: block
 
+.home.post-list.post-sticky
+    border: .5em solid $green-light
+    border-radius: .4em
+    padding: 1em
+    position: relative
+    &:before, &:after
+        content: ''
+        position: absolute
+        left: 50%
+        bottom: -.3em
+        transform: translate(-50%, 100%)
+        width: 3em
+        height: 2em
+        background: darken($green-light, 5%)
+        border-bottom: 4px solid $text-color
+    &:after
+        bottom: -2em
+        width: 7em
+        height: .7em
+        background: darken($green-light, 5%)
+    .post-list-item
+        background: $text-color //#F8F8F8
+        border: 2px solid $green-light
+        overflow: hidden
+        padding: .1em 1em 1em 1em
+        position: relative
+        &:before, &:after
+            content: ''
+            position: absolute
+            top: 0
+            bottom: 0
+            left: 50%
+            width: 5em
+            background: rgba(white, .1)
+            transform: skewX(-20deg)
+        &:after
+            left: calc(50% + 6em)
+            width: 2em
+        .post-title-link, .post-content
+            color: rgba(white, .75)
+        .post-tag
+            opacity: .9
+        a.read-more
+            display: block
+            margin-top: 2em
+            visibility: hidden
+            color: $red // $green-light
+            &:hover
+                border: none
+                &:before, &:after
+                    color: $green-light
+                    border-color: $green-light
+            &:after
+                animation: typewriter 5s infinite linear
+                content: ''
+                float: right
+                font-family: 'consolas', sans-serf
+                font-size: .9em
+                font-weight: 500
+                visibility: visible
+            &:before
+                animation: cursorblinks 5s infinite linear
+                border-bottom: 1.5px solid $green
+                content: ''
+                color: inherit
+                float: right
+                height: 1em
+                width: .5em
+                margin-left: 5px
+                margin-right: .3em
+                visibility: visible
+                position: relative
+
+$sentence: 'READ MORE'
+@keyframes typewriter
+    @for $i from 1 through str-length($sentence)
+        #{10+($i*3)}%, #{100-($i*3)}%
+            content: str-slice($sentence, 0, $i)
+@keyframes cursorblinks
+    0%, 40%, 80%, 100%
+        border-color: inherit
+    @for $i from 8 through 12
+        #{$i*6}%
+            @if $i%2 == 0
+                border-color: inherit
+            @else
+                border-color: transparent
+
 // ARCHIVE
 .archive
     .post-info
@@ -142,12 +230,11 @@ hr
     .post-tags
         margin-bottom: 1em
     .post-title-link
-        @extend h3
+        font-size: 1.05em
         font-weight: 400
         margin-left: $post-info-width
         &:hover
             color: $text-color
-            // color: $green
 
 // TAGS
 .tag-cloud
@@ -224,7 +311,6 @@ hr
         box-sizing: border-box
         margin: auto
         padding: 0 1em
-
     .logo-link .subtitle
         display: block
         margin-left: 0
@@ -239,7 +325,55 @@ hr
         margin-top: 1em
         .post-item
             padding-left: 10px
+    // .home.post-list.post-sticky
+    //     padding-right: 5em
+    //     &:after, &:before
+    //         top: 50%
+    //         bottom: auto
+    //         left: 93.5%
+    //         transform: translate(-50%, -50%)
+    //         border-radius: 3em
+    //         border: .3em solid $green-light
+    //         background: white
+    //         width: 2.7em
+    //         height: 2.7em
+    //     &:after
+    //         border: .2em solid $green-light !important
+    //         width: 1.8em
+    //         height: 1.8em
 
+@media screen and (max-width: 480px)
+    .home.post-list.post-sticky
+        padding-right: 1em
+        padding-top: 2em
+        padding-bottom: 5em
+        // 按鈕
+        &:before
+            // bottom: 4.2em
+            top: auto
+            left: 50%
+            transform: translate(-50%, -50%)
+            border-radius: 3em
+            border: .4em solid white //$green-light
+            background: lighten($green-light, 3%)
+            width: 2em
+            height: 2em
+            box-shadow: 0 0 0 .3em $green-light
+        // 聽筒
+        &:after
+            top: 0%
+            transform: translate(-50%, 150%)
+            width: 3em
+            height: .5em
+            border-radius: 2em
+            border: none
+        // &:after
+        //     border: .2em solid $green-light !important
+        //     // transform: translate(-50%, calc(100% + .4em))
+        //     bottom: 3.6em
+        //     width: 1.8em
+        //     height: 1.8em
+        // &:after
 
 // Highlight
 .highlight figcaption
