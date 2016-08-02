@@ -26,11 +26,11 @@ mixin postListItem(item)
 
 //- Index Page
 mixin posts()
-    ul.home.post-list.post-sticky
-        - page.posts.each(function (item) {
-            if item.sticky
+    - page.posts.each(function (item) {
+        if item.sticky
+            ul.home.post-list.post-sticky
                 +postListItem(item)
-        - })
+    - })
     ul.home.post-list
         - page.posts.each(function (item) {
             +postListItem(item)
