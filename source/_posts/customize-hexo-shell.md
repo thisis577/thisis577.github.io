@@ -2,8 +2,8 @@
 title: 自己寫 Hexo shell
 date: 2016-07-28 11:09:25
 tags:
-- hexo
 - bash
+- hexo
 ---
 
 
