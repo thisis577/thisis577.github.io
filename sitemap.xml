@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2016/08/05/chinese-text-render-in-chrome/</loc>
+    
+    <lastmod>2016-08-05T10:06:45.278Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/07/26/web-font-setting/</loc>
+    
+    <lastmod>2016-08-05T07:24:31.730Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2016/07/28/customize-hexo-shell/</loc>
     
-    <lastmod>2016-08-05T06:57:13.724Z</lastmod>
+    <lastmod>2016-08-05T07:10:24.268Z</lastmod>
     
   </url>
   
@@ -89,13 +103,6 @@
     <loc>http://yoursite.com/2016/07/27/hexo-md-usage/</loc>
     
     <lastmod>2016-07-29T06:09:14.703Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2016/07/26/web-font-setting/</loc>
-    
-    <lastmod>2016-07-29T05:24:30.489Z</lastmod>
     
   </url>
   

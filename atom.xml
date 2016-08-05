@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-08-05T06:52:37.199Z</updated>
+  <updated>2016-08-05T10:06:45.278Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Chrome 的中文字型設定</title>
+    <link href="http://yoursite.com/2016/08/05/chinese-text-render-in-chrome/"/>
+    <id>http://yoursite.com/2016/08/05/chinese-text-render-in-chrome/</id>
+    <published>2016-08-05T09:39:16.000Z</published>
+    <updated>2016-08-05T10:06:45.278Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="解決中文字型-render-問題"><a href="#解決中文字型-render-問題" class="headerlink" title="解決中文字型 render 問題"></a>解決中文字型 render 問題</h2><p>Chrome v49+ 的版本在投影到第二台螢幕上 render 老是很可怕，<br>我又一直查不太到相關資訊，害我只能先把版本鎖死在 v49 好一陣子。</p>
+<p>前幾天發現 Chrome canary 的中文 render 很漂亮，滿心歡喜的跳槽過去，<br>結果開心不到兩天，一更新下去，登愣～竟然！不能！輸入中文了= =</p>
+<p>IME 整個掛點，裝了 Chrome 的外掛 Google input tool 也只能在特定的 input text 輸入中文。<br>網址列及大部分的輸入框都不能輸入中文（顯示 <code>IME 已停用</code>）！<br>怒去 Google Chrome Help Forum 投訴(?)，順便爬爬有沒有相關議題。<br>然後找到了一篇雖然不是中文字型但是也是 render 問題的討論串，就找到解法了！！！！</p>
+<p>解法還TMD的簡單：</p>
+<p><strong>1.打開設定<br>2.找到系統區塊（在進階設定裡）<br>3.取消勾選 <code>在可用時使用硬體加速</code><br>4.重新啟動 chrome
+</strong></p>
+<p>困擾我一個多月的事情就解決了，可喜可賀、可喜可賀=__=</p>
+<hr>
+<h2 id="順便設定預設中文字型"><a href="#順便設定預設中文字型" class="headerlink" title="順便設定預設中文字型"></a>順便設定預設中文字型</h2><p>1.設定<br>2.找到網頁內容區塊<br>3.選<code>自訂字型</code><br>4.將<code>標準字型</code>改為喜歡的字型就可以了</p>
+<p>因為微軟正黑體在大部分的螢幕上 render 都不太好<br>所以我裝了 <a href="https://www.google.com/get/noto/help/cjk/" target="_blank" rel="external">Google 和 Adobe 出的思源黑體</a><br>啊～沒有新細明體的世界真是美好ˊ_&gt;ˋ</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;解決中文字型-render-問題&quot;&gt;&lt;a href=&quot;#解決中文字型-render-問題&quot; class=&quot;headerlink&quot; title=&quot;解決中文字型 render 問題&quot;&gt;&lt;/a&gt;解決中文字型 render 問題&lt;/h2&gt;&lt;p&gt;Chrome v49+ 的版
+    
+    </summary>
+    
+    
+      <category term="chrome" scheme="http://yoursite.com/tags/chrome/"/>
+    
+  </entry>
   
   <entry>
     <title>為指令自訂別名(alias)</title>
@@ -179,11 +209,11 @@
     </summary>
     
     
-      <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
-    
       <category term="practice" scheme="http://yoursite.com/tags/practice/"/>
     
       <category term="UI" scheme="http://yoursite.com/tags/UI/"/>
+    
+      <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
     
   </entry>
   
@@ -219,7 +249,7 @@
     <link href="http://yoursite.com/2016/07/28/customize-hexo-shell/"/>
     <id>http://yoursite.com/2016/07/28/customize-hexo-shell/</id>
     <published>2016-07-28T03:09:25.000Z</published>
-    <updated>2016-08-05T06:57:13.724Z</updated>
+    <updated>2016-08-05T07:10:24.268Z</updated>
     
     <content type="html"><![CDATA[<h4 id="可以自動-deploy-hexo-並-push-source-code"><a href="#可以自動-deploy-hexo-並-push-source-code" class="headerlink" title="可以自動 deploy hexo 並 push source code"></a>可以自動 deploy hexo 並 push source code</h4><a id="more"></a>
 <h2 id="在-root-編寫檔案，此處檔名為-hexo"><a href="#在-root-編寫檔案，此處檔名為-hexo" class="headerlink" title="在 root 編寫檔案，此處檔名為 hexo"></a>在 root 編寫檔案，此處檔名為 <code>hexo</code></h2><p>(shell 可不需副檔名)</p>
@@ -548,62 +578,6 @@
   </entry>
   
   <entry>
-    <title>Bourbon &amp; Neat install</title>
-    <link href="http://yoursite.com/2016/07/26/bourbon-neat-install-and-link/"/>
-    <id>http://yoursite.com/2016/07/26/bourbon-neat-install-and-link/</id>
-    <published>2016-07-25T16:00:00.000Z</published>
-    <updated>2016-08-05T06:50:03.806Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="使用-bower-安裝"><a href="#使用-bower-安裝" class="headerlink" title="使用 bower 安裝"></a>使用 bower 安裝</h2><figure class="highlight js"><figcaption><span>bower.json</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 加入 depenencies (後面為版本號)</span></div><div class="line"><span class="string">"dependencies"</span>: &#123;</div><div class="line">    <span class="string">"bourbon"</span>: <span class="string">"4.2.7"</span>,</div><div class="line">    <span class="string">"neat"</span>: <span class="string">"1.8.0"</span></div><div class="line">  &#125;</div></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 進行安裝</span></div><div class="line">$ bower install</div></pre></td></tr></table></figure>
-<a id="more"></a>
-<h2 id="再把它們-link-到-styles-import-底下"><a href="#再把它們-link-到-styles-import-底下" class="headerlink" title="再把它們 link 到 styles/import/ 底下"></a>再把它們 link 到 <code>styles/import/</code> 底下</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">cd</span> styles/import</div><div class="line"><span class="comment"># link過來並命名為bourbon</span></div><div class="line">$ ln <span class="_">-s</span> ../../vender/bower/bourbon/app/assets/stylesheets bourbon</div><div class="line"><span class="comment"># link過來並命名為neat</span></div><div class="line">$ ln <span class="_">-s</span> ../../vender/bower/neat/app/assets/stylesheets neat</div></pre></td></tr></table></figure>
-<h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><p>如此一來就可以直接從 SASS import 進來了<br><figure class="highlight scss"><figcaption><span>style.sass</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">@<span class="keyword">import</span> <span class="string">'import/bourbon'</span></div><div class="line">@<span class="keyword">import</span> <span class="string">'import/neat'</span></div></pre></td></tr></table></figure></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;使用-bower-安裝&quot;&gt;&lt;a href=&quot;#使用-bower-安裝&quot; class=&quot;headerlink&quot; title=&quot;使用 bower 安裝&quot;&gt;&lt;/a&gt;使用 bower 安裝&lt;/h2&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;figcaption&gt;&lt;span&gt;bower.json&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// 加入 depenencies (後面為版本號)&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&quot;dependencies&quot;&lt;/span&gt;: &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;string&quot;&gt;&quot;bourbon&quot;&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&quot;4.2.7&quot;&lt;/span&gt;,&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;string&quot;&gt;&quot;neat&quot;&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&quot;1.8.0&quot;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  &amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 進行安裝&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;$ bower install&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-    
-      <category term="bourbon" scheme="http://yoursite.com/tags/bourbon/"/>
-    
-      <category term="neat" scheme="http://yoursite.com/tags/neat/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git branch</title>
-    <link href="http://yoursite.com/2016/07/26/git-branch/"/>
-    <id>http://yoursite.com/2016/07/26/git-branch/</id>
-    <published>2016-07-25T16:00:00.000Z</published>
-    <updated>2016-08-02T08:20:36.449Z</updated>
-    
-    <content type="html"><![CDATA[<p>第一次推branch:</p>
-<figure class="highlight bash"><figcaption><span>@branch</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 在該branch下</span></div><div class="line">$ git push -u origin &lt;branch-name&gt;</div><div class="line"><span class="comment"># 因遠端尚未有這支branch, 所以需要下此指令建立</span></div><div class="line"><span class="comment"># -u: 與遠端建立關連, 這樣下次才不需要又打長長的指令</span></div><div class="line"><span class="comment"># 之後就可以直接在 branch 下 git push 就好</span></div></pre></td></tr></table></figure>
-<a id="more"></a>
-<p>到別人推的branch:<br><figure class="highlight bash"><figcaption><span>@master</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git fetch</div><div class="line">$ git checkout &lt;branch-name&gt;</div></pre></td></tr></table></figure></p>
-<hr>
-<p>如果在 master 做完 commit 以後想要把這次的 commit 改成放在一個 branch 裡面</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 以目前的 commit 為基準建立一個新的 branch</span></div><div class="line">$ git checkout -b &lt;branch-name&gt;</div><div class="line"><span class="comment"># 確認 local 端的 origin/master 跟遠端的一樣</span></div><div class="line">$ git fetch</div><div class="line"><span class="comment"># 把 master 指回 origin/master 的位置</span></div><div class="line"><span class="comment"># -B 為強制更改，若用 -b 的話會因為重名而無法進行</span></div><div class="line">$ git checkout -B master origin/master</div><div class="line"><span class="comment"># 如此一來新的 commit 就只存在於新建立的 branch 底下了</span></div></pre></td></tr></table></figure>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;第一次推branch:&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;figcaption&gt;&lt;span&gt;@branch&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 在該branch下&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;$ git push -u origin &amp;lt;branch-name&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 因遠端尚未有這支branch, 所以需要下此指令建立&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# -u: 與遠端建立關連, 這樣下次才不需要又打長長的指令&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 之後就可以直接在 branch 下 git push 就好&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-    
-      <category term="git" scheme="http://yoursite.com/tags/git/"/>
-    
-  </entry>
-  
-  <entry>
     <title>UI 筆記 from 如何修正壞UI</title>
     <link href="http://yoursite.com/2016/07/26/UI-state-note/"/>
     <id>http://yoursite.com/2016/07/26/UI-state-note/</id>
@@ -644,11 +618,39 @@
   </entry>
   
   <entry>
-    <title>Font note</title>
+    <title>Git branch</title>
+    <link href="http://yoursite.com/2016/07/26/git-branch/"/>
+    <id>http://yoursite.com/2016/07/26/git-branch/</id>
+    <published>2016-07-25T16:00:00.000Z</published>
+    <updated>2016-08-02T08:20:36.449Z</updated>
+    
+    <content type="html"><![CDATA[<p>第一次推branch:</p>
+<figure class="highlight bash"><figcaption><span>@branch</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 在該branch下</span></div><div class="line">$ git push -u origin &lt;branch-name&gt;</div><div class="line"><span class="comment"># 因遠端尚未有這支branch, 所以需要下此指令建立</span></div><div class="line"><span class="comment"># -u: 與遠端建立關連, 這樣下次才不需要又打長長的指令</span></div><div class="line"><span class="comment"># 之後就可以直接在 branch 下 git push 就好</span></div></pre></td></tr></table></figure>
+<a id="more"></a>
+<p>到別人推的branch:<br><figure class="highlight bash"><figcaption><span>@master</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git fetch</div><div class="line">$ git checkout &lt;branch-name&gt;</div></pre></td></tr></table></figure></p>
+<hr>
+<p>如果在 master 做完 commit 以後想要把這次的 commit 改成放在一個 branch 裡面</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 以目前的 commit 為基準建立一個新的 branch</span></div><div class="line">$ git checkout -b &lt;branch-name&gt;</div><div class="line"><span class="comment"># 確認 local 端的 origin/master 跟遠端的一樣</span></div><div class="line">$ git fetch</div><div class="line"><span class="comment"># 把 master 指回 origin/master 的位置</span></div><div class="line"><span class="comment"># -B 為強制更改，若用 -b 的話會因為重名而無法進行</span></div><div class="line">$ git checkout -B master origin/master</div><div class="line"><span class="comment"># 如此一來新的 commit 就只存在於新建立的 branch 底下了</span></div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;第一次推branch:&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;figcaption&gt;&lt;span&gt;@branch&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 在該branch下&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;$ git push -u origin &amp;lt;branch-name&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 因遠端尚未有這支branch, 所以需要下此指令建立&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# -u: 與遠端建立關連, 這樣下次才不需要又打長長的指令&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 之後就可以直接在 branch 下 git push 就好&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="git" scheme="http://yoursite.com/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>網頁字型</title>
     <link href="http://yoursite.com/2016/07/26/web-font-setting/"/>
     <id>http://yoursite.com/2016/07/26/web-font-setting/</id>
     <published>2016-07-25T16:00:00.000Z</published>
-    <updated>2016-07-29T05:24:30.489Z</updated>
+    <updated>2016-08-05T07:24:31.730Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Fallback"><a href="#Fallback" class="headerlink" title="Fallback"></a>Fallback</h1><ul>
 <li>web font loader to fallbacks the webfont (if font loading is not compeleted</li>
@@ -693,6 +695,34 @@
       <category term="reading" scheme="http://yoursite.com/tags/reading/"/>
     
       <category term="font" scheme="http://yoursite.com/tags/font/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Bourbon &amp; Neat install</title>
+    <link href="http://yoursite.com/2016/07/26/bourbon-neat-install-and-link/"/>
+    <id>http://yoursite.com/2016/07/26/bourbon-neat-install-and-link/</id>
+    <published>2016-07-25T16:00:00.000Z</published>
+    <updated>2016-08-05T06:50:03.806Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="使用-bower-安裝"><a href="#使用-bower-安裝" class="headerlink" title="使用 bower 安裝"></a>使用 bower 安裝</h2><figure class="highlight js"><figcaption><span>bower.json</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 加入 depenencies (後面為版本號)</span></div><div class="line"><span class="string">"dependencies"</span>: &#123;</div><div class="line">    <span class="string">"bourbon"</span>: <span class="string">"4.2.7"</span>,</div><div class="line">    <span class="string">"neat"</span>: <span class="string">"1.8.0"</span></div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 進行安裝</span></div><div class="line">$ bower install</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<h2 id="再把它們-link-到-styles-import-底下"><a href="#再把它們-link-到-styles-import-底下" class="headerlink" title="再把它們 link 到 styles/import/ 底下"></a>再把它們 link 到 <code>styles/import/</code> 底下</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">cd</span> styles/import</div><div class="line"><span class="comment"># link過來並命名為bourbon</span></div><div class="line">$ ln <span class="_">-s</span> ../../vender/bower/bourbon/app/assets/stylesheets bourbon</div><div class="line"><span class="comment"># link過來並命名為neat</span></div><div class="line">$ ln <span class="_">-s</span> ../../vender/bower/neat/app/assets/stylesheets neat</div></pre></td></tr></table></figure>
+<h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><p>如此一來就可以直接從 SASS import 進來了<br><figure class="highlight scss"><figcaption><span>style.sass</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">@<span class="keyword">import</span> <span class="string">'import/bourbon'</span></div><div class="line">@<span class="keyword">import</span> <span class="string">'import/neat'</span></div></pre></td></tr></table></figure></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;使用-bower-安裝&quot;&gt;&lt;a href=&quot;#使用-bower-安裝&quot; class=&quot;headerlink&quot; title=&quot;使用 bower 安裝&quot;&gt;&lt;/a&gt;使用 bower 安裝&lt;/h2&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;figcaption&gt;&lt;span&gt;bower.json&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// 加入 depenencies (後面為版本號)&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&quot;dependencies&quot;&lt;/span&gt;: &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;string&quot;&gt;&quot;bourbon&quot;&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&quot;4.2.7&quot;&lt;/span&gt;,&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;string&quot;&gt;&quot;neat&quot;&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&quot;1.8.0&quot;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  &amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 進行安裝&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;$ bower install&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="bourbon" scheme="http://yoursite.com/tags/bourbon/"/>
+    
+      <category term="neat" scheme="http://yoursite.com/tags/neat/"/>
     
   </entry>
   
