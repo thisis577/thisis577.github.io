@@ -14,6 +14,8 @@ tags:
 
 跟 HTML 有關的只有 [Chapter 4](http://searchengineland.com/guide/seo/html-code-search-engine-ranking)
 
+<!-- more -->
+
 ----
 
 # 網頁配置
@@ -41,12 +43,9 @@ Cross-selling & upselling
 4. Image 加上 alt tag 讓搜尋引擎認識
 
 
-
-<!-- more -->
-
 Ref: [The Anatomy of a Perfect Web Page](https://www.hitreach.com/perfect-web-page/#top)
 
-&nbsp;
+----
 
 # 名詞解釋
 

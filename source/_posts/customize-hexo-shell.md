@@ -3,7 +3,7 @@ title: 自己寫 Hexo shell
 date: 2016-07-28 11:09:25
 tags:
 - hexo
-- shell
+- bash
 ---
 
 
@@ -54,11 +54,21 @@ fi
 
 ``` yml
 # deploy + push
-./hexo deploy "give some comment"
+$ ./hexo deploy "give some comment"
 # only push
-./hexo push "give some comment"
+$ ./hexo push "give some comment"
 ```
 
 <div class="tip">
 	`"$2"` 只要用雙引號刮起來就可以吃含有空格的句子
 </div>
+
+
+#### 也可以自訂別名讓指令縮短
+
+``` bash
+# 使用 ${HOME} 自動抓家目錄位置
+$ alias hd="${HOME}/hexo deploy"
+```
+
+延伸閱讀：[為指令自訂別名(alias)](http://thisis577.github.io/2016/08/05/bash-alias/)

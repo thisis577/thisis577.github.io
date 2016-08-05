@@ -22,9 +22,9 @@ git config --global --edit
 指令 alias
 
 ``` bash
-# 加一些常用的 alias
+# 加一些常用的 git-command alias
 # git config --global alias.<alias-name> <git-command>
-git config --global alias.ll "ls -al"
+git config --global alias.st status
 ```
 
 Ref: [Git tutorials](https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-config)
