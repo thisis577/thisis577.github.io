@@ -1,5 +1,5 @@
 ---
-title: Hexo markdown note
+title: Hexo markdown 筆記
 date: 2016-07-27 22:20:18
 tags:
 - hexo
@@ -34,6 +34,11 @@ tags:
 
 **兩個星號括起來**
 
+~~刪除線~~
+
+~~~ bash
+code block
+~~~
 
 Ref: [Markdown 語法說明](http://markdown.tw/)
 
@@ -114,7 +119,7 @@ code snippet
 ## Backtick Code Block
 
 ``` md test.md https://hexo.io/docs/tag-plugins.html#Backtick-Code-Block #Backtick-Code-Block
-    ''' [language] [title] [url] [link text] code snippet '''
+    ~~~ [language] [title] [url] [link text] code snippet ~~~
 
 ```
 
@@ -137,3 +142,4 @@ Every interaction is both precious and an opportunity to delight.
 {% endblockquote %}
 ```
 
+> 引用

@@ -13,7 +13,7 @@ $post-info-width: 100px
 // Styles
 body
     font-family: 'sourcesanspro', 'Play', 'Noto Sans TC', '微軟正黑體', 'Helvetica Neue', Arial, sans-serif
-    font-weight: 300
+    // font-weight: 300
     min-width: 320px
 
 header
@@ -138,6 +138,7 @@ hr
 .home.post-list.post-sticky
     border: .5em solid $green-light
     border-radius: .4em
+    margin-bottom: 3em
     padding: 1em
     position: relative
     &:before, &:after
@@ -304,7 +305,7 @@ $sentence: 'READ MORE'
         margin-top: 3em
 
 
-// MOBILE //
+// TABLET //
 @media screen and (max-width: 700px)
     .wrap
         width: 100%
@@ -325,28 +326,14 @@ $sentence: 'READ MORE'
         margin-top: 1em
         .post-item
             padding-left: 10px
-    // .home.post-list.post-sticky
-    //     padding-right: 5em
-    //     &:after, &:before
-    //         top: 50%
-    //         bottom: auto
-    //         left: 93.5%
-    //         transform: translate(-50%, -50%)
-    //         border-radius: 3em
-    //         border: .3em solid $green-light
-    //         background: white
-    //         width: 2.7em
-    //         height: 2.7em
-    //     &:after
-    //         border: .2em solid $green-light !important
-    //         width: 1.8em
-    //         height: 1.8em
 
+// MOBILE //
 @media screen and (max-width: 480px)
     .home.post-list.post-sticky
         padding-right: 1em
         padding-top: 2em
         padding-bottom: 5em
+        margin-bottom: 1em
         // 按鈕
         &:before
             // bottom: 4.2em

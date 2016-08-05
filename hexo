@@ -32,4 +32,3 @@ then
 		echo "--------------- Push successfully!"
 	fi
 fi
-

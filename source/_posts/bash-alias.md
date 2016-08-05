@@ -29,7 +29,7 @@ alias hp='/c/Users/577/hexo push'
 $ unalias <command>
 ```
 
-### 讓 alias 永久生效
+## 讓 alias 永久生效
 
 上述指令皆為一次性，只有下指令的這一個 session 有用
 為了讓指令在 session 一打開時就執行，需編輯 `.bashrc`
