@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-08-05T10:06:45.278Z</updated>
+  <updated>2016-08-08T09:57:00.270Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,32 +16,335 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Chrome 的中文字型設定</title>
-    <link href="http://yoursite.com/2016/08/05/chinese-text-render-in-chrome/"/>
-    <id>http://yoursite.com/2016/08/05/chinese-text-render-in-chrome/</id>
-    <published>2016-08-05T09:39:16.000Z</published>
-    <updated>2016-08-05T10:06:45.278Z</updated>
+    <title>Sublime 設定</title>
+    <link href="http://yoursite.com/2016/08/08/sublime-setting/"/>
+    <id>http://yoursite.com/2016/08/08/sublime-setting/</id>
+    <published>2016-08-08T09:43:23.000Z</published>
+    <updated>2016-08-08T09:57:00.270Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="解決中文字型-render-問題"><a href="#解決中文字型-render-問題" class="headerlink" title="解決中文字型 render 問題"></a>解決中文字型 render 問題</h2><p>Chrome v49+ 的版本在投影到第二台螢幕上 render 老是很可怕，<br>我又一直查不太到相關資訊，害我只能先把版本鎖死在 v49 好一陣子。</p>
-<p>前幾天發現 Chrome canary 的中文 render 很漂亮，滿心歡喜的跳槽過去，<br>結果開心不到兩天，一更新下去，登愣～竟然！不能！輸入中文了= =</p>
-<p>IME 整個掛點，裝了 Chrome 的外掛 Google input tool 也只能在特定的 input text 輸入中文。<br>網址列及大部分的輸入框都不能輸入中文（顯示 <code>IME 已停用</code>）！<br>怒去 Google Chrome Help Forum 投訴(?)，順便爬爬有沒有相關議題。<br>然後找到了一篇雖然不是中文字型但是也是 render 問題的討論串，就找到解法了！！！！</p>
-<p>解法還TMD的簡單：</p>
-<p><strong>1.打開設定<br>2.找到系統區塊（在進階設定裡）<br>3.取消勾選 <code>在可用時使用硬體加速</code><br>4.重新啟動 chrome
-</strong></p>
-<p>困擾我一個多月的事情就解決了，可喜可賀、可喜可賀=__=</p>
-<hr>
-<h2 id="順便設定預設中文字型"><a href="#順便設定預設中文字型" class="headerlink" title="順便設定預設中文字型"></a>順便設定預設中文字型</h2><p>1.設定<br>2.找到網頁內容區塊<br>3.選<code>自訂字型</code><br>4.將<code>標準字型</code>改為喜歡的字型就可以了</p>
-<p>因為微軟正黑體在大部分的螢幕上 render 都不太好<br>所以我裝了 <a href="https://www.google.com/get/noto/help/cjk/" target="_blank" rel="external">Google 和 Adobe 出的思源黑體</a><br>啊～沒有新細明體的世界真是美好ˊ_&gt;ˋ</p>
+    <content type="html"><![CDATA[<h2 id="初始設定"><a href="#初始設定" class="headerlink" title="初始設定"></a>初始設定</h2><ol>
+<li>安裝 <a href="https://packagecontrol.io/installation" target="_blank" rel="external">Package control</a></li>
+<li>改色系(?<br>Color scheme - Peacock</li>
+<li><p>設定 line ending</p>
+<figure class="highlight"><figcaption><span>Preference > Setting-Users</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">"default_line_ending": "unix"</div></pre></td></tr></table></figure>
+</li>
+<li><p>去除空白字元</p>
+</li>
+<li>Emmet (for html autocomplete)</li>
+</ol>
+<h2 id="環境設定"><a href="#環境設定" class="headerlink" title="環境設定"></a>環境設定</h2><figure class="highlight json"><figcaption><span>Preferences.sublime-settings</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    <span class="attr">"color_scheme"</span>: <span class="string">"Packages/Colorsublime - Themes/Peacock.tmTheme"</span>,</div><div class="line">    <span class="attr">"default_line_ending"</span>: <span class="string">"unix"</span>,</div><div class="line">    <span class="attr">"font_size"</span>: <span class="number">12</span>,</div><div class="line">    <span class="attr">"ignored_packages"</span>:</div><div class="line">    [</div><div class="line">        <span class="string">"Vintage"</span></div><div class="line">    ],</div><div class="line">    <span class="attr">"trim_trailing_white_space_on_save"</span>: <span class="literal">true</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="空格轉tab"><a href="#空格轉tab" class="headerlink" title="空格轉tab"></a>空格轉tab</h2><p><code>Ctrl+alt+P</code> &gt; 輸入 indent &gt; 選擇 Covert to tab</p>
+<h2 id="檢視安裝清單"><a href="#檢視安裝清單" class="headerlink" title="檢視安裝清單"></a>檢視安裝清單</h2><p>用 package control 搜 package list 可以看到安裝清單</p>
+<h2 id="移除套件"><a href="#移除套件" class="headerlink" title="移除套件"></a>移除套件</h2><p><code>Ctrl+shift+p</code> 搜尋 remove package<br>就可以找到一個類別<br>點進去以後會列出所有裝過的package<br>就可以選擇要砍的package了~</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;解決中文字型-render-問題&quot;&gt;&lt;a href=&quot;#解決中文字型-render-問題&quot; class=&quot;headerlink&quot; title=&quot;解決中文字型 render 問題&quot;&gt;&lt;/a&gt;解決中文字型 render 問題&lt;/h2&gt;&lt;p&gt;Chrome v49+ 的版
+      &lt;h2 id=&quot;初始設定&quot;&gt;&lt;a href=&quot;#初始設定&quot; class=&quot;headerlink&quot; title=&quot;初始設定&quot;&gt;&lt;/a&gt;初始設定&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;安裝 &lt;a href=&quot;https://packagecontrol.io/installation&quot; targ
+    
+    </summary>
+    
+    
+      <category term="sublime" scheme="http://yoursite.com/tags/sublime/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mail 模版限制</title>
+    <link href="http://yoursite.com/2016/08/08/mail-template-html/"/>
+    <id>http://yoursite.com/2016/08/08/mail-template-html/</id>
+    <published>2016-08-08T09:23:42.000Z</published>
+    <updated>2016-08-08T09:37:54.084Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="郵箱只吃寫在-html-tag-裡面的-inline-style"><a href="#郵箱只吃寫在-html-tag-裡面的-inline-style" class="headerlink" title="郵箱只吃寫在 html tag 裡面的 inline style"></a>郵箱只吃寫在 html tag 裡面的 inline style</h2><p>所以寫完以後需要先轉 inline 再寄出，使用 <a href="https://github.com/tijsverkoyen/CssToInlineStyles/" target="_blank" rel="external">CssToInlineStyles</a> 這套可以把 css 轉為 inline style。</p>
+<a id="more"></a>
+<h2 id="各家-mail-server-對-CSS-的限制可參考：The-Ultimate-Guide-to-CSS"><a href="#各家-mail-server-對-CSS-的限制可參考：The-Ultimate-Guide-to-CSS" class="headerlink" title="各家 mail server 對 CSS 的限制可參考：The Ultimate Guide to CSS"></a>各家 mail server 對 CSS 的限制可參考：<a href="https://www.campaignmonitor.com/css/" target="_blank" rel="external">The Ultimate Guide to CSS</a></h2><p>不吃：</p>
+<ul>
+<li>html5 有語意之 tag</li>
+<li>Box-shadow</li>
+<li>任何有透明度之屬性</li>
+</ul>
+<p>建議：</p>
+<ul>
+<li>要有高度：使用 <code>line-height</code></li>
+<li>不要用 <code>&lt;p&gt;</code></li>
+<li>用 <code>border</code> 取代 <code>padding</code></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;郵箱只吃寫在-html-tag-裡面的-inline-style&quot;&gt;&lt;a href=&quot;#郵箱只吃寫在-html-tag-裡面的-inline-style&quot; class=&quot;headerlink&quot; title=&quot;郵箱只吃寫在 html tag 裡面的 inline style&quot;&gt;&lt;/a&gt;郵箱只吃寫在 html tag 裡面的 inline style&lt;/h2&gt;&lt;p&gt;所以寫完以後需要先轉 inline 再寄出，使用 &lt;a href=&quot;https://github.com/tijsverkoyen/CssToInlineStyles/&quot;&gt;CssToInlineStyles&lt;/a&gt; 這套可以把 css 轉為 inline style。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
+    
+      <category term="html" scheme="http://yoursite.com/tags/html/"/>
+    
+      <category term="mail" scheme="http://yoursite.com/tags/mail/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mobile 開發時遇到的一些問題整理</title>
+    <link href="http://yoursite.com/2016/08/08/mobile-develop-note/"/>
+    <id>http://yoursite.com/2016/08/08/mobile-develop-note/</id>
+    <published>2016-08-08T08:53:41.000Z</published>
+    <updated>2016-08-08T09:22:34.774Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="iOS-的毛"><a href="#iOS-的毛" class="headerlink" title="iOS 的毛"></a>iOS 的毛</h2><ul>
+<li>要送 <code>click</code> 的對象應該設定 <code>cursor: pointer</code> 才會動（不然會無法點擊）</li>
+</ul>
+<a id="more"></a>
+<ul>
+<li>iOS scrolling not smooth  <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">Html</span>,<span class="selector-tag">body</span> &#123; <span class="attribute">height</span>: <span class="number">100vh</span>; &#125;</div><div class="line">* &#123; <span class="attribute">-webkit-overflow-scrolling</span>: touch &#125;  <span class="comment">/* set this to ensure scrolling smooth!! */</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="Android-鍵盤出現時把高度壓縮造成版跑掉"><a href="#Android-鍵盤出現時把高度壓縮造成版跑掉" class="headerlink" title="Android 鍵盤出現時把高度壓縮造成版跑掉"></a>Android 鍵盤出現時把高度壓縮造成版跑掉</h2><p>用改寫viewport的方法: <a href="http://stackoverflow.com/questions/8556933/screen-styling-when-virtual-keyboard-is-active" target="_blank" rel="external">screen styling when virtual keyboard is active</a></p>
+<h2 id="input-預設-style-移除"><a href="#input-預設-style-移除" class="headerlink" title="input 預設 style 移除"></a>input 預設 style 移除</h2><figure class="highlight scss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">input</span><span class="selector-attr">[type="text"]</span></div><div class="line">    +appearance(<span class="attribute">none</span>) <span class="comment">/* Remove iOS default shadow */</span></div></pre></td></tr></table></figure>
+<h2 id="手機觸碰的-delay-NEVER-DO-THIS"><a href="#手機觸碰的-delay-NEVER-DO-THIS" class="headerlink" title="手機觸碰的 delay - NEVER DO THIS!!"></a>手機觸碰的 delay - NEVER DO THIS!!</h2><p>在 iOS 上會先吃 <code>touchstart</code> 再吃 <code>click</code>，一般只綁 click 的話會造成在 iOS 上有延遲感，點擊下去會 delay 一下才有反應。問估狗大師的話通常會出現以下解法：</p>
+<figure class="highlight js"><figcaption><span>script.js</span><a href="http://stackoverflow.com/questions/7018919/how-to-bind-touchstart-and-click-events-but-not-respond-to-both" target="_blank" rel="external">How to bind 'touchstart' and 'click' events but not respond to both?</a></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Mobile click &amp; touch event</span></div><div class="line">$(<span class="string">'#buttonId'</span>).on(<span class="string">'touchstart click'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</div><div class="line">    e.stopPropagation(); e.preventDefault();</div><div class="line">    <span class="comment">// your code here</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>但我忘記在哪裡看到評論說 <strong>不要這樣做</strong> 比較好，具體原因我忘記了…OTZ<br>目前找到的替代方案是用 <a href="https://github.com/ftlabs/fastclick" target="_blank" rel="external">FastClick</a> 這個套件來解決，他可以消除在手機上觸碰的 300ms delay。但這個套件在 bower 上好像很久沒有更新了…嘛，在有更好的辦法之前先這麼頂著吧ˊ_&gt;ˋ</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;iOS-的毛&quot;&gt;&lt;a href=&quot;#iOS-的毛&quot; class=&quot;headerlink&quot; title=&quot;iOS 的毛&quot;&gt;&lt;/a&gt;iOS 的毛&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;要送 &lt;code&gt;click&lt;/code&gt; 的對象應該設定 &lt;code&gt;cursor: pointer&lt;/code&gt; 才會動（不然會無法點擊）&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
+    
+      <category term="mobile" scheme="http://yoursite.com/tags/mobile/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS 筆記</title>
+    <link href="http://yoursite.com/2016/08/08/CSS-note/"/>
+    <id>http://yoursite.com/2016/08/08/CSS-note/</id>
+    <published>2016-08-08T08:30:30.000Z</published>
+    <updated>2016-08-08T09:23:02.672Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Flex-真是個好東西"><a href="#Flex-真是個好東西" class="headerlink" title="Flex 真是個好東西"></a>Flex 真是個好東西</h2><figure class="highlight scss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">display</span>: flex; <span class="comment">// 用flex方式顯示</span></div><div class="line"><span class="attribute">flex-direction</span>: column; <span class="comment">// 排列方向, column垂直排, row為水平</span></div><div class="line"><span class="attribute">flex-basis</span>: auto; <span class="comment">// 初始的 size</span></div><div class="line"><span class="attribute">flex</span>: <span class="number">1</span>;  <span class="comment">// 設定佔滿空間的比例, 若同階層兩元件一為2一為3則分別佔2/5與3/5的空間</span></div><div class="line">          <span class="comment">// 若只有自己的話會把剩餘的空間佔滿, 用在垂直方向則可以把其後方元件推到最底部</span></div><div class="line">          <span class="comment">// flex-grow + flex-shrink + flex-basis 的濃縮寫法</span></div><div class="line"><span class="attribute">order</span>: <span class="number">1</span>; <span class="comment">// flex元件的排列順序, 照數字大小排</span></div></pre></td></tr></table></figure>
+<p>實作參考：<a href="http://webdesign.tutsplus.com/tutorials/how-to-build-a-news-website-layout-with-flexbox--cms-26611" target="_blank" rel="external">How to Build a News Website Layout with Flexbox</a></p>
+<a id="more"></a>
+<h2 id="在-CSS-中使用-Material-Icons"><a href="#在-CSS-中使用-Material-Icons" class="headerlink" title="在 CSS 中使用 Material Icons"></a>在 CSS 中使用 Material Icons</h2><figure class="highlight css"><figcaption><span>basic.css</span><a href="http://google.github.io/material-design-icons/" target="_blank" rel="external">Material Icons Guide</a></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.material-icons</span> &#123;</div><div class="line">    <span class="attribute">font-family</span>: <span class="string">'Material Icons'</span>;</div><div class="line">    <span class="attribute">font-weight</span>: normal;</div><div class="line">    <span class="attribute">font-style</span>: normal;</div><div class="line">    <span class="attribute">font-size</span>: <span class="number">24px</span>;  <span class="comment">/* Preferred icon size */</span></div><div class="line">    <span class="attribute">display</span>: inline-block;</div><div class="line">    <span class="attribute">line-height</span>: <span class="number">1</span>;</div><div class="line">    <span class="attribute">text-transform</span>: none;</div><div class="line">    <span class="attribute">letter-spacing</span>: normal;</div><div class="line">    <span class="attribute">word-wrap</span>: normal;</div><div class="line">    <span class="attribute">white-space</span>: nowrap;</div><div class="line">    <span class="attribute">direction</span>: ltr;</div><div class="line"></div><div class="line">    <span class="comment">/* Support for all WebKit browsers. */</span></div><div class="line">    <span class="attribute">-webkit-font-smoothing</span>: antialiased;</div><div class="line">    <span class="comment">/* Support for Safari and Chrome. */</span></div><div class="line">    <span class="attribute">text-rendering</span>: optimizeLegibility;</div><div class="line"></div><div class="line">    <span class="comment">/* Support for Firefox. */</span></div><div class="line">    <span class="attribute">-moz-osx-font-smoothing</span>: grayscale;</div><div class="line"></div><div class="line">    <span class="comment">/* Support for IE. */</span></div><div class="line">    <span class="attribute">font-feature-settings</span>: <span class="string">'liga'</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<div class="tip"><br>    <code>font-variant: small-caps</code> 會導致 material-icons 不能使用 ligatures<br></div>
+
+
+<h2 id="偽元素"><a href="#偽元素" class="headerlink" title="偽元素"></a>偽元素</h2><p><code>content</code> 只能用在 <code>:before</code> / <code>:after</code><br>因為 <code>input[type=&quot;text&quot;]</code> 沒有 <code>content</code>, 所以不能用偽元素<br>要寫在後面的 <code>label</code> ( <code>input + label:before { … }</code> )</p>
+<h2 id="讓元素不被overlay遮住"><a href="#讓元素不被overlay遮住" class="headerlink" title="讓元素不被overlay遮住"></a>讓元素不被overlay遮住</h2><p>用 <code>:before</code> 做 overlay 時，此 overlay 會把內容整個蓋住<br>此時 <strong>內容元素設定 <code>position: relative</code></strong> , 可讓他不被 overlay 蓋住</p>
+<h2 id="Favicon-refresh"><a href="#Favicon-refresh" class="headerlink" title="Favicon refresh"></a>Favicon refresh</h2><p>在檔名後面加上 <code>?v=xxx</code> 可強制不去讀 cache ，一定要更新檔案</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Flex-真是個好東西&quot;&gt;&lt;a href=&quot;#Flex-真是個好東西&quot; class=&quot;headerlink&quot; title=&quot;Flex 真是個好東西&quot;&gt;&lt;/a&gt;Flex 真是個好東西&lt;/h2&gt;&lt;figure class=&quot;highlight scss&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;display&lt;/span&gt;: flex; &lt;span class=&quot;comment&quot;&gt;// 用flex方式顯示&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;flex-direction&lt;/span&gt;: column; &lt;span class=&quot;comment&quot;&gt;// 排列方向, column垂直排, row為水平&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;flex-basis&lt;/span&gt;: auto; &lt;span class=&quot;comment&quot;&gt;// 初始的 size&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;flex&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;  &lt;span class=&quot;comment&quot;&gt;// 設定佔滿空間的比例, 若同階層兩元件一為2一為3則分別佔2/5與3/5的空間&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;          &lt;span class=&quot;comment&quot;&gt;// 若只有自己的話會把剩餘的空間佔滿, 用在垂直方向則可以把其後方元件推到最底部&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;          &lt;span class=&quot;comment&quot;&gt;// flex-grow + flex-shrink + flex-basis 的濃縮寫法&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;order&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;; &lt;span class=&quot;comment&quot;&gt;// flex元件的排列順序, 照數字大小排&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;實作參考：&lt;a href=&quot;http://webdesign.tutsplus.com/tutorials/how-to-build-a-news-website-layout-with-flexbox--cms-26611&quot;&gt;How to Build a News Website Layout with Flexbox&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>tmux 常用指令 + 自己寫 shell</title>
+    <link href="http://yoursite.com/2016/08/08/tmux-use-and-shell/"/>
+    <id>http://yoursite.com/2016/08/08/tmux-use-and-shell/</id>
+    <published>2016-08-08T08:06:22.000Z</published>
+    <updated>2016-08-08T08:28:57.021Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="常用指令"><a href="#常用指令" class="headerlink" title="常用指令"></a>常用指令</h2><p><code>tmux ls</code> 列出目前所有 session<br><code>tmux a -t &lt;session-name&gt;</code> 跳至該 session<br><code>tmux a -dt &lt;session-name&gt;</code> 將其他 client 踢掉</p>
+<p>tmux 的操作都是 <code>^B</code> 開頭：</p>
+<ul>
+<li><code>^B+&lt;number&gt;</code> 切換 tmux window (現在所在的窗會以*標記</li>
+<li><code>^B+C</code> 建新的窗(window)</li>
+<li><code>^B+D</code> 維持 tmux 背景執行並離開</li>
+<li><code>^B+,</code> 重新命名視窗</li>
+<li><code>^B+$</code> 命名目前 session</li>
+</ul>
+<h2 id="個人用-shell"><a href="#個人用-shell" class="headerlink" title="個人用 shell"></a>個人用 shell</h2><p>知道了幾種常用的指令，為了不要每一次開 tmux 都需要重複開窗+命名，所以寫了一支 shell來幫我做這些事：（會自動開 git / sass / tpl 三個窗並各自執行 watch 指令）</p>
+<figure class="highlight bash"><figcaption><span>myTmux</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#!/usr/bin/env bash</span></div><div class="line"></div><div class="line"><span class="comment"># Usage</span></div><div class="line"><span class="keyword">if</span> [ <span class="string">"<span class="variable">$1</span>"</span> == <span class="string">""</span> ];</div><div class="line"><span class="keyword">then</span></div><div class="line">	<span class="built_in">echo</span> <span class="string">"Usage1: `basename <span class="variable">$0</span>` [SESSION_NAME] [PROJECT]"</span></div><div class="line">	<span class="built_in">echo</span> <span class="string">"	Create a new session with git/sass/tpl windows and start watch"</span></div><div class="line">	<span class="built_in">echo</span> <span class="string">"Usage2: `basename <span class="variable">$0</span>` [SESSION_NAME]"</span></div><div class="line">	<span class="built_in">echo</span> <span class="string">"	Attach the exist session and detach other clients"</span></div><div class="line">	<span class="built_in">echo</span> <span class="string">"---"</span></div><div class="line">	<span class="built_in">echo</span> <span class="string">"&lt;Alive session&gt;"</span></div><div class="line">	tmux ls</div><div class="line">	<span class="built_in">exit</span> 0</div><div class="line"><span class="keyword">fi</span></div><div class="line"></div><div class="line">SESSION_NAME=<span class="variable">$1</span></div><div class="line">PROJECT=<span class="variable">$2</span></div><div class="line"></div><div class="line"><span class="comment"># Ensure it's not exist</span></div><div class="line">tmux has-session -t <span class="variable">$&#123;SESSION_NAME&#125;</span></div><div class="line"></div><div class="line"><span class="keyword">if</span> [ $? != 0 ];</div><div class="line"><span class="keyword">then</span></div><div class="line"></div><div class="line">	<span class="comment"># Check parameter $2</span></div><div class="line">	<span class="keyword">if</span> [ <span class="string">"<span class="variable">$&#123;PROJECT&#125;</span>"</span> == <span class="string">""</span> ];</div><div class="line">	<span class="keyword">then</span></div><div class="line">		<span class="built_in">echo</span> <span class="string">"Syntax error: Missing param2 [PROJECT]"</span></div><div class="line">		<span class="built_in">exit</span> 0</div><div class="line">	<span class="keyword">fi</span></div><div class="line"></div><div class="line">	<span class="comment"># Go to the project</span></div><div class="line">	<span class="built_in">cd</span> <span class="variable">$&#123;PROJECT&#125;</span></div><div class="line"></div><div class="line">	<span class="comment"># Create the session</span></div><div class="line">	tmux new-session <span class="_">-d</span> <span class="_">-s</span> <span class="variable">$&#123;SESSION_NAME&#125;</span></div><div class="line"></div><div class="line">	<span class="comment"># Create windows (0 is exist, so use rename)</span></div><div class="line">	tmux rename-window -t <span class="variable">$&#123;SESSION_NAME&#125;</span>:0 <span class="string">"git"</span></div><div class="line">	tmux new-window -t <span class="variable">$&#123;SESSION_NAME&#125;</span>:1 -n sass</div><div class="line">	tmux new-window -t <span class="variable">$&#123;SESSION_NAME&#125;</span>:2 -n tpl</div><div class="line"></div><div class="line">	<span class="comment"># Do somthing</span></div><div class="line">	tmux send-keys -t <span class="variable">$&#123;SESSION_NAME&#125;</span>:0 <span class="string">'./oconf compile'</span> C-m</div><div class="line">	tmux send-keys -t <span class="variable">$&#123;SESSION_NAME&#125;</span>:1 <span class="string">'./oconf watch sass'</span> C-m</div><div class="line">	tmux send-keys -t <span class="variable">$&#123;SESSION_NAME&#125;</span>:2 <span class="string">'./oconf watch tpl'</span> C-m</div><div class="line"></div><div class="line">	<span class="comment"># Start on the first window</span></div><div class="line">	tmux select-window -t <span class="variable">$&#123;SESSION_NAME&#125;</span>:0</div><div class="line"><span class="keyword">fi</span></div><div class="line"></div><div class="line"><span class="comment"># Detach other clients &amp; attach session : a=attach, d=detach other client, t=target</span></div><div class="line">tmux a -dt <span class="variable">$&#123;SESSION_NAME&#125;</span></div></pre></td></tr></table></figure>
+<p>執行方式</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ./myTmux [SESSION_NAME] [PROJECT]</div></pre></td></tr></table></figure>
+<p>另外可將指令<a href="(http://thisis577.github.io/2016/08/05/bash-alias/)">自訂別名(alias)</a>，這樣就可以不用找相對路徑來下指令了。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;常用指令&quot;&gt;&lt;a href=&quot;#常用指令&quot; class=&quot;headerlink&quot; title=&quot;常用指令&quot;&gt;&lt;/a&gt;常用指令&lt;/h2&gt;&lt;p&gt;&lt;code&gt;tmux ls&lt;/code&gt; 列出目前所有 session&lt;br&gt;&lt;code&gt;tmux a -t &amp;lt;ses
+    
+    </summary>
+    
+    
+      <category term="shell" scheme="http://yoursite.com/tags/shell/"/>
+    
+      <category term="tmux" scheme="http://yoursite.com/tags/tmux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Bower - js 的 package 管理</title>
+    <link href="http://yoursite.com/2016/08/08/bower-install/"/>
+    <id>http://yoursite.com/2016/08/08/bower-install/</id>
+    <published>2016-08-08T07:46:15.000Z</published>
+    <updated>2016-08-08T08:29:40.420Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="透過-bower-安裝-package"><a href="#透過-bower-安裝-package" class="headerlink" title="透過 bower 安裝 package"></a>透過 bower 安裝 package</h2><p>在 <a href="http://bower.io" target="_blank" rel="external">bower</a> 上找相關的 package，找到以後在 <code>bower.json</code> 檔案裡面的 dependencies 設定 package name 與版本號(或用 <code>*</code> 代表任一版本, 會自動裝最新的)：</p>
+<a id="more"></a>
+<figure class="highlight js"><figcaption><span>bower.json</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="string">"dependencies"</span> : &#123;</div><div class="line">    <span class="string">"&lt;package-name&gt;"</span>: <span class="string">"&lt;version&gt;"</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>設定完以後進行安裝：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ bower install</div></pre></td></tr></table></figure>
+<p>安裝完後可以在 <code>vendor/bower/</code> 底下看到剛裝好的 package。</p>
+<h2 id="Yii-asset-設定"><a href="#Yii-asset-設定" class="headerlink" title="Yii asset 設定"></a>Yii asset 設定</h2><p>接著到 <code>assets</code> 底下建立新的 class 檔案</p>
+<figure class="highlight php"><figcaption><span>assets/NewPackage.php</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// class name 需與檔名相符</span></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">NewPackage</span> <span class="keyword">extends</span> <span class="title">AssetBundle</span> </span>&#123;</div><div class="line">    <span class="comment">// 設定所需檔案的 src 資料夾</span></div><div class="line">    <span class="comment">// 一般是在新的 package folder 下的 dist (反正找到有.min.xxx的就對惹</span></div><div class="line">    <span class="keyword">public</span> $sourcePath = <span class="string">'@bower/&lt;package-name&gt;/dist/'</span>;</div><div class="line">    <span class="comment">// 路徑已經設定好，只需要把檔名填上去就好了</span></div><div class="line">    <span class="keyword">public</span> $css = [</div><div class="line">        &lt;package-name&gt;.min.css</div><div class="line">    ];</div><div class="line">    <span class="keyword">public</span> $js = [</div><div class="line">        &lt;package-name&gt;.min.js</div><div class="line">    ];</div><div class="line">    <span class="comment">// 看該隻檔案需要用到哪個 class 則去找該 class 的 namespace 寫路徑進去</span></div><div class="line">    <span class="comment">// Ex. Namespace app\assets, 則寫 'app\assets\&lt;class-name&gt;'</span></div><div class="line">    <span class="keyword">public</span> $depends = [</div><div class="line">        <span class="string">'app\assets\&lt;class-name&gt;'</span></div><div class="line">    ];</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="移除-package"><a href="#移除-package" class="headerlink" title="移除 package"></a>移除 package</h2><p>將 <code>bower.json</code> 的 dependencies 拿掉然後重新 <code>bower install</code> 即可。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;透過-bower-安裝-package&quot;&gt;&lt;a href=&quot;#透過-bower-安裝-package&quot; class=&quot;headerlink&quot; title=&quot;透過 bower 安裝 package&quot;&gt;&lt;/a&gt;透過 bower 安裝 package&lt;/h2&gt;&lt;p&gt;在 &lt;a href=&quot;http://bower.io&quot;&gt;bower&lt;/a&gt; 上找相關的 package，找到以後在 &lt;code&gt;bower.json&lt;/code&gt; 檔案裡面的 dependencies 設定 package name 與版本號(或用 &lt;code&gt;*&lt;/code&gt; 代表任一版本, 會自動裝最新的)：&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="bower" scheme="http://yoursite.com/tags/bower/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>個人常用 Git 指令</title>
+    <link href="http://yoursite.com/2016/08/08/git-common-use/"/>
+    <id>http://yoursite.com/2016/08/08/git-common-use/</id>
+    <published>2016-08-08T07:27:15.000Z</published>
+    <updated>2016-08-08T08:28:40.520Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://blog.gogojimmy.net/2012/02/29/git-scenario/" target="_blank" rel="external">Git 情境劇</a> 這篇文章應該已經涵蓋了大部分的使用情境，教學也寫得很清楚，以下只列出一些我自己比較常用或比較記不住的指令XD</p>
+<a id="more"></a>
+<h2 id="暫存-commit"><a href="#暫存-commit" class="headerlink" title="暫存 commit"></a>暫存 commit</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 暫時把目前的 commit 存起來</span></div><div class="line">git commit -m tmp</div><div class="line"><span class="comment"># 還原暫存的commit</span></div><div class="line">git reset HEAD^</div></pre></td></tr></table></figure>
+<p>暫存變更則是使用 <code>git stash</code></p>
+<h2 id="將-branch-的變更推到遠端"><a href="#將-branch-的變更推到遠端" class="headerlink" title="將 branch 的變更推到遠端"></a>將 branch 的變更推到遠端</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 先在 branch 做 commit</span></div><div class="line"><span class="comment"># 做完 commit 後切回 master</span></div><div class="line">(branch)$ git checkout master</div><div class="line"><span class="comment"># 檢查 master 與遠端是否同步</span></div><div class="line">(master)$ git pull</div><div class="line"><span class="comment"># 無任何衝突的話就 merge branch</span></div><div class="line">(master)$ git merge &lt;branch-name&gt;</div><div class="line">(master)$ git push</div></pre></td></tr></table></figure>
+<h2 id="拉新的-commit-到目前-branch"><a href="#拉新的-commit-到目前-branch" class="headerlink" title="拉新的 commit 到目前 branch"></a>拉新的 commit 到目前 branch</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 更新 master</span></div><div class="line">(master)$ git pull</div><div class="line">(master)$ git checkout &lt;branch-name&gt;</div><div class="line"><span class="comment"># 對 branch 做 rebase，把它接到更新過的 master 上</span></div><div class="line">(branch)$ git rebase master</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://blog.gogojimmy.net/2012/02/29/git-scenario/&quot;&gt;Git 情境劇&lt;/a&gt; 這篇文章應該已經涵蓋了大部分的使用情境，教學也寫得很清楚，以下只列出一些我自己比較常用或比較記不住的指令XD&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="git" scheme="http://yoursite.com/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo 建立新文章後自動打開編輯器跟瀏覽器</title>
+    <link href="http://yoursite.com/2016/08/05/auto-open-editor-and-browser-after-hexo-new-post/"/>
+    <id>http://yoursite.com/2016/08/05/auto-open-editor-and-browser-after-hexo-new-post/</id>
+    <published>2016-08-05T12:41:54.000Z</published>
+    <updated>2016-08-08T07:11:33.621Z</updated>
+    
+    <content type="html"><![CDATA[<p>基本原理是去監聽 <code>hexo new</code> 這個指令，但網路上找到的文章大部分是在 OS X 或根本就是 Linux 環境，指令怎麼跑都不會動～（哭哭）<br>後來翻到的<a href="http://liam0205.me/2015/05/01/open-editor-after-hexo-new-immediately/" target="_blank" rel="external">一篇文章</a>裡面提到 windows 的指令不一樣：</p>
+<ul>
+<li>要用 <code>start</code> 取代 <code>open -a</code></li>
+<li>sublime 的執行路徑也需要另外<a href="#adding-sublime-to-PATH">設置</a></li>
+</ul>
+<p>總之終於可以自動打開瀏覽器跟編輯器，愉快的進行編輯啦～</p>
+<a id="more"></a>
+<hr>
+<h2 id="在建立新文章後自動打開編輯器-in-Windows"><a href="#在建立新文章後自動打開編輯器-in-Windows" class="headerlink" title="在建立新文章後自動打開編輯器(in Windows)"></a>在建立新文章後自動打開編輯器(in Windows)</h2><figure class="highlight js"><figcaption><span>/hexo-root/scripts/new-post.js</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> exec = <span class="built_in">require</span>(<span class="string">'child_process'</span>).exec;</div><div class="line">hexo.on(<span class="string">'new'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">data</span>) </span>&#123;</div><div class="line">    exec(<span class="string">'hexo server'</span>); <span class="comment">// start preview server</span></div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'running hexo server....'</span>);</div><div class="line">    setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="comment">// open preview url</span></div><div class="line">        exec(<span class="string">'start "Google Chrome" "http://localhost:4000"'</span>);</div><div class="line">        <span class="comment">// open with editor</span></div><div class="line">        exec(<span class="string">'start "subl.exe" '</span>+data.path);</div><div class="line">    &#125;, <span class="number">3000</span>);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"open editor and browser"</span></div></pre></td></tr></table></figure>
+<hr>
+<p><a name="adding-sublime-to-PATH"></a></p>
+<h2 id="在-Windows-下從命令列開啟-sublime-的設置"><a href="#在-Windows-下從命令列開啟-sublime-的設置" class="headerlink" title="在 Windows 下從命令列開啟 sublime 的設置"></a>在 Windows 下從命令列開啟 sublime 的設置</h2><p>1.<code>Ctrl + X</code> 打開選單 &gt; 開啟 <strong>系統</strong><br>2.進階系統設定 &gt; 進階頁籤 &gt; 點擊下方的 <strong>環境變數</strong><br>3.新增 <strong>系統變數(S)</strong></p>
+<ul>
+<li>變數名稱 | <code>SUBLIME</code></li>
+<li>變數值  | <code>C:\Program Files\Sublime Text 3</code><br>(即為 Sublime 的安裝資料夾)</li>
+</ul>
+<p>4.編輯 <strong>使用者變數(U)</strong> 當中的 <strong>PATH</strong></p>
+<ul>
+<li>在末端加入 <code>;%SUBLIME%</code></li>
+</ul>
+<p>5.重開 command line ，就可以使用 <code>subl.exe</code> 來呼叫 sublime</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ subl.exe test.txt</div></pre></td></tr></table></figure>
+<div class="tip"><br>    如果是 Win10，第一次執行時可能會需要先設定 .md 的預設開啟程式為 sublime。（在 Win10 跳出的選擇框選擇即可）<br></div>
+
+<hr>
+<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
+<li><a href="https://lessmind.github.io/2015/10/13/New-hexo-post-auto-open-with-editor/" target="_blank" rel="external">New hexo post auto open with editor</a></li>
+<li><a href="http://liam0205.me/2015/05/01/open-editor-after-hexo-new-immediately/" target="_blank" rel="external">在 hexo new 之后立即打开新建的 Markdown 文稿</a></li>
+<li><a href="https://scotch.io/tutorials/open-sublime-text-from-the-command-line-using-subl-exe-windows#adding-sublime-to-your-path" target="_blank" rel="external">Open Sublime Text From the Command Line Using subl.exe (Windows)</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;基本原理是去監聽 &lt;code&gt;hexo new&lt;/code&gt; 這個指令，但網路上找到的文章大部分是在 OS X 或根本就是 Linux 環境，指令怎麼跑都不會動～（哭哭）&lt;br&gt;後來翻到的&lt;a href=&quot;http://liam0205.me/2015/05/01/open-editor-after-hexo-new-immediately/&quot;&gt;一篇文章&lt;/a&gt;裡面提到 windows 的指令不一樣：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;要用 &lt;code&gt;start&lt;/code&gt; 取代 &lt;code&gt;open -a&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;sublime 的執行路徑也需要另外&lt;a href=&quot;#adding-sublime-to-PATH&quot;&gt;設置&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;總之終於可以自動打開瀏覽器跟編輯器，愉快的進行編輯啦～&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="sublime" scheme="http://yoursite.com/tags/sublime/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Chrome 的中文字型設定</title>
+    <link href="http://yoursite.com/2016/08/05/chinese-text-render-in-chrome/"/>
+    <id>http://yoursite.com/2016/08/05/chinese-text-render-in-chrome/</id>
+    <published>2016-08-05T09:39:16.000Z</published>
+    <updated>2016-08-08T07:11:33.630Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="解決投影時中文字型-render-問題"><a href="#解決投影時中文字型-render-問題" class="headerlink" title="解決投影時中文字型 render 問題"></a>解決投影時中文字型 render 問題</h2><a id="more"></a>
+<p>Chrome v49+ 的版本在投影到第二台螢幕上 render 老是很可怕，<br>我又一直查不太到相關資訊，害我只能先把版本鎖死在 v49 好一陣子。</p>
+<p>前幾天發現 Chrome canary 的中文 render 很漂亮，滿心歡喜的跳槽過去，<br>結果開心不到兩天，一更新下去，登愣～竟然！不能！輸入中文了= =</p>
+<p>IME 整個掛點，裝了 Chrome 的外掛 Google input tool 也只能在特定的 input text 輸入中文。<br>網址列及大部分的輸入框都不能輸入中文（顯示 <code>IME 已停用</code>）！<br>怒去 Google Chrome Help Forum 投訴(?)，順便爬爬有沒有相關議題。<br>然後找到了一篇雖然不是中文字型但是也是 render 問題的討論串，就找到解法了！！！！</p>
+<p>解法還TMD的簡單：</p>
+<ol>
+<li>打開 <strong>設定</strong></li>
+<li>找到 <strong>系統</strong> 區塊（在進階設定裡）</li>
+<li>取消勾選 <strong>在可用時使用硬體加速</strong></li>
+<li>重新啟動 chrome</li>
+</ol>
+<p>困擾我一個多月的事情就解決了，可喜可賀、可喜可賀=__=</p>
+<hr>
+<h2 id="順便設定預設中文字型"><a href="#順便設定預設中文字型" class="headerlink" title="順便設定預設中文字型"></a>順便設定預設中文字型</h2><ol>
+<li>打開 <strong>設定</strong></li>
+<li>找到 <strong>網頁內容</strong> 區塊</li>
+<li>選 <strong>自訂字型</strong></li>
+<li>將 <strong>標準字型</strong> 改為喜歡的字型就可以了</li>
+<li>重新啟動 chrome 體驗美好的中文字型吧～</li>
+</ol>
+<p>因為微軟正黑體在大部分的螢幕上 render 都不太好<br>所以我裝了 <a href="https://www.google.com/get/noto/help/cjk/" target="_blank" rel="external">Google 和 Adobe 出的思源黑體</a><br>愛將是 <code>Noto Sans CJK TC DemiLight</code><br>啊～沒有新細明體的世界真是美好ˊ_&gt;ˋ</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;解決投影時中文字型-render-問題&quot;&gt;&lt;a href=&quot;#解決投影時中文字型-render-問題&quot; class=&quot;headerlink&quot; title=&quot;解決投影時中文字型 render 問題&quot;&gt;&lt;/a&gt;解決投影時中文字型 render 問題&lt;/h2&gt;
     
     </summary>
     
     
       <category term="chrome" scheme="http://yoursite.com/tags/chrome/"/>
+    
+      <category term="font" scheme="http://yoursite.com/tags/font/"/>
     
   </entry>
   
@@ -50,12 +353,12 @@
     <link href="http://yoursite.com/2016/08/05/bash-alias/"/>
     <id>http://yoursite.com/2016/08/05/bash-alias/</id>
     <published>2016-08-05T06:44:07.000Z</published>
-    <updated>2016-08-05T06:52:37.199Z</updated>
+    <updated>2016-08-08T07:11:33.626Z</updated>
     
     <content type="html"><![CDATA[<h2 id="在當前-session-為指令自訂別名-alias"><a href="#在當前-session-為指令自訂別名-alias" class="headerlink" title="在當前 session 為指令自訂別名(alias)"></a>在當前 session 為指令自訂別名(alias)</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># alias &lt;new-command&gt;='&lt;old-command&gt; -&lt;param&gt;'</span></div><div class="line"><span class="comment"># 使用 $&#123;HOME&#125; 自動抓家目錄位置</span></div><div class="line">$ <span class="built_in">alias</span> hd=<span class="string">"<span class="variable">$&#123;HOME&#125;</span>/hexo deploy"</span></div><div class="line">$ <span class="built_in">alias</span> hp=<span class="string">"<span class="variable">$&#123;HOME&#125;</span>/hexo push"</span></div><div class="line"><span class="comment"># 使目前設置的 alias 即刻生效，不需要重開 terminal</span></div><div class="line">$ <span class="built_in">source</span> ~/.bashrc</div></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 查看目前所有 alias</span></div><div class="line">$ <span class="built_in">alias</span></div><div class="line"><span class="built_in">alias</span> hd=<span class="string">'/c/Users/577/hexo deploy'</span></div><div class="line"><span class="built_in">alias</span> hp=<span class="string">'/c/Users/577/hexo push'</span></div></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 刪除已存在的 alias</span></div><div class="line">$ <span class="built_in">unalias</span> &lt;<span class="built_in">command</span>&gt;</div></pre></td></tr></table></figure>
-<h3 id="讓-alias-永久生效"><a href="#讓-alias-永久生效" class="headerlink" title="讓 alias 永久生效"></a>讓 alias 永久生效</h3><p>上述指令皆為一次性，只有下指令的這一個 session 有用<br>為了讓指令在 session 一打開時就執行，需編輯 <code>.bashrc</code></p>
+<h2 id="讓-alias-永久生效"><a href="#讓-alias-永久生效" class="headerlink" title="讓 alias 永久生效"></a>讓 alias 永久生效</h2><p>上述指令皆為一次性，只有下指令的這一個 session 有用<br>為了讓指令在 session 一打開時就執行，需編輯 <code>.bashrc</code></p>
 <figure class="highlight bash"><figcaption><span>~/.bashrc</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 加入 alias</span></div><div class="line"><span class="built_in">alias</span> hd=<span class="string">"<span class="variable">$&#123;HOME&#125;</span>/hexo deploy"</span></div><div class="line"><span class="built_in">alias</span> hp=<span class="string">"<span class="variable">$&#123;HOME&#125;</span>/hexo push"</span></div></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 使設定直接生效</span></div><div class="line">$ <span class="built_in">source</span> ~/.bashrc</div></pre></td></tr></table></figure>
 ]]></content>
@@ -209,11 +512,11 @@
     </summary>
     
     
+      <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
+    
       <category term="practice" scheme="http://yoursite.com/tags/practice/"/>
     
       <category term="UI" scheme="http://yoursite.com/tags/UI/"/>
-    
-      <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
     
   </entry>
   
@@ -249,7 +552,7 @@
     <link href="http://yoursite.com/2016/07/28/customize-hexo-shell/"/>
     <id>http://yoursite.com/2016/07/28/customize-hexo-shell/</id>
     <published>2016-07-28T03:09:25.000Z</published>
-    <updated>2016-08-05T07:10:24.268Z</updated>
+    <updated>2016-08-08T08:19:29.903Z</updated>
     
     <content type="html"><![CDATA[<h4 id="可以自動-deploy-hexo-並-push-source-code"><a href="#可以自動-deploy-hexo-並-push-source-code" class="headerlink" title="可以自動 deploy hexo 並 push source code"></a>可以自動 deploy hexo 並 push source code</h4><a id="more"></a>
 <h2 id="在-root-編寫檔案，此處檔名為-hexo"><a href="#在-root-編寫檔案，此處檔名為-hexo" class="headerlink" title="在 root 編寫檔案，此處檔名為 hexo"></a>在 root 編寫檔案，此處檔名為 <code>hexo</code></h2><p>(shell 可不需副檔名)</p>
@@ -269,9 +572,9 @@
     </summary>
     
     
-      <category term="bash" scheme="http://yoursite.com/tags/bash/"/>
-    
       <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="shell" scheme="http://yoursite.com/tags/shell/"/>
     
   </entry>
   
@@ -280,18 +583,18 @@
     <link href="http://yoursite.com/2016/07/28/custom-404-page/"/>
     <id>http://yoursite.com/2016/07/28/custom-404-page/</id>
     <published>2016-07-28T02:38:39.000Z</published>
-    <updated>2016-07-29T09:42:18.707Z</updated>
+    <updated>2016-08-08T07:11:33.635Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="本站的-404-page"><a href="#本站的-404-page" class="headerlink" title="本站的 404 page"></a>本站的 404 page</h1><p><img src="http://imgur.com/Lg9AMHO.png" alt="404-page"></p>
+    <content type="html"><![CDATA[<p><img src="http://imgur.com/Lg9AMHO.png" alt="404-page"><br><small class="img-descript">本站的 404 page</small></p>
 <a id="more"></a>
 <hr>
-<h2 id="創建要給-404-的新頁面"><a href="#創建要給-404-的新頁面" class="headerlink" title="創建要給 404 的新頁面"></a>創建要給 404 的新頁面</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new page <span class="number">404</span></div></pre></td></tr></table></figure>
-<h2 id="編輯-source-404-index-md"><a href="#編輯-source-404-index-md" class="headerlink" title="編輯 source/404/index.md"></a>編輯 <code>source/404/index.md</code></h2><figure class="highlight md"><figcaption><span>source/404/index.md</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: 404</div><div class="line"><span class="section">permalink: /404 # 指定固定連結為 http://your_account.github.io/404.html</span></div><div class="line">---</div><div class="line"><span class="section"># Write inline style</span></div><div class="line">&lt;style&gt;</div><div class="line">...</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
+<h2 id="創建要給-404-的新頁面"><a href="#創建要給-404-的新頁面" class="headerlink" title="創建要給 404 的新頁面"></a>創建要給 404 的新頁面</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new page 404</div></pre></td></tr></table></figure>
+<h2 id="編輯-source-404-index-md"><a href="#編輯-source-404-index-md" class="headerlink" title="編輯 source/404/index.md"></a>編輯 <code>source/404/index.md</code></h2><figure class="highlight md"><figcaption><span>source/404/index.md</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: 404</div><div class="line"><span class="section">permalink: /404 # 指定固定連結為 http://your_account.github.io/404.html</span></div><div class="line">---</div><div class="line">&lt;!-- Write inline style --&gt;</div><div class="line">&lt;style&gt;</div><div class="line">...</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
 <div class="tip"><br>    若要在 local 端測試的話，需將 permalink 拿掉<br>    <div>測試網址為 <code>http://localhost:4000/404</code></div><br></div>
 
 
-<p>Ref:</p>
-<ul>
+<hr>
+<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
 <li><a href="http://moxfive.xyz/2015/10/16/hexo-404-page/" target="_blank" rel="external">在 Hexo 中创建匹配主题的404页面</a></li>
 <li><a href="https://help.github.com/articles/creating-a-custom-404-page-for-your-github-pages-site/" target="_blank" rel="external">Creating a custom 404 page for your GitHub Pages site</a></li>
 </ul>
@@ -299,14 +602,14 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;本站的-404-page&quot;&gt;&lt;a href=&quot;#本站的-404-page&quot; class=&quot;headerlink&quot; title=&quot;本站的 404 page&quot;&gt;&lt;/a&gt;本站的 404 page&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://imgur.com/Lg9AMHO.png&quot; alt=&quot;404-page&quot;&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;img src=&quot;http://imgur.com/Lg9AMHO.png&quot; alt=&quot;404-page&quot;&gt;&lt;br&gt;&lt;small class=&quot;img-descript&quot;&gt;本站的 404 page&lt;/small&gt;&lt;/p&gt;
     
     </summary>
     
     
-      <category term="github" scheme="http://yoursite.com/tags/github/"/>
-    
       <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="github" scheme="http://yoursite.com/tags/github/"/>
     
   </entry>
   
@@ -369,9 +672,9 @@
     </summary>
     
     
-      <category term="github" scheme="http://yoursite.com/tags/github/"/>
-    
       <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="github" scheme="http://yoursite.com/tags/github/"/>
     
   </entry>
   
@@ -423,11 +726,11 @@
   </entry>
   
   <entry>
-    <title>Hexo markdown note</title>
+    <title>Hexo markdown 筆記</title>
     <link href="http://yoursite.com/2016/07/27/hexo-md-usage/"/>
     <id>http://yoursite.com/2016/07/27/hexo-md-usage/</id>
     <published>2016-07-27T14:20:18.000Z</published>
-    <updated>2016-07-29T06:09:14.703Z</updated>
+    <updated>2016-08-08T07:11:33.641Z</updated>
     
     <content type="html"><![CDATA[<div class="tip"><br>    為個人規範跟一些使用方式的範例筆記<br></div>
 
@@ -448,6 +751,8 @@
 </ul>
 <p><em>星號刮起來變斜體</em></p>
 <p><strong>兩個星號括起來</strong></p>
+<p><del>刪除線</del></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">code block</div></pre></td></tr></table></figure>
 <p>Ref: <a href="http://markdown.tw/" target="_blank" rel="external">Markdown 語法說明</a></p>
 <hr>
 <h1 id="標題"><a href="#標題" class="headerlink" title="標題"></a>標題</h1><h1 id="h1"><a href="#h1" class="headerlink" title="h1"></a>h1</h1><h2 id="h2"><a href="#h2" class="headerlink" title="h2"></a>h2</h2><h3 id="h3"><a href="#h3" class="headerlink" title="h3"></a>h3</h3><h4 id="h4"><a href="#h4" class="headerlink" title="h4"></a>h4</h4><figure class="highlight md"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="section"># h1</span></div><div class="line"><span class="section">## h2</span></div><div class="line"><span class="section">### h3</span></div><div class="line"><span class="section">#### h4</span></div></pre></td></tr></table></figure>
@@ -463,12 +768,15 @@
 <hr>
 <h1 id="Markdown-新大陸"><a href="#Markdown-新大陸" class="headerlink" title="Markdown 新大陸"></a>Markdown 新大陸</h1><h2 id="Code-Block"><a href="#Code-Block" class="headerlink" title="Code Block"></a>Code Block</h2><figure class="highlight md"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;% codeblock [title] [lang:language] [url] [link text] %&#125;</div><div class="line">code snippet</div><div class="line">&#123;% endcodeblock %&#125;</div></pre></td></tr></table></figure>
 <p><small class="murmur"><br>    我一直把那個格式當成是 <code>ejs</code> 的格式 囧<br></small></p>
-<h2 id="Backtick-Code-Block"><a href="#Backtick-Code-Block" class="headerlink" title="Backtick Code Block"></a>Backtick Code Block</h2><figure class="highlight md"><figcaption><span>test.md</span><a href="https://hexo.io/docs/tag-plugins.html#Backtick-Code-Block" target="_blank" rel="external">#Backtick-Code-Block</a></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">''' [language] [title] [url] [link text] code snippet '''</div></pre></td></tr></table></figure>
+<h2 id="Backtick-Code-Block"><a href="#Backtick-Code-Block" class="headerlink" title="Backtick Code Block"></a>Backtick Code Block</h2><figure class="highlight md"><figcaption><span>test.md</span><a href="https://hexo.io/docs/tag-plugins.html#Backtick-Code-Block" target="_blank" rel="external">#Backtick-Code-Block</a></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">~~~ [language] [title] [url] [link text] code snippet ~~~</div></pre></td></tr></table></figure>
 <div class="tip"><br>    <ol><br>        <li>Code block 與 Backtick Code Block 不能混用</li><br>        <li>Block 與上下文必須有空行不能連在一起</li><br>    </ol><br></div>
 
 <h3 id="Blockquote"><a href="#Blockquote" class="headerlink" title="Blockquote"></a>Blockquote</h3><blockquote><p>Every interaction is both precious and an opportunity to delight.</p>
 <footer><strong>Seth Godin</strong><cite><a href="http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html" target="_blank" rel="external">Welcome to Island Marketing</a></cite></footer></blockquote>
 <figure class="highlight md"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;% blockquote Seth Godin http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html Welcome to Island Marketing %&#125;</div><div class="line">Every interaction is both precious and an opportunity to delight.</div><div class="line">&#123;% endblockquote %&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>引用</p>
+</blockquote>
 ]]></content>
     
     <summary type="html">
@@ -479,250 +787,6 @@
     
     
       <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>把 Hexo 原始碼也放到 Github 遠端保存</title>
-    <link href="http://yoursite.com/2016/07/27/keep-hexo-source-in-github/"/>
-    <id>http://yoursite.com/2016/07/27/keep-hexo-source-in-github/</id>
-    <published>2016-07-27T03:32:55.000Z</published>
-    <updated>2016-07-29T05:24:30.475Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="新-Project"><a href="#新-Project" class="headerlink" title="新 Project"></a>新 Project</h2><p>在 hexo 資料夾下初始化 git，並做第一次 commit</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git init</div><div class="line">git commit -a</div></pre></td></tr></table></figure>
-<a id="more"></a>
-<p>將 branch 改名並推至遠端</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git branch -m hexo-article <span class="comment"># 更名為 hexo-article</span></div><div class="line">git remote add origin https://github.com/[your-account]/[your-account].github.io</div><div class="line">git fetch origin <span class="comment"># 檢查遠端是否有新東西</span></div><div class="line">git push origin hexo-article -u</div></pre></td></tr></table></figure>
-<p>&nbsp;</p>
-<h2 id="既有-project"><a href="#既有-project" class="headerlink" title="既有 project"></a>既有 project</h2><p>原本怎麼做就怎麼做…<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git commit -am <span class="string">"some comment"</span></div><div class="line">git push</div></pre></td></tr></table></figure></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;新-Project&quot;&gt;&lt;a href=&quot;#新-Project&quot; class=&quot;headerlink&quot; title=&quot;新 Project&quot;&gt;&lt;/a&gt;新 Project&lt;/h2&gt;&lt;p&gt;在 hexo 資料夾下初始化 git，並做第一次 commit&lt;/p&gt;
-&lt;figure class=&quot;highlight yml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;git init&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;git commit -a&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-    
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
-    
-      <category term="git" scheme="http://yoursite.com/tags/git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SEO note</title>
-    <link href="http://yoursite.com/2016/07/27/SEO-note/"/>
-    <id>http://yoursite.com/2016/07/27/SEO-note/</id>
-    <published>2016-07-26T16:00:00.000Z</published>
-    <updated>2016-08-05T06:41:39.969Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Search-Engine-Land’s-Guide-To-SEO"><a href="#Search-Engine-Land’s-Guide-To-SEO" class="headerlink" title="Search Engine Land’s Guide To SEO"></a>Search Engine Land’s Guide To SEO</h1><p><a href="http://searchengineland.com/guide/seo" target="_blank" rel="external"><img src="http://searchengineland.com/figz/wp-content/seloads/2011/06/periodic-table-of-seo-2015.png" alt="SEO periodic table"></a></p>
-<p>跟 HTML 有關的只有 <a href="http://searchengineland.com/guide/seo/html-code-search-engine-ranking" target="_blank" rel="external">Chapter 4</a></p>
-<a id="more"></a>
-<hr>
-<h1 id="網頁配置"><a href="#網頁配置" class="headerlink" title="網頁配置"></a>網頁配置</h1><p>CTA = Call to Actions</p>
-<ul>
-<li>button</li>
-<li>Main CTA 要夠大夠醒目讓 user 一眼就能看到</li>
-</ul>
-<p>Cross-selling &amp; upselling</p>
-<ul>
-<li>Good-better-best options</li>
-<li>Recently viewed products</li>
-<li>People who bought this also bought…</li>
-<li>Additional service only £x extra</li>
-<li>See others in this category/brand</li>
-</ul>
-<h1 id="On-site-SEO"><a href="#On-site-SEO" class="headerlink" title="On-site SEO"></a>On-site SEO</h1><ol>
-<li><p>Contextual links should be semantically relevant and beneficial to the user, and can also be used to upsell or cross-sell products.</p>
-</li>
-<li><p>Title tag</p>
-<ul>
-<li>Your Title Tag should be 70 characters or less, and each page title should be unique at least for every page you wish to rank.</li>
-</ul>
-</li>
-<li><p>Use one H1 tag per page, to include your primary keyword, and use secondary keywords or synonyms in H2/H3/H4 tags.</p>
-</li>
-<li><p>Image 加上 alt tag 讓搜尋引擎認識</p>
-</li>
-</ol>
-<p>Ref: <a href="https://www.hitreach.com/perfect-web-page/#top" target="_blank" rel="external">The Anatomy of a Perfect Web Page</a></p>
-<hr>
-<h1 id="名詞解釋"><a href="#名詞解釋" class="headerlink" title="名詞解釋"></a>名詞解釋</h1><h2 id="Web-copy-網頁文案"><a href="#Web-copy-網頁文案" class="headerlink" title="Web copy = 網頁文案"></a>Web copy = 網頁文案</h2><ul>
-<li>Web copy is the bones of your website. It’s the core text that guides people through your site and tells them what they need to know.</li>
-<li>Web copy is copywriting for your website, found on all the major pages on your site. It’s designed to sell your products or services to people once they’ve found you.</li>
-</ul>
-<h2 id="Web-content-網頁內容？"><a href="#Web-content-網頁內容？" class="headerlink" title="Web content = 網頁內容？"></a>Web content = 網頁內容？</h2><ul>
-<li>Blog posts are web content. In fact, pretty much any piece of writing on the internet can be classed as ‘web content’.</li>
-</ul>
-<p>Ref: <a href="http://untamedwriting.com/the-difference-between-web-copy-and-web-content-and-why-your-site-needs-both/" target="_blank" rel="external">The Difference Between Web Copy and Web Content (and Why Your Site Needs Both)</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;Search-Engine-Land’s-Guide-To-SEO&quot;&gt;&lt;a href=&quot;#Search-Engine-Land’s-Guide-To-SEO&quot; class=&quot;headerlink&quot; title=&quot;Search Engine Land’s Guide To SEO&quot;&gt;&lt;/a&gt;Search Engine Land’s Guide To SEO&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;http://searchengineland.com/guide/seo&quot;&gt;&lt;img src=&quot;http://searchengineland.com/figz/wp-content/seloads/2011/06/periodic-table-of-seo-2015.png&quot; alt=&quot;SEO periodic table&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;跟 HTML 有關的只有 &lt;a href=&quot;http://searchengineland.com/guide/seo/html-code-search-engine-ranking&quot;&gt;Chapter 4&lt;/a&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="UI" scheme="http://yoursite.com/tags/UI/"/>
-    
-      <category term="reading" scheme="http://yoursite.com/tags/reading/"/>
-    
-      <category term="SEO" scheme="http://yoursite.com/tags/SEO/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>UI 筆記 from 如何修正壞UI</title>
-    <link href="http://yoursite.com/2016/07/26/UI-state-note/"/>
-    <id>http://yoursite.com/2016/07/26/UI-state-note/</id>
-    <published>2016-07-25T16:00:00.000Z</published>
-    <updated>2016-07-29T05:24:30.447Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="產品的五個狀態"><a href="#產品的五個狀態" class="headerlink" title="產品的五個狀態"></a>產品的五個狀態</h1><a id="more"></a>
-<h2 id="理想狀態（Ideal-State）"><a href="#理想狀態（Ideal-State）" class="headerlink" title="理想狀態（Ideal State）"></a>理想狀態（Ideal State）</h2><h2 id="空白狀態（Empty-State）"><a href="#空白狀態（Empty-State）" class="headerlink" title="空白狀態（Empty State）"></a>空白狀態（Empty State）</h2><ul>
-<li>首次使用</li>
-<li>User 清除導致全空</li>
-<li>找不到資料</li>
-</ul>
-<h2 id="錯誤狀態（Error-State）"><a href="#錯誤狀態（Error-State）" class="headerlink" title="錯誤狀態（Error State）"></a>錯誤狀態（Error State）</h2><div class="tip"><br>    不要嚇到 User<br></div>
-
-<h2 id="局部資料狀態（Partial-State）"><a href="#局部資料狀態（Partial-State）" class="headerlink" title="局部資料狀態（Partial State）"></a>局部資料狀態（Partial State）</h2><ul>
-<li>讓 User 知道離完美狀態有多遠</li>
-<li>如「個人檔案完成度」</li>
-</ul>
-<h2 id="載入中狀態（Loading-State）"><a href="#載入中狀態（Loading-State）" class="headerlink" title="載入中狀態（Loading State）"></a>載入中狀態（Loading State）</h2><ul>
-<li>可先載入框架，讓 User 知道這一頁會長什麼樣子</li>
-</ul>
-<div class="tip"><br>    不要讓 User 撞牆，要他有用的建議或不一樣的途徑<br></div>
-
-<p>Ref: <a href="https://medium.com/@zonble/%E7%BF%BB%E8%AD%AF-%E5%A6%82%E4%BD%95%E4%BF%AE%E6%AD%A3%E5%A3%9E-ui-2f972da15d5b#.n50384v8h" target="_blank" rel="external">如何修正壞UI</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;產品的五個狀態&quot;&gt;&lt;a href=&quot;#產品的五個狀態&quot; class=&quot;headerlink&quot; title=&quot;產品的五個狀態&quot;&gt;&lt;/a&gt;產品的五個狀態&lt;/h1&gt;
-    
-    </summary>
-    
-    
-      <category term="UI" scheme="http://yoursite.com/tags/UI/"/>
-    
-      <category term="reading" scheme="http://yoursite.com/tags/reading/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git branch</title>
-    <link href="http://yoursite.com/2016/07/26/git-branch/"/>
-    <id>http://yoursite.com/2016/07/26/git-branch/</id>
-    <published>2016-07-25T16:00:00.000Z</published>
-    <updated>2016-08-02T08:20:36.449Z</updated>
-    
-    <content type="html"><![CDATA[<p>第一次推branch:</p>
-<figure class="highlight bash"><figcaption><span>@branch</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 在該branch下</span></div><div class="line">$ git push -u origin &lt;branch-name&gt;</div><div class="line"><span class="comment"># 因遠端尚未有這支branch, 所以需要下此指令建立</span></div><div class="line"><span class="comment"># -u: 與遠端建立關連, 這樣下次才不需要又打長長的指令</span></div><div class="line"><span class="comment"># 之後就可以直接在 branch 下 git push 就好</span></div></pre></td></tr></table></figure>
-<a id="more"></a>
-<p>到別人推的branch:<br><figure class="highlight bash"><figcaption><span>@master</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git fetch</div><div class="line">$ git checkout &lt;branch-name&gt;</div></pre></td></tr></table></figure></p>
-<hr>
-<p>如果在 master 做完 commit 以後想要把這次的 commit 改成放在一個 branch 裡面</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 以目前的 commit 為基準建立一個新的 branch</span></div><div class="line">$ git checkout -b &lt;branch-name&gt;</div><div class="line"><span class="comment"># 確認 local 端的 origin/master 跟遠端的一樣</span></div><div class="line">$ git fetch</div><div class="line"><span class="comment"># 把 master 指回 origin/master 的位置</span></div><div class="line"><span class="comment"># -B 為強制更改，若用 -b 的話會因為重名而無法進行</span></div><div class="line">$ git checkout -B master origin/master</div><div class="line"><span class="comment"># 如此一來新的 commit 就只存在於新建立的 branch 底下了</span></div></pre></td></tr></table></figure>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;第一次推branch:&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;figcaption&gt;&lt;span&gt;@branch&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 在該branch下&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;$ git push -u origin &amp;lt;branch-name&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 因遠端尚未有這支branch, 所以需要下此指令建立&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# -u: 與遠端建立關連, 這樣下次才不需要又打長長的指令&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 之後就可以直接在 branch 下 git push 就好&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-    
-      <category term="git" scheme="http://yoursite.com/tags/git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>網頁字型</title>
-    <link href="http://yoursite.com/2016/07/26/web-font-setting/"/>
-    <id>http://yoursite.com/2016/07/26/web-font-setting/</id>
-    <published>2016-07-25T16:00:00.000Z</published>
-    <updated>2016-08-05T07:24:31.730Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Fallback"><a href="#Fallback" class="headerlink" title="Fallback"></a>Fallback</h1><ul>
-<li>web font loader to fallbacks the webfont (if font loading is not compeleted</li>
-</ul>
-<h1 id="單位"><a href="#單位" class="headerlink" title="單位"></a>單位</h1><ul>
-<li>1em = 16px</li>
-<li>font-size: rem.em</li>
-<li>padding / margin: 用相對單位(rem.em.%)</li>
-<li>media query: em</li>
-<li>少用vw&amp;vh (支援不足</li>
-</ul>
-<a id="more"></a>
-<h1 id="設定字形大小"><a href="#設定字形大小" class="headerlink" title="設定字形大小"></a>設定字形大小</h1><figure class="highlight scss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">html</span></div><div class="line">	<span class="attribute">font-size</span>: <span class="number">100%</span></div><div class="line">@media (min-width: <span class="number">64em</span>)</div><div class="line">	html</div><div class="line">		font-size: <span class="number">112.5%</span></div></pre></td></tr></table></figure>
-<h1 id="containers-設定-border-box"><a href="#containers-設定-border-box" class="headerlink" title="containers 設定 border-box"></a>containers 設定 border-box</h1><figure class="highlight scss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 讓它在parent內,且padding是width往內推，而不是加寬</span></div><div class="line"><span class="selector-tag">html</span></div><div class="line">	<span class="attribute">box-sizing</span>: border-box</div><div class="line">*, *:before, *:after</div><div class="line">	box-sizing: inherit</div></pre></td></tr></table></figure>
-<figure class="highlight scss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// max-width is good for mobile</span></div><div class="line"><span class="selector-class">.container</span></div><div class="line">	<span class="attribute">max-width</span>: <span class="number">67rem</span></div></pre></td></tr></table></figure>
-<h1 id="Responsive-Modular-Scale"><a href="#Responsive-Modular-Scale" class="headerlink" title="Responsive Modular Scale"></a>Responsive Modular Scale</h1><ul>
-<li>single direction margin - margin-bottom</li>
-<li>vertical margin 會被 font-size 影響, 使用 em</li>
-<li>horizontal margin 不會，所以用 rem</li>
-</ul>
-<p>Ref: <a href="http://typographyhandbook.com/" target="_blank" rel="external">Typography Handbook</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;Fallback&quot;&gt;&lt;a href=&quot;#Fallback&quot; class=&quot;headerlink&quot; title=&quot;Fallback&quot;&gt;&lt;/a&gt;Fallback&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;web font loader to fallbacks the webfont (if font loading is not compeleted&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&quot;單位&quot;&gt;&lt;a href=&quot;#單位&quot; class=&quot;headerlink&quot; title=&quot;單位&quot;&gt;&lt;/a&gt;單位&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;1em = 16px&lt;/li&gt;
-&lt;li&gt;font-size: rem.em&lt;/li&gt;
-&lt;li&gt;padding / margin: 用相對單位(rem.em.%)&lt;/li&gt;
-&lt;li&gt;media query: em&lt;/li&gt;
-&lt;li&gt;少用vw&amp;amp;vh (支援不足&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="UI" scheme="http://yoursite.com/tags/UI/"/>
-    
-      <category term="reading" scheme="http://yoursite.com/tags/reading/"/>
-    
-      <category term="font" scheme="http://yoursite.com/tags/font/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Bourbon &amp; Neat install</title>
-    <link href="http://yoursite.com/2016/07/26/bourbon-neat-install-and-link/"/>
-    <id>http://yoursite.com/2016/07/26/bourbon-neat-install-and-link/</id>
-    <published>2016-07-25T16:00:00.000Z</published>
-    <updated>2016-08-05T06:50:03.806Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="使用-bower-安裝"><a href="#使用-bower-安裝" class="headerlink" title="使用 bower 安裝"></a>使用 bower 安裝</h2><figure class="highlight js"><figcaption><span>bower.json</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 加入 depenencies (後面為版本號)</span></div><div class="line"><span class="string">"dependencies"</span>: &#123;</div><div class="line">    <span class="string">"bourbon"</span>: <span class="string">"4.2.7"</span>,</div><div class="line">    <span class="string">"neat"</span>: <span class="string">"1.8.0"</span></div><div class="line">  &#125;</div></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 進行安裝</span></div><div class="line">$ bower install</div></pre></td></tr></table></figure>
-<a id="more"></a>
-<h2 id="再把它們-link-到-styles-import-底下"><a href="#再把它們-link-到-styles-import-底下" class="headerlink" title="再把它們 link 到 styles/import/ 底下"></a>再把它們 link 到 <code>styles/import/</code> 底下</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">cd</span> styles/import</div><div class="line"><span class="comment"># link過來並命名為bourbon</span></div><div class="line">$ ln <span class="_">-s</span> ../../vender/bower/bourbon/app/assets/stylesheets bourbon</div><div class="line"><span class="comment"># link過來並命名為neat</span></div><div class="line">$ ln <span class="_">-s</span> ../../vender/bower/neat/app/assets/stylesheets neat</div></pre></td></tr></table></figure>
-<h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><p>如此一來就可以直接從 SASS import 進來了<br><figure class="highlight scss"><figcaption><span>style.sass</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">@<span class="keyword">import</span> <span class="string">'import/bourbon'</span></div><div class="line">@<span class="keyword">import</span> <span class="string">'import/neat'</span></div></pre></td></tr></table></figure></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;使用-bower-安裝&quot;&gt;&lt;a href=&quot;#使用-bower-安裝&quot; class=&quot;headerlink&quot; title=&quot;使用 bower 安裝&quot;&gt;&lt;/a&gt;使用 bower 安裝&lt;/h2&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;figcaption&gt;&lt;span&gt;bower.json&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// 加入 depenencies (後面為版本號)&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&quot;dependencies&quot;&lt;/span&gt;: &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;string&quot;&gt;&quot;bourbon&quot;&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&quot;4.2.7&quot;&lt;/span&gt;,&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;string&quot;&gt;&quot;neat&quot;&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&quot;1.8.0&quot;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  &amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 進行安裝&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;$ bower install&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-    
-      <category term="bourbon" scheme="http://yoursite.com/tags/bourbon/"/>
-    
-      <category term="neat" scheme="http://yoursite.com/tags/neat/"/>
     
   </entry>
   

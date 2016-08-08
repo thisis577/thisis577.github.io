@@ -1,0 +1,40 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title>Hexo 建立新文章後自動打開編輯器跟瀏覽器 · A little bird on coding</title><meta name="description" content="Hexo 建立新文章後自動打開編輯器跟瀏覽器 - 577"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/profile.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="/css/customize.css"><!--    link(rel="search", type="application/opensearchdescription+xml", href=xml, title=config.title)--></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/profile.png"><div class="subtitle">A little front-end desinger say little things</div></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="http://codepen.io/thisis577" target="_blank" class="nav-list-link">CODEPEN</a></li><li class="nav-list-item"><a href="https://github.com/thisis577" target="_blank" class="nav-list-link">GITHUB</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">Hexo 建立新文章後自動打開編輯器跟瀏覽器</h1><div class="post-info">Aug 5, 2016<span class="post-tags"><a href="/tags/hexo/" class="post-tag"># hexo</a><a href="/tags/sublime/" class="post-tag"># sublime</a></span></div><div class="post-content"><p>基本原理是去監聽 <code>hexo new</code> 這個指令，但網路上找到的文章大部分是在 OS X 或根本就是 Linux 環境，指令怎麼跑都不會動～（哭哭）<br>後來翻到的<a href="http://liam0205.me/2015/05/01/open-editor-after-hexo-new-immediately/" target="_blank" rel="external">一篇文章</a>裡面提到 windows 的指令不一樣：</p>
+<ul>
+<li>要用 <code>start</code> 取代 <code>open -a</code></li>
+<li>sublime 的執行路徑也需要另外<a href="#adding-sublime-to-PATH">設置</a></li>
+</ul>
+<p>總之終於可以自動打開瀏覽器跟編輯器，愉快的進行編輯啦～</p>
+<a id="more"></a>
+<hr>
+<h2 id="在建立新文章後自動打開編輯器-in-Windows"><a href="#在建立新文章後自動打開編輯器-in-Windows" class="headerlink" title="在建立新文章後自動打開編輯器(in Windows)"></a>在建立新文章後自動打開編輯器(in Windows)</h2><figure class="highlight js"><figcaption><span>/hexo-root/scripts/new-post.js</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> exec = <span class="built_in">require</span>(<span class="string">'child_process'</span>).exec;</div><div class="line">hexo.on(<span class="string">'new'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">data</span>) </span>&#123;</div><div class="line">    exec(<span class="string">'hexo server'</span>); <span class="comment">// start preview server</span></div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'running hexo server....'</span>);</div><div class="line">    setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="comment">// open preview url</span></div><div class="line">        exec(<span class="string">'start "Google Chrome" "http://localhost:4000"'</span>);</div><div class="line">        <span class="comment">// open with editor</span></div><div class="line">        exec(<span class="string">'start "subl.exe" '</span>+data.path);</div><div class="line">    &#125;, <span class="number">3000</span>);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"open editor and browser"</span></div></pre></td></tr></table></figure>
+<hr>
+<p><a name="adding-sublime-to-PATH"></a></p>
+<h2 id="在-Windows-下從命令列開啟-sublime-的設置"><a href="#在-Windows-下從命令列開啟-sublime-的設置" class="headerlink" title="在 Windows 下從命令列開啟 sublime 的設置"></a>在 Windows 下從命令列開啟 sublime 的設置</h2><p>1.<code>Ctrl + X</code> 打開選單 &gt; 開啟 <strong>系統</strong><br>2.進階系統設定 &gt; 進階頁籤 &gt; 點擊下方的 <strong>環境變數</strong><br>3.新增 <strong>系統變數(S)</strong></p>
+<ul>
+<li>變數名稱 | <code>SUBLIME</code></li>
+<li>變數值  | <code>C:\Program Files\Sublime Text 3</code><br>(即為 Sublime 的安裝資料夾)</li>
+</ul>
+<p>4.編輯 <strong>使用者變數(U)</strong> 當中的 <strong>PATH</strong></p>
+<ul>
+<li>在末端加入 <code>;%SUBLIME%</code></li>
+</ul>
+<p>5.重開 command line ，就可以使用 <code>subl.exe</code> 來呼叫 sublime</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ subl.exe test.txt</div></pre></td></tr></table></figure>
+<div class="tip"><br>    如果是 Win10，第一次執行時可能會需要先設定 .md 的預設開啟程式為 sublime。（在 Win10 跳出的選擇框選擇即可）<br></div>
+
+<hr>
+<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
+<li><a href="https://lessmind.github.io/2015/10/13/New-hexo-post-auto-open-with-editor/" target="_blank" rel="external">New hexo post auto open with editor</a></li>
+<li><a href="http://liam0205.me/2015/05/01/open-editor-after-hexo-new-immediately/" target="_blank" rel="external">在 hexo new 之后立即打开新建的 Markdown 文稿</a></li>
+<li><a href="https://scotch.io/tutorials/open-sublime-text-from-the-command-line-using-subl-exe-windows#adding-sublime-to-your-path" target="_blank" rel="external">Open Sublime Text From the Command Line Using subl.exe (Windows)</a></li>
+</ul>
+</div></article></div></section><footer><div class="paginator"><a href="/2016/08/08/git-common-use/" class="prev">PREV</a><a href="/2016/08/05/chinese-text-render-in-chrome/" class="next">NEXT</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'thisis577';
+var disqus_identifier = '2016/08/05/auto-open-editor-and-browser-after-hexo-new-post/';
+var disqus_title = 'Hexo 建立新文章後自動打開編輯器跟瀏覽器';
+var disqus_url = 'http://yoursite.com/2016/08/05/auto-open-editor-and-browser-after-hexo-new-post/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//thisis577.disqus.com/count.js" async></script><div class="copyright"><p>© 2016 <a href="http://yoursite.com">577</a>, power by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">Hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-81119231-1",'auto');ga('send','pageview');</script></body></html>

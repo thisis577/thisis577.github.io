@@ -5,7 +5,7 @@
 <hr>
 <p>如果在 master 做完 commit 以後想要把這次的 commit 改成放在一個 branch 裡面</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 以目前的 commit 為基準建立一個新的 branch</span></div><div class="line">$ git checkout -b &lt;branch-name&gt;</div><div class="line"><span class="comment"># 確認 local 端的 origin/master 跟遠端的一樣</span></div><div class="line">$ git fetch</div><div class="line"><span class="comment"># 把 master 指回 origin/master 的位置</span></div><div class="line"><span class="comment"># -B 為強制更改，若用 -b 的話會因為重名而無法進行</span></div><div class="line">$ git checkout -B master origin/master</div><div class="line"><span class="comment"># 如此一來新的 commit 就只存在於新建立的 branch 底下了</span></div></pre></td></tr></table></figure>
-</div></article></div></section><footer><div class="paginator"><a href="/2016/07/26/UI-state-note/" class="prev">PREV</a><a href="/2016/07/26/web-font-setting/" class="next">NEXT</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'thisis577';
+</div></article></div></section><footer><div class="paginator"><a href="/2016/07/26/UI-state-note/" class="prev">PREV</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'thisis577';
 var disqus_identifier = '2016/07/26/git-branch/';
 var disqus_title = 'Git branch';
 var disqus_url = 'http://yoursite.com/2016/07/26/git-branch/';

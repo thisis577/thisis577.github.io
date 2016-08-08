@@ -2,9 +2,100 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2016/08/08/sublime-setting/</loc>
+    
+    <lastmod>2016-08-08T09:57:00.270Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/08/08/mail-template-html/</loc>
+    
+    <lastmod>2016-08-08T09:37:54.084Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/08/08/CSS-note/</loc>
+    
+    <lastmod>2016-08-08T09:23:02.672Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/08/08/mobile-develop-note/</loc>
+    
+    <lastmod>2016-08-08T09:22:34.774Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/08/08/bower-install/</loc>
+    
+    <lastmod>2016-08-08T08:29:40.420Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/08/08/tmux-use-and-shell/</loc>
+    
+    <lastmod>2016-08-08T08:28:57.021Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/08/08/git-common-use/</loc>
+    
+    <lastmod>2016-08-08T08:28:40.520Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/07/28/customize-hexo-shell/</loc>
+    
+    <lastmod>2016-08-08T08:19:29.903Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/07/26/bourbon-neat-install-and-link/</loc>
+    
+    <lastmod>2016-08-08T07:45:53.491Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/07/27/hexo-md-usage/</loc>
+    
+    <lastmod>2016-08-08T07:11:33.641Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/07/28/custom-404-page/</loc>
+    
+    <lastmod>2016-08-08T07:11:33.635Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2016/08/05/chinese-text-render-in-chrome/</loc>
     
-    <lastmod>2016-08-05T10:06:45.278Z</lastmod>
+    <lastmod>2016-08-08T07:11:33.630Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/08/05/bash-alias/</loc>
+    
+    <lastmod>2016-08-08T07:11:33.626Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/08/05/auto-open-editor-and-browser-after-hexo-new-post/</loc>
+    
+    <lastmod>2016-08-08T07:11:33.621Z</lastmod>
     
   </url>
   
@@ -12,27 +103,6 @@
     <loc>http://yoursite.com/2016/07/26/web-font-setting/</loc>
     
     <lastmod>2016-08-05T07:24:31.730Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2016/07/28/customize-hexo-shell/</loc>
-    
-    <lastmod>2016-08-05T07:10:24.268Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2016/08/05/bash-alias/</loc>
-    
-    <lastmod>2016-08-05T06:52:37.199Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2016/07/26/bourbon-neat-install-and-link/</loc>
-    
-    <lastmod>2016-08-05T06:50:03.806Z</lastmod>
     
   </url>
   
@@ -89,20 +159,6 @@
     <loc>http://yoursite.com/2016/07/28/modify-hexo-themes/</loc>
     
     <lastmod>2016-07-29T09:51:00.965Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2016/07/28/custom-404-page/</loc>
-    
-    <lastmod>2016-07-29T09:42:18.707Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2016/07/27/hexo-md-usage/</loc>
-    
-    <lastmod>2016-07-29T06:09:14.703Z</lastmod>
     
   </url>
   
