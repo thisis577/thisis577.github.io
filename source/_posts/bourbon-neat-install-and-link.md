@@ -3,6 +3,7 @@ title: Bourbon & Neat install
 date: 2016-07-26
 tags:
 - bourbon
+- bower
 - neat
 ---
 
