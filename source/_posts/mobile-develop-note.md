@@ -43,6 +43,7 @@ $('#buttonId').on('touchstart click', function(e){
 ~~~
 
 但我忘記在哪裡看到評論說 **不要這樣做** 比較好，具體原因我忘記了...OTZ
-目前找到的替代方案是用 [FastClick](https://github.com/ftlabs/fastclick) 這個套件來解決，他可以消除在手機上觸碰的 300ms delay。但這個套件在 bower 上好像很久沒有更新了...嘛，在有更好的辦法之前先這麼頂著吧ˊ_>ˋ
+
+目前找到的替代方案是 **用 [FastClick](https://github.com/ftlabs/fastclick) 這個套件** 來解決，他可以消除在手機上觸碰的 300ms delay。但這個套件在 bower 上好像很久沒有更新了...嘛，在有更好的辦法之前先這麼頂著吧ˊ_>ˋ
 
 

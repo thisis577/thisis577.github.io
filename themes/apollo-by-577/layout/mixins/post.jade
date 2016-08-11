@@ -26,11 +26,6 @@ mixin postListItem(item)
 
 //- Index Page
 mixin posts()
-    - page.posts.each(function (item) {
-        if item.sticky
-            ul.home.post-list.post-sticky
-                +postListItem(item)
-    - })
     ul.home.post-list
         - page.posts.each(function (item) {
             +postListItem(item)
@@ -55,7 +50,9 @@ mixin postList()
             .post-item
                 +postInfo(item, false)
                 if item.sticky
-                    a.post-title-link(href= url_for(item.path)) [置頂] #{item.title}
+                    a.post-title-link.sticky(href= url_for(item.path))
+                        i.material-icons flag
+                        != item.title
                 else
                     a.post-title-link(href= url_for(item.path))
                         != item.title

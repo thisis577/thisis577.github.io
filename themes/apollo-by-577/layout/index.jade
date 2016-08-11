@@ -2,6 +2,11 @@ extends partial/layout
 
 block container
     include mixins/post
+    - site.posts.each(function (item) {
+        if item.sticky
+            ul.home.post-list.post-sticky
+                +postListItem(item)
+    - })
     +posts()
 
 block pagination

@@ -56,6 +56,50 @@ order: 1; // flex元件的排列順序, 照數字大小排
 </div>
 
 
+## 去除瀏覽器對 focus 狀態的 style
+
+~~~ CSS
+.elm {
+    outline: none;
+}
+~~~
+
+## Select placeholder
+
+**原理**
+select 預設會顯示被選擇(`selected`)的 option 內容，只要將 `selected` option 設成不顯示的話，就可以讓他在下拉選單時不顯示。
+
+**實作**
+~~~ html
+<select name="browsers" required>
+
+    <option value="" disabled selected>Placeholder</option>
+    <option value="op1">Option1</option>
+    <option value="op2">Option2</option>
+    <option value="op3">Option3</option>
+
+</select>
+
+
+~~~
+
+~~~ css
+option[value=""][disabled] {
+    display: none;
+}
+~~~
+
+**DEMO**
+<select name="browsers" required>
+    <option value="" disabled selected style="display: none">Placeholder</option>
+    <option value="op1">Option1</option>
+    <option value="op2">Option2</option>
+    <option value="op3">Option3</option>
+</select>
+
+
+Ref: [ADDING A PLACEHOLDER TO THE SELECT TAG IN HTML5](https://shellzero.wordpress.com/2015/06/29/adding-a-placeholder-to-the-select-tag-in-html5/)
+
 ## 偽元素
 
 `content` 只能用在 `:before` / `:after`
