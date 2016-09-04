@@ -9,6 +9,7 @@ tags:
 ## iOS 的毛
 
 - 要送 `click` 的對象應該設定 `cursor: pointer` 才會動（不然會無法點擊）
+	- **可解決手機上 click delay 300ms 的問題**
 
 <!-- more -->
 
@@ -21,6 +22,28 @@ tags:
 ## Android 鍵盤出現時把高度壓縮造成版跑掉
 
 用改寫viewport的方法: [screen styling when virtual keyboard is active](http://stackoverflow.com/questions/8556933/screen-styling-when-virtual-keyboard-is-active)
+
+<div class="tip">
+**2016/09 補充**：
+因為鍵盤通常只會在 input foucs 的時候出現，所以改用判斷 focus 出現時去重設高度來解決這個問題
+
+~~~ JS
+// Avoding keyboard affect window height
+if(isMobile()) {
+	var windowHeight = $(window).height();
+	$('input').focus(function() {
+		$('html').height(windowHeight);
+	});
+	$('input').blur(function() {
+		// wait 200ms for keyboard remove
+		setTimeout(function() {
+			$('html').height('100%');
+		}, 200);
+	});
+}
+
+~~~
+</div>
 
 ## input 預設 style 移除
 
@@ -46,4 +69,6 @@ $('#buttonId').on('touchstart click', function(e){
 
 目前找到的替代方案是 **用 [FastClick](https://github.com/ftlabs/fastclick) 這個套件** 來解決，他可以消除在手機上觸碰的 300ms delay。但這個套件在 bower 上好像很久沒有更新了...嘛，在有更好的辦法之前先這麼頂著吧ˊ_>ˋ
 
-
+<div class="tip">
+**2016/09補充：** 在需要點擊的元件套上 `cursor: pointer` 可解決此問題
+</div>
