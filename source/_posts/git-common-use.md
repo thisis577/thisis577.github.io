@@ -1,6 +1,7 @@
 ---
 title: 個人常用 Git 指令
 date: 2016-08-08 15:27:15
+sticky: true
 tags:
 - git
 ---
@@ -18,8 +19,19 @@ git commit -m tmp
 git reset HEAD^
 ~~~
 
-暫存變更則是使用 `git stash`
+暫存變更則是使用 `git stash`。但 stash 不會把 untracked 的檔案也一起 stash 起來，所以在 pull 的時候可能會出問題，較建議用 commit tmp。
 
+<div class="tip">
+	暫存 commit 只有在 branch 可以做！千萬不要在 master 做！
+	若在 master 修改後想要暫存的話，先 `git checkout -b new-branch` 到新的 branch 再暫存。
+</div>
+
+## local 端所有東西都不要，reset 回目前遠端的 master
+~~~ bash
+git fetch origin
+# 大寫B強制用遠端進度蓋掉本地 master
+git checkout -B master origin/master
+~~~
 
 ## 將 branch 的變更推到遠端
 
