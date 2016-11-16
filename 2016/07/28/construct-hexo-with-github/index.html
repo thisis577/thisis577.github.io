@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title>建立 Hexo 環境 · A little bird on coding</title><meta name="description" content="建立 Hexo 環境 - 577"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/profile.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="/css/customize.css"><!--    link(rel="search", type="application/opensearchdescription+xml", href=xml, title=config.title)--></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/profile.png"><h1 class="subtitle">A little front-end desinger say little things</h1></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="http://codepen.io/thisis577" target="_blank" class="nav-list-link">CODEPEN</a></li><li class="nav-list-item"><a href="https://github.com/thisis577" target="_blank" class="nav-list-link">GITHUB</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">建立 Hexo 環境</h1><div class="post-info">Jul 28, 2016<span class="post-tags"><a href="/tags/hexo/" class="post-tag"># hexo</a><a href="/tags/github/" class="post-tag"># github</a></span></div><div class="post-content"><h1 id="1-安裝-Github-Desktop"><a href="#1-安裝-Github-Desktop" class="headerlink" title="1. 安裝 Github Desktop"></a>1. 安裝 <a href="https://desktop.github.com/" target="_blank" rel="external">Github Desktop</a></h1><p>優點</p>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title>利用 Github + Hexo 來建 blog · A little bird on coding</title><meta name="description" content="利用 Github + Hexo 來建 blog - 577"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/profile.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="/css/customize.css"><!--    link(rel="search", type="application/opensearchdescription+xml", href=xml, title=config.title)--></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/profile.png"><h1 class="subtitle">A little front-end desinger say little things</h1></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="http://codepen.io/thisis577" target="_blank" class="nav-list-link">CODEPEN</a></li><li class="nav-list-item"><a href="https://github.com/thisis577" target="_blank" class="nav-list-link">GITHUB</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">利用 Github + Hexo 來建 blog</h1><div class="post-info">Jul 28, 2016<span class="post-tags"><a href="/tags/hexo/" class="post-tag"># hexo</a><a href="/tags/github/" class="post-tag"># github</a></span></div><div class="post-content"><h1 id="1-安裝-Github-Desktop"><a href="#1-安裝-Github-Desktop" class="headerlink" title="1. 安裝 Github Desktop"></a>1. 安裝 <a href="https://desktop.github.com/" target="_blank" rel="external">Github Desktop</a></h1><p>優點</p>
 <ul>
 <li>在 Windows 環境下使用</li>
 <li>可以自動建立 SSH Keys</li>
@@ -17,28 +17,39 @@
 
 
 <h1 id="4-建立-Hexo-環境"><a href="#4-建立-Hexo-環境" class="headerlink" title="4. 建立 Hexo 環境"></a>4. 建立 Hexo 環境</h1><ol>
-<li><p><a href="https://hexo.io/zh-tw/docs/" target="_blank" rel="external">照著 Hexo 官方安裝教學走吧XD</a></p>
- <div class="tip"><br>     需要在 Github 上開一個名為 <code>[your_account].github.io</code> 的 repo，<br>     這樣在推出去之後網頁(<code>http://[your_account].github.io</code>)才會動。<br> </div>
+<li><p>安裝 Hexo</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo-cli 	<span class="comment"># 安裝 Hexo</span></div><div class="line">$ hexo init &lt;folder&gt; 		<span class="comment"># 在指定資料夾中建立所需文件</span></div><div class="line">$ <span class="built_in">cd</span> &lt;folder&gt;			<span class="comment"># 移至指定資料夾</span></div><div class="line">$ npm install			<span class="comment"># 安裝 Hexo plugin</span></div></pre></td></tr></table></figure>
 </li>
-<li><p>設定 root <code>_config.yml</code></p>
- <figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 選擇主題</span></div><div class="line"><span class="attr">theme:</span> theme-name</div><div class="line"></div><div class="line"><span class="comment"># 設定 deploy</span></div><div class="line"><span class="attr">deploy:</span></div><div class="line"><span class="attr">    type:</span> git</div><div class="line"><span class="attr">    repo:</span> git@github.com:[your_account]/[your_account].github.io.git</div><div class="line"><span class="attr">    branch:</span> master</div></pre></td></tr></table></figure>
+<li><p>Hello World!</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server 	<span class="comment"># = hexo s, 進行 compile</span></div></pre></td></tr></table></figure>
+<p> 到這邊基本已經安裝好 hexo 了，可以在執行上述指令後到 <code>http://localhost:4000</code> 檢視基本頁面。</p>
 </li>
-<li><p>基本操作指令</p>
- <figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo server 	<span class="comment"># = hexo s, 進行 compile</span></div><div class="line">hexo generate 	<span class="comment"># = hexo g, 建立 publish 檔案</span></div><div class="line">hexo deploy	<span class="comment"># = hexo d, 將 publish 的檔案推到第二點設定的 repo 上</span></div></pre></td></tr></table></figure>
+<li><p>設定 hexo 根目錄下的 <code>_config.yml</code></p>
+ <figure class="highlight bash"><figcaption><span><hexo-root>/_config.yml</hexo-root></span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 選擇主題</span></div><div class="line">theme: theme-name</div><div class="line"></div><div class="line"><span class="comment"># 設定要 deploy 到 github repo</span></div><div class="line">deploy:</div><div class="line">    <span class="built_in">type</span>: git</div><div class="line">    repo: git@github.com:[your_account]/[your_account].github.io.git</div><div class="line">    branch: master</div></pre></td></tr></table></figure>
+</li>
+<li><p>設置 <a href="https://pages.github.com/" target="_blank" rel="external">Github pages</a></p>
+ <div class="tip"><br>     需要在 Github 上開一個名為 <code>[your_account].github.io</code> 的 repo，這樣在推出去之後網頁(<code>http://[your_account].github.io</code>)才會動。<br> </div>
+</li>
+<li><p>產生靜態網頁並推到 github 上</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo generate <span class="comment"># = hexo g, 建立 publish 檔案</span></div><div class="line">$ hexo deploy	<span class="comment"># = hexo d, 將 publish 的檔案推到第二點設定的 repo 上</span></div></pre></td></tr></table></figure>
+<p> 接下來就可以到 <code>http://[your_account].github.io</code> 檢視成果囉～</p>
+</li>
+</ol>
+<h1 id="5-進階設定"><a href="#5-進階設定" class="headerlink" title="5. 進階設定"></a>5. 進階設定</h1><div class="tip"><br>若此處項目連結失效可至 <a href="/tags/hexo/">#Hexo</a> 搜尋該主題<br></div>
+
+<ol>
+<li><p><a href="https://thisis577.github.io/2016/07/27/keep-hexo-source-in-github/" target="_blank" rel="external">把 Hexo 原始碼也放到 github 遠端保存</a></p>
+<p> 延伸: 在別的地方 clone 既有的 hexo repo</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># clone repo 到指定目錄</span></div><div class="line">$ git <span class="built_in">clone</span> http://github.com/[your_account]/[your_account].github.io target_dir</div><div class="line"><span class="comment"># 切換到保存 hexo 原始碼的 branch</span></div><div class="line">$ git checkout hexo_branch</div><div class="line"><span class="comment"># 將該裝的東西都裝一裝</span></div><div class="line">$ npm install</div></pre></td></tr></table></figure>
 </li>
 <li><p><a href="https://thisis577.github.io/2016/07/28/modify-hexo-themes/" target="_blank" rel="external">修改 Hexo 主題</a></p>
 <p> 若遇到 deploy 完 style 卻不對的情況: <a href="https://github.com/hexojs/hexo/issues/579" target="_blank" rel="external">(deploy后style.css不对)</a></p>
- <figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Make theme changes &amp; deploy</span></div><div class="line">hexo clean</div><div class="line">hexo generate</div><div class="line">hexo deploy</div></pre></td></tr></table></figure>
-</li>
-<li><p><a href="https://thisis577.github.io/2016/07/27/keep-hexo-source-in-github/" target="_blank" rel="external">把 Hexo 原始碼也放到 github 遠端保存</a></p>
-<p> 延伸: 在別的地方 clone 既有的 hexo repo</p>
- <figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># clone repo 到指定目錄</span></div><div class="line">git clone http://github.com/[your_account]/[your_account].github.io target_dir</div><div class="line"><span class="comment"># 切換到保存 hexo 原始碼的 branch</span></div><div class="line">git checkout hexo_branch</div><div class="line"><span class="comment"># 將該裝的東西都裝一裝</span></div><div class="line">npm install</div></pre></td></tr></table></figure>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Make theme changes &amp; deploy</span></div><div class="line">$ hexo clean</div><div class="line">$ hexo generate</div><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
 </li>
 </ol>
-<div class="tip"><br>若項目4.5連結失效可至 <a href="/tags/hexo/">#Hexo</a> 搜尋該主題<br></div>
 </div></article></div></section><footer><div class="paginator"><a href="/2016/07/28/custom-404-page/" class="prev">PREV</a><a href="/2016/07/28/modify-hexo-themes/" class="next">NEXT</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'thisis577';
 var disqus_identifier = '2016/07/28/construct-hexo-with-github/';
-var disqus_title = '建立 Hexo 環境';
+var disqus_title = '利用 Github + Hexo 來建 blog';
 var disqus_url = 'http://yoursite.com/2016/07/28/construct-hexo-with-github/';
 (function() {
     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

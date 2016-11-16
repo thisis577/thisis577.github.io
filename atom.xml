@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-08-08T09:57:00.270Z</updated>
+  <updated>2016-11-16T10:15:31.313Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,59 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>用 CSS 刻一隻白頭翁</title>
+    <link href="http://yoursite.com/2016/09/04/CSS-chinese-bulbul/"/>
+    <id>http://yoursite.com/2016/09/04/CSS-chinese-bulbul/</id>
+    <published>2016-09-04T14:33:58.000Z</published>
+    <updated>2016-11-16T10:15:31.313Z</updated>
+    
+    <content type="html"><![CDATA[<p>身為一個前端工程師，一定要用網頁來刻一下愛鳥啦～</p>
+<p></p><p data-height="710" data-theme-id="0" data-slug-hash="BzZYJN" data-default-tab="result" data-user="thisis577" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/thisis577/pen/BzZYJN/" target="_blank" rel="external">Playing with Chinese bulbul</a> by 577 (<a href="http://codepen.io/thisis577" target="_blank" rel="external">@thisis577</a>) on <a href="http://codepen.io" target="_blank" rel="external">CodePen</a>.</p><p></p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+<a id="more"></a>
+<p>其實用到的新技巧不多，大概就是</p>
+<ol>
+<li><p>稍微摸熟 <code>border-radius</code></p>
+<ul>
+<li><p><code>border-radius: 左上 右上 右下 左下</code> 原本我也搞不清楚順序，但～熟能生巧，寫多了就記住了！（一隻鳥到底用了多少）其實就是順時針繞一圈XD</p>
+</li>
+<li><p>不規則形狀(嘴喙/頭毛/腮紅/翅膀羽毛/身體形狀/腳爪)：每個屬性設置不同數值即可。 也可利用 <code>%</code> 來設置，很方便。</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 尾羽範例</span></div><div class="line"><span class="selector-class">.feathers</span></div><div class="line">	<span class="attribute">border-radius</span>: <span class="number">0</span> <span class="number">60%</span> <span class="number">120%</span> <span class="number">20%</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>橢圓(影子)： 使用 <code>/</code> 的寫法，參考自 <a href="http://www.books.com.tw/products/0010702536" target="_blank" rel="external">CSS Secrets</a></p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 影子</span></div><div class="line"><span class="selector-class">.shadow</span></div><div class="line">	<span class="attribute">border-radius</span>: <span class="number">15em</span> /<span class="number">3em</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p><code>animation</code> 應用<br> 因為大多是使用 <code>transform</code> 來達到動畫效果，因此    要套用 <code>animation</code> 的元素最好本身不要有用到 <code>transform</code>，這樣子在進行動畫時比較不會出現 bug（遇到在 Edge 上會怪異扭動+飄移的靈異現象XD），也不需要重新複製好長一段 <code>transform</code> QQ (為什麼多種不同類型的 <code>transform</code> 不會一起套用而是蓋掉呢…好不方便喔QQ)</p>
+ <div class="tip"><br> 2016/09/06 補充:<br> 學到新屬性–<code>animation-play-state</code>，可以讓設定讓動畫暫停！<br> 直接把動畫寫在元素本身並設定暫停(<code>pause</code>)，觸發時再設定為 <code>running</code> 即可。<br> <figure class="highlight scss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.head</span></div><div class="line">	<span class="attribute">animation</span>: nod .<span class="number">2s</span> infinite alternate pause</div><div class="line">	&amp;.is-active</div><div class="line">		animation-play-state: running</div></pre></td></tr></table></figure><br><br> </div>
+</li>
+<li><p>基本漸層 <code>linear-gradient</code> 應用<br> 只有菜菜的一個方向+兩個顏色，感覺尾巴那邊緣亮色的部分應該可以用漸層去做出來而不是無止境的加 <code>::before</code> <code>::after</code></p>
+</li>
+</ol>
+<p>因為是刻爽的，所以只測了 Chrome / Edge 可以正常顯示（Edge 沒有跑版讓我好訝異啊），數值也都抓得很隨意沒有統整，<code>position: absolute</code> 還被我濫用的很徹底XDD 用了大量重複的元素，寫完以後完全不敢回頭整理 code…而且有點後悔沒用 SVG ，可以直接輸出成圖檔的說~~（不過圖檔用畫得好像更快，還是不要浪費那個美國時間好了…）</p>
+<p>希望有機會生出正面XD</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;身為一個前端工程師，一定要用網頁來刻一下愛鳥啦～&lt;/p&gt;
+&lt;p&gt;&lt;p data-height=&quot;710&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;BzZYJN&quot; data-default-tab=&quot;result&quot; data-user=&quot;thisis577&quot; data-embed-version=&quot;2&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/thisis577/pen/BzZYJN/&quot;&gt;Playing with Chinese bulbul&lt;/a&gt; by 577 (&lt;a href=&quot;http://codepen.io/thisis577&quot;&gt;@thisis577&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;script async src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+    
+    </summary>
+    
+    
+      <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
+    
+      <category term="practice" scheme="http://yoursite.com/tags/practice/"/>
+    
+      <category term="UI" scheme="http://yoursite.com/tags/UI/"/>
+    
+  </entry>
   
   <entry>
     <title>Sublime 設定</title>
@@ -93,10 +146,13 @@
     <link href="http://yoursite.com/2016/08/08/mobile-develop-note/"/>
     <id>http://yoursite.com/2016/08/08/mobile-develop-note/</id>
     <published>2016-08-08T08:53:41.000Z</published>
-    <updated>2016-08-09T09:03:15.874Z</updated>
+    <updated>2016-11-16T10:15:31.329Z</updated>
     
     <content type="html"><![CDATA[<h2 id="iOS-的毛"><a href="#iOS-的毛" class="headerlink" title="iOS 的毛"></a>iOS 的毛</h2><ul>
-<li>要送 <code>click</code> 的對象應該設定 <code>cursor: pointer</code> 才會動（不然會無法點擊）</li>
+<li>要送 <code>click</code> 的對象應該設定 <code>cursor: pointer</code> 才會動（不然會無法點擊）<ul>
+<li><strong>可解決手機上 click delay 300ms 的問題</strong></li>
+</ul>
+</li>
 </ul>
 <a id="more"></a>
 <ul>
@@ -104,17 +160,22 @@
 </li>
 </ul>
 <h2 id="Android-鍵盤出現時把高度壓縮造成版跑掉"><a href="#Android-鍵盤出現時把高度壓縮造成版跑掉" class="headerlink" title="Android 鍵盤出現時把高度壓縮造成版跑掉"></a>Android 鍵盤出現時把高度壓縮造成版跑掉</h2><p>用改寫viewport的方法: <a href="http://stackoverflow.com/questions/8556933/screen-styling-when-virtual-keyboard-is-active" target="_blank" rel="external">screen styling when virtual keyboard is active</a></p>
+<div class="tip"><br><strong>2016/09 補充</strong>：<br>因為鍵盤通常只會在 input foucs 的時候出現，所以改用判斷 focus 出現時去重設高度來解決這個問題<br><br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Avoding keyboard affect window height</span></div><div class="line"><span class="keyword">if</span>(isMobile()) &#123;</div><div class="line">	<span class="keyword">var</span> windowHeight = $(<span class="built_in">window</span>).height();</div><div class="line">	$(<span class="string">'input'</span>).focus(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">		$(<span class="string">'html'</span>).height(windowHeight);</div><div class="line">	&#125;);</div><div class="line">	$(<span class="string">'input'</span>).blur(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">		<span class="comment">// wait 200ms for keyboard remove</span></div><div class="line">		setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">			$(<span class="string">'html'</span>).height(<span class="string">'100%'</span>);</div><div class="line">		&#125;, <span class="number">200</span>);</div><div class="line">	&#125;);</div><div class="line">&#125;</div></pre></td></tr></table></figure><br><br></div>
+
 <h2 id="input-預設-style-移除"><a href="#input-預設-style-移除" class="headerlink" title="input 預設 style 移除"></a>input 預設 style 移除</h2><figure class="highlight scss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">input</span><span class="selector-attr">[type="text"]</span></div><div class="line">    +appearance(<span class="attribute">none</span>) <span class="comment">/* Remove iOS default shadow */</span></div></pre></td></tr></table></figure>
 <h2 id="手機觸碰的-delay-NEVER-DO-THIS"><a href="#手機觸碰的-delay-NEVER-DO-THIS" class="headerlink" title="手機觸碰的 delay - NEVER DO THIS!!"></a>手機觸碰的 delay - NEVER DO THIS!!</h2><p>在 iOS 上會先吃 <code>touchstart</code> 再吃 <code>click</code>，一般只綁 click 的話會造成在 iOS 上有延遲感，點擊下去會 delay 一下才有反應。問估狗大師的話通常會出現以下解法：</p>
 <figure class="highlight js"><figcaption><span>script.js</span><a href="http://stackoverflow.com/questions/7018919/how-to-bind-touchstart-and-click-events-but-not-respond-to-both" target="_blank" rel="external">How to bind 'touchstart' and 'click' events but not respond to both?</a></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Mobile click &amp; touch event</span></div><div class="line">$(<span class="string">'#buttonId'</span>).on(<span class="string">'touchstart click'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</div><div class="line">    e.stopPropagation(); e.preventDefault();</div><div class="line">    <span class="comment">// your code here</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <p>但我忘記在哪裡看到評論說 <strong>不要這樣做</strong> 比較好，具體原因我忘記了…OTZ</p>
 <p>目前找到的替代方案是 <strong>用 <a href="https://github.com/ftlabs/fastclick" target="_blank" rel="external">FastClick</a> 這個套件</strong> 來解決，他可以消除在手機上觸碰的 300ms delay。但這個套件在 bower 上好像很久沒有更新了…嘛，在有更好的辦法之前先這麼頂著吧ˊ_&gt;ˋ</p>
-]]></content>
+<div class="tip"><br><strong>2016/09補充：</strong> 在需要點擊的元件套上 <code>cursor: pointer</code> 可解決此問題<br></div>]]></content>
     
     <summary type="html">
     
       &lt;h2 id=&quot;iOS-的毛&quot;&gt;&lt;a href=&quot;#iOS-的毛&quot; class=&quot;headerlink&quot; title=&quot;iOS 的毛&quot;&gt;&lt;/a&gt;iOS 的毛&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;要送 &lt;code&gt;click&lt;/code&gt; 的對象應該設定 &lt;code&gt;cursor: pointer&lt;/code&gt; 才會動（不然會無法點擊）&lt;/li&gt;
+&lt;li&gt;要送 &lt;code&gt;click&lt;/code&gt; 的對象應該設定 &lt;code&gt;cursor: pointer&lt;/code&gt; 才會動（不然會無法點擊）&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;可解決手機上 click delay 300ms 的問題&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
     
     </summary>
@@ -236,12 +297,15 @@
     <link href="http://yoursite.com/2016/08/08/git-common-use/"/>
     <id>http://yoursite.com/2016/08/08/git-common-use/</id>
     <published>2016-08-08T07:27:15.000Z</published>
-    <updated>2016-08-08T08:28:40.520Z</updated>
+    <updated>2016-11-16T10:22:38.917Z</updated>
     
     <content type="html"><![CDATA[<p><a href="http://blog.gogojimmy.net/2012/02/29/git-scenario/" target="_blank" rel="external">Git 情境劇</a> 這篇文章應該已經涵蓋了大部分的使用情境，教學也寫得很清楚，以下只列出一些我自己比較常用或比較記不住的指令XD</p>
 <a id="more"></a>
 <h2 id="暫存-commit"><a href="#暫存-commit" class="headerlink" title="暫存 commit"></a>暫存 commit</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 暫時把目前的 commit 存起來</span></div><div class="line">git commit -m tmp</div><div class="line"><span class="comment"># 還原暫存的commit</span></div><div class="line">git reset HEAD^</div></pre></td></tr></table></figure>
-<p>暫存變更則是使用 <code>git stash</code></p>
+<p>暫存變更則是使用 <code>git stash</code>。但 stash 不會把 untracked 的檔案也一起 stash 起來，所以在 pull 的時候可能會出問題，較建議用 commit tmp。</p>
+<div class="tip"><br>    暫存 commit 只有在 branch 可以做！千萬不要在 master 做！<br>    若在 master 修改後想要暫存的話，先 <code>git checkout -b new-branch</code> 到新的 branch 再暫存。<br></div>
+
+<h2 id="local-端所有東西都不要，reset-回目前遠端的-master"><a href="#local-端所有東西都不要，reset-回目前遠端的-master" class="headerlink" title="local 端所有東西都不要，reset 回目前遠端的 master"></a>local 端所有東西都不要，reset 回目前遠端的 master</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git fetch origin</div><div class="line"><span class="comment"># 大寫B強制用遠端進度蓋掉本地 master</span></div><div class="line">git checkout -B master origin/master</div></pre></td></tr></table></figure>
 <h2 id="將-branch-的變更推到遠端"><a href="#將-branch-的變更推到遠端" class="headerlink" title="將 branch 的變更推到遠端"></a>將 branch 的變更推到遠端</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 先在 branch 做 commit</span></div><div class="line"><span class="comment"># 做完 commit 後切回 master</span></div><div class="line">(branch)$ git checkout master</div><div class="line"><span class="comment"># 檢查 master 與遠端是否同步</span></div><div class="line">(master)$ git pull</div><div class="line"><span class="comment"># 無任何衝突的話就 merge branch</span></div><div class="line">(master)$ git merge &lt;branch-name&gt;</div><div class="line">(master)$ git push</div></pre></td></tr></table></figure>
 <h2 id="拉新的-commit-到目前-branch"><a href="#拉新的-commit-到目前-branch" class="headerlink" title="拉新的 commit 到目前 branch"></a>拉新的 commit 到目前 branch</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 更新 master</span></div><div class="line">(master)$ git pull</div><div class="line">(master)$ git checkout &lt;branch-name&gt;</div><div class="line"><span class="comment"># 對 branch 做 rebase，把它接到更新過的 master 上</span></div><div class="line">(branch)$ git rebase master</div></pre></td></tr></table></figure>
 ]]></content>
@@ -624,11 +688,11 @@
   </entry>
   
   <entry>
-    <title>建立 Hexo 環境</title>
+    <title>利用 Github + Hexo 來建 blog</title>
     <link href="http://yoursite.com/2016/07/28/construct-hexo-with-github/"/>
     <id>http://yoursite.com/2016/07/28/construct-hexo-with-github/</id>
     <published>2016-07-28T02:20:39.000Z</published>
-    <updated>2016-08-02T04:08:43.099Z</updated>
+    <updated>2016-11-16T10:15:31.319Z</updated>
     
     <content type="html"><![CDATA[<h1 id="1-安裝-Github-Desktop"><a href="#1-安裝-Github-Desktop" class="headerlink" title="1. 安裝 Github Desktop"></a>1. 安裝 <a href="https://desktop.github.com/" target="_blank" rel="external">Github Desktop</a></h1><p>優點</p>
 <ul>
@@ -649,25 +713,36 @@
 
 
 <h1 id="4-建立-Hexo-環境"><a href="#4-建立-Hexo-環境" class="headerlink" title="4. 建立 Hexo 環境"></a>4. 建立 Hexo 環境</h1><ol>
-<li><p><a href="https://hexo.io/zh-tw/docs/" target="_blank" rel="external">照著 Hexo 官方安裝教學走吧XD</a></p>
- <div class="tip"><br>     需要在 Github 上開一個名為 <code>[your_account].github.io</code> 的 repo，<br>     這樣在推出去之後網頁(<code>http://[your_account].github.io</code>)才會動。<br> </div>
+<li><p>安裝 Hexo</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo-cli 	<span class="comment"># 安裝 Hexo</span></div><div class="line">$ hexo init &lt;folder&gt; 		<span class="comment"># 在指定資料夾中建立所需文件</span></div><div class="line">$ <span class="built_in">cd</span> &lt;folder&gt;			<span class="comment"># 移至指定資料夾</span></div><div class="line">$ npm install			<span class="comment"># 安裝 Hexo plugin</span></div></pre></td></tr></table></figure>
 </li>
-<li><p>設定 root <code>_config.yml</code></p>
- <figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 選擇主題</span></div><div class="line"><span class="attr">theme:</span> theme-name</div><div class="line"></div><div class="line"><span class="comment"># 設定 deploy</span></div><div class="line"><span class="attr">deploy:</span></div><div class="line"><span class="attr">    type:</span> git</div><div class="line"><span class="attr">    repo:</span> git@github.com:[your_account]/[your_account].github.io.git</div><div class="line"><span class="attr">    branch:</span> master</div></pre></td></tr></table></figure>
+<li><p>Hello World!</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server 	<span class="comment"># = hexo s, 進行 compile</span></div></pre></td></tr></table></figure>
+<p> 到這邊基本已經安裝好 hexo 了，可以在執行上述指令後到 <code>http://localhost:4000</code> 檢視基本頁面。</p>
 </li>
-<li><p>基本操作指令</p>
- <figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo server 	<span class="comment"># = hexo s, 進行 compile</span></div><div class="line">hexo generate 	<span class="comment"># = hexo g, 建立 publish 檔案</span></div><div class="line">hexo deploy	<span class="comment"># = hexo d, 將 publish 的檔案推到第二點設定的 repo 上</span></div></pre></td></tr></table></figure>
+<li><p>設定 hexo 根目錄下的 <code>_config.yml</code></p>
+ <figure class="highlight bash"><figcaption><span><hexo-root>/_config.yml</hexo-root></span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 選擇主題</span></div><div class="line">theme: theme-name</div><div class="line"></div><div class="line"><span class="comment"># 設定要 deploy 到 github repo</span></div><div class="line">deploy:</div><div class="line">    <span class="built_in">type</span>: git</div><div class="line">    repo: git@github.com:[your_account]/[your_account].github.io.git</div><div class="line">    branch: master</div></pre></td></tr></table></figure>
+</li>
+<li><p>設置 <a href="https://pages.github.com/" target="_blank" rel="external">Github pages</a></p>
+ <div class="tip"><br>     需要在 Github 上開一個名為 <code>[your_account].github.io</code> 的 repo，這樣在推出去之後網頁(<code>http://[your_account].github.io</code>)才會動。<br> </div>
+</li>
+<li><p>產生靜態網頁並推到 github 上</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo generate <span class="comment"># = hexo g, 建立 publish 檔案</span></div><div class="line">$ hexo deploy	<span class="comment"># = hexo d, 將 publish 的檔案推到第二點設定的 repo 上</span></div></pre></td></tr></table></figure>
+<p> 接下來就可以到 <code>http://[your_account].github.io</code> 檢視成果囉～</p>
+</li>
+</ol>
+<h1 id="5-進階設定"><a href="#5-進階設定" class="headerlink" title="5. 進階設定"></a>5. 進階設定</h1><div class="tip"><br>若此處項目連結失效可至 <a href="/tags/hexo/">#Hexo</a> 搜尋該主題<br></div>
+
+<ol>
+<li><p><a href="https://thisis577.github.io/2016/07/27/keep-hexo-source-in-github/" target="_blank" rel="external">把 Hexo 原始碼也放到 github 遠端保存</a></p>
+<p> 延伸: 在別的地方 clone 既有的 hexo repo</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># clone repo 到指定目錄</span></div><div class="line">$ git <span class="built_in">clone</span> http://github.com/[your_account]/[your_account].github.io target_dir</div><div class="line"><span class="comment"># 切換到保存 hexo 原始碼的 branch</span></div><div class="line">$ git checkout hexo_branch</div><div class="line"><span class="comment"># 將該裝的東西都裝一裝</span></div><div class="line">$ npm install</div></pre></td></tr></table></figure>
 </li>
 <li><p><a href="https://thisis577.github.io/2016/07/28/modify-hexo-themes/" target="_blank" rel="external">修改 Hexo 主題</a></p>
 <p> 若遇到 deploy 完 style 卻不對的情況: <a href="https://github.com/hexojs/hexo/issues/579" target="_blank" rel="external">(deploy后style.css不对)</a></p>
- <figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Make theme changes &amp; deploy</span></div><div class="line">hexo clean</div><div class="line">hexo generate</div><div class="line">hexo deploy</div></pre></td></tr></table></figure>
-</li>
-<li><p><a href="https://thisis577.github.io/2016/07/27/keep-hexo-source-in-github/" target="_blank" rel="external">把 Hexo 原始碼也放到 github 遠端保存</a></p>
-<p> 延伸: 在別的地方 clone 既有的 hexo repo</p>
- <figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># clone repo 到指定目錄</span></div><div class="line">git clone http://github.com/[your_account]/[your_account].github.io target_dir</div><div class="line"><span class="comment"># 切換到保存 hexo 原始碼的 branch</span></div><div class="line">git checkout hexo_branch</div><div class="line"><span class="comment"># 將該裝的東西都裝一裝</span></div><div class="line">npm install</div></pre></td></tr></table></figure>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Make theme changes &amp; deploy</span></div><div class="line">$ hexo clean</div><div class="line">$ hexo generate</div><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
 </li>
 </ol>
-<div class="tip"><br>若項目4.5連結失效可至 <a href="/tags/hexo/">#Hexo</a> 搜尋該主題<br></div>
 ]]></content>
     
     <summary type="html">
@@ -732,71 +807,6 @@
       <category term="jade" scheme="http://yoursite.com/tags/jade/"/>
     
       <category term="SASS" scheme="http://yoursite.com/tags/SASS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo markdown 筆記</title>
-    <link href="http://yoursite.com/2016/07/27/hexo-md-usage/"/>
-    <id>http://yoursite.com/2016/07/27/hexo-md-usage/</id>
-    <published>2016-07-27T14:20:18.000Z</published>
-    <updated>2016-08-08T07:11:33.641Z</updated>
-    
-    <content type="html"><![CDATA[<div class="tip"><br>    為個人規範跟一些使用方式的範例筆記<br></div>
-
-<a id="more"></a>
-<h1 id="tags-格式"><a href="#tags-格式" class="headerlink" title="tags 格式"></a>tags 格式</h1><ul>
-<li>全小寫: 一般名詞，如 <code>hexo</code></li>
-<li>全大寫: 特定縮寫，如 <code>SEO</code></li>
-<li>按照英文字母順序排列</li>
-</ul>
-<hr>
-<h1 id="Markdown-基本語法"><a href="#Markdown-基本語法" class="headerlink" title="Markdown 基本語法"></a>Markdown 基本語法</h1><p>水平線</p>
-<figure class="highlight md"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">----</div></pre></td></tr></table></figure>
-<blockquote>
-<p>右尖括號</p>
-</blockquote>
-<ul>
-<li>星號</li>
-</ul>
-<p><em>星號刮起來變斜體</em></p>
-<p><strong>兩個星號括起來</strong></p>
-<p><del>刪除線</del></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">code block</div></pre></td></tr></table></figure>
-<p>Ref: <a href="http://markdown.tw/" target="_blank" rel="external">Markdown 語法說明</a></p>
-<hr>
-<h1 id="標題"><a href="#標題" class="headerlink" title="標題"></a>標題</h1><h1 id="h1"><a href="#h1" class="headerlink" title="h1"></a>h1</h1><h2 id="h2"><a href="#h2" class="headerlink" title="h2"></a>h2</h2><h3 id="h3"><a href="#h3" class="headerlink" title="h3"></a>h3</h3><h4 id="h4"><a href="#h4" class="headerlink" title="h4"></a>h4</h4><figure class="highlight md"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="section"># h1</span></div><div class="line"><span class="section">## h2</span></div><div class="line"><span class="section">### h3</span></div><div class="line"><span class="section">#### h4</span></div></pre></td></tr></table></figure>
-<hr>
-<h1 id="特殊區塊"><a href="#特殊區塊" class="headerlink" title="特殊區塊"></a>特殊區塊</h1><h2 id="提示區塊"><a href="#提示區塊" class="headerlink" title="提示區塊"></a>提示區塊</h2><div class="tip"><br>   提示區塊<br></div>
-
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"tip"</span>&gt;</span></div><div class="line">    提示區塊</div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
-<h2 id="評論區塊"><a href="#評論區塊" class="headerlink" title="評論區塊"></a>評論區塊</h2><p><small class="murmur">murmur區塊</small></p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">small</span> <span class="attr">class</span>=<span class="string">"murmur"</span>&gt;</span>murmur區塊<span class="tag">&lt;/<span class="name">small</span>&gt;</span></div></pre></td></tr></table></figure>
-<h2 id="murmur-in-tip"><a href="#murmur-in-tip" class="headerlink" title="murmur in tip"></a>murmur in tip</h2><div class="tip"><br>    提示區塊<br>    <small class="murmur"><br>        在提示區塊 murmur<br>    </small><br></div>
-
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"tip"</span>&gt;</span></div><div class="line">    提示區塊</div><div class="line">    <span class="tag">&lt;<span class="name">small</span> <span class="attr">class</span>=<span class="string">"murmur"</span>&gt;</span></div><div class="line">        在提示區塊 murmur</div><div class="line">    <span class="tag">&lt;/<span class="name">small</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
-<hr>
-<h1 id="Markdown-新大陸"><a href="#Markdown-新大陸" class="headerlink" title="Markdown 新大陸"></a>Markdown 新大陸</h1><h2 id="Code-Block"><a href="#Code-Block" class="headerlink" title="Code Block"></a>Code Block</h2><figure class="highlight md"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;% codeblock [title] [lang:language] [url] [link text] %&#125;</div><div class="line">code snippet</div><div class="line">&#123;% endcodeblock %&#125;</div></pre></td></tr></table></figure>
-<p><small class="murmur"><br>    我一直把那個格式當成是 <code>ejs</code> 的格式 囧<br></small></p>
-<h2 id="Backtick-Code-Block"><a href="#Backtick-Code-Block" class="headerlink" title="Backtick Code Block"></a>Backtick Code Block</h2><figure class="highlight md"><figcaption><span>test.md</span><a href="https://hexo.io/docs/tag-plugins.html#Backtick-Code-Block" target="_blank" rel="external">#Backtick-Code-Block</a></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">~~~ [language] [title] [url] [link text] code snippet ~~~</div></pre></td></tr></table></figure>
-<div class="tip"><br>    <ol><br>        <li>Code block 與 Backtick Code Block 不能混用</li><br>        <li>Block 與上下文必須有空行不能連在一起</li><br>    </ol><br></div>
-
-<h3 id="Blockquote"><a href="#Blockquote" class="headerlink" title="Blockquote"></a>Blockquote</h3><blockquote><p>Every interaction is both precious and an opportunity to delight.</p>
-<footer><strong>Seth Godin</strong><cite><a href="http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html" target="_blank" rel="external">Welcome to Island Marketing</a></cite></footer></blockquote>
-<figure class="highlight md"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;% blockquote Seth Godin http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html Welcome to Island Marketing %&#125;</div><div class="line">Every interaction is both precious and an opportunity to delight.</div><div class="line">&#123;% endblockquote %&#125;</div></pre></td></tr></table></figure>
-<blockquote>
-<p>引用</p>
-</blockquote>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;div class=&quot;tip&quot;&gt;&lt;br&gt;    為個人規範跟一些使用方式的範例筆記&lt;br&gt;&lt;/div&gt;
-    
-    </summary>
-    
-    
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
   </entry>
   
