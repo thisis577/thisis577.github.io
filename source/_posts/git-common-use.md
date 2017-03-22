@@ -1,7 +1,6 @@
 ---
 title: 個人常用 Git 指令
 date: 2016-08-08 15:27:15
-sticky: true
 tags:
 - git
 ---
