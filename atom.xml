@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-11-16T10:15:31.313Z</updated>
+  <updated>2017-07-05T06:18:34.997Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Performance of animation</title>
+    <link href="http://yoursite.com/2017/07/05/Performance-of-animation/"/>
+    <id>http://yoursite.com/2017/07/05/Performance-of-animation/</id>
+    <published>2017-07-05T05:19:08.000Z</published>
+    <updated>2017-07-05T06:18:34.997Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近在研究效能研究到快爆炸了，剛剛看了<a href="https://developers.google.com/web/updates/2017/03/performant-expand-and-collapse" target="_blank" rel="external">一篇關於開合動畫的文章</a>讓我好震驚：</p>
+<h2 id="指定寬高的寫法是最差的寫法！！！"><a href="#指定寬高的寫法是最差的寫法！！！" class="headerlink" title="指定寬高的寫法是最差的寫法！！！"></a>指定寬高的寫法是最差的寫法！！！</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.menu</span> &#123;</div><div class="line">  <span class="attribute">overflow</span>: hidden;</div><div class="line">  <span class="attribute">width</span>: <span class="number">350px</span>;</div><div class="line">  <span class="attribute">height</span>: <span class="number">600px</span>;</div><div class="line">  <span class="attribute">transition</span>: width <span class="number">600ms</span> ease-out, height <span class="number">600ms</span> ease-out;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="selector-class">.menu--collapsed</span> &#123;</div><div class="line">  <span class="attribute">width</span>: <span class="number">200px</span>;</div><div class="line">  <span class="attribute">height</span>: <span class="number">60px</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>原來指定<code>width</code>跟<code>height</code>的作法會讓畫面在每個 frame 重算 layout 跟重畫(paint)結果！！</p>
+<div class="tip"><br>要讓效能好，要避開重算 layout &amp; paint ，只做 composite，而會觸發 composite 的屬性只有 <code>opacity</code> &amp; <code>transform</code>，其他屬性都會動到兩項之一，通通NG～<br></div>
+
+<p>看來我的學習還不夠，前端之路還很漫長啊…</p>
+<h3 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h3><ul>
+<li><a href="https://www.html5rocks.com/en/tutorials/speed/high-performance-animations/" target="_blank" rel="external">High Performance Animations</a></li>
+<li><a href="https://www.chenhuijing.com/slides/css-triggers/#/" target="_blank" rel="external">Let’s Talk about CSS triggers</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近在研究效能研究到快爆炸了，剛剛看了&lt;a href=&quot;https://developers.google.com/web/updates/2017/03/performant-expand-and-collapse&quot; target=&quot;_blank&quot; rel=&quot;extern
+    
+    </summary>
+    
+    
+      <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
+    
+      <category term="performance" scheme="http://yoursite.com/tags/performance/"/>
+    
+  </entry>
   
   <entry>
     <title>用 CSS 刻一隻白頭翁</title>
@@ -760,53 +792,6 @@
       <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
       <category term="github" scheme="http://yoursite.com/tags/github/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>修改 Hexo 主題</title>
-    <link href="http://yoursite.com/2016/07/28/modify-hexo-themes/"/>
-    <id>http://yoursite.com/2016/07/28/modify-hexo-themes/</id>
-    <published>2016-07-28T01:25:44.000Z</published>
-    <updated>2016-07-29T09:51:00.965Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="不是秘技的秘技"><a href="#不是秘技的秘技" class="headerlink" title="不是秘技的秘技"></a>不是秘技的秘技</h1><p>將 themes 資料夾複製一份出來，這樣就可以自由修改la~ O_&lt;</p>
-<div class="tip"><br><div>記得將 themes 資料夾底下的 .git 資料夾砍掉</div><br><div><code>(Windows 檢視需開啟隱藏資料夾才看得到)</code></div><br><code>這樣自己的 git 才 track 到 themes 底下的所有變更</code><br></div>
-
-<a id="more"></a>
-<hr>
-<h1 id="很難懂的-Jade"><a href="#很難懂的-Jade" class="headerlink" title="很難懂的 Jade"></a>很難懂的 Jade</h1><p>Hexo-theme-apollo 模版是以 <code>Jade</code> 寫的，與官方使用的 <code>ejs</code> 不同<br>但只需要另外安裝 <code>Jade</code> 外掛 <a href="https://github.com/hexojs/hexo-renderer-jade" target="_blank" rel="external">hexo-render-jade</a></p>
-<h2 id="其實只需要一行指令"><a href="#其實只需要一行指令" class="headerlink" title="其實只需要一行指令"></a>其實只需要一行指令</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 安裝 Jade 外掛</span></div><div class="line">npm install hexo-renderer-jade --save</div></pre></td></tr></table></figure>
-<p>如此一來只要下 <code>hexo server</code> 就會自動幫你 compile<br>也可以另外插入 css 去修改了</p>
-<div class="tip"><br>    凡是有修改 <code>*.jade</code> 建議關掉重開 hexo 比較好，以確保有吃到變更。<br></div>
-
-<p>jade theme 寫法參考: <a href="https://github.com/saintwinkle/hexo-theme-pure" target="_blank" rel="external">hexo-theme-pure</a></p>
-<hr>
-<h1 id="編譯-SASS"><a href="#編譯-SASS" class="headerlink" title="編譯 SASS"></a>編譯 SASS</h1><h2 id="在-themes-底下安裝-gulp"><a href="#在-themes-底下安裝-gulp" class="headerlink" title="在 themes 底下安裝 gulp"></a>在 themes 底下安裝 gulp</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">cd themes/[your-themes]</div><div class="line"><span class="comment"># 裝 themes 裡面的 package</span></div><div class="line">npm install</div><div class="line"><span class="comment"># 裝 gulp</span></div><div class="line">npm install gulp -g</div><div class="line">npm install gulp-sass</div></pre></td></tr></table></figure>
-<p><small class="murmur"><br>    因為我在 themes 底下裝一直會噴 Error: EMFILE, too many open files 的錯誤，<br>    所以我乾脆把 gulp 裝在 root 底下<br></small></p>
-<figure class="highlight"><figcaption><span>/package.json</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">"dependencies": &#123;</div><div class="line">    "gulp": "^3.9.0",</div><div class="line">    "gulp-autoprefixer": "^3.0.2",</div><div class="line">    "gulp-sass": "^2.0.4",</div><div class="line">    "gulp-sourcemaps": "^1.6.0"</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 直接用 npm 裝一次</span></div><div class="line">npm install</div></pre></td></tr></table></figure>
-<h2 id="編輯-gulpfile-js-此處改自hexo-theme-apollo"><a href="#編輯-gulpfile-js-此處改自hexo-theme-apollo" class="headerlink" title="編輯 gulpfile.js (此處改自hexo-theme-apollo)"></a>編輯 <code>gulpfile.js</code> (此處改自<a href="https://github.com/pinggod/hexo-theme-apollo/blob/master/gulpfile.js" target="_blank" rel="external">hexo-theme-apollo</a>)</h2><figure class="highlight js"><figcaption><span>themes/[your-themes]/gulpfile.js</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> gulp = <span class="built_in">require</span>(<span class="string">'gulp'</span>);</div><div class="line"><span class="keyword">var</span> sass = <span class="built_in">require</span>(<span class="string">'gulp-sass'</span>);</div><div class="line"><span class="keyword">var</span> autoprefixer = <span class="built_in">require</span>(<span class="string">'gulp-autoprefixer'</span>);</div><div class="line"></div><div class="line"><span class="comment">// 一次性編譯 Sass</span></div><div class="line">gulp.task(<span class="string">'sass'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="comment">// 原主題使用 scss, 因個人習慣新增 *.sass (多個 src 可用 array[] 方式塞入)</span></div><div class="line">    <span class="keyword">return</span> gulp.src([<span class="string">'./source/scss/*.scss'</span>, <span class="string">'./source/scss/*.sass'</span>])</div><div class="line">        .pipe(sass(&#123;outputStyle: <span class="string">'compressed'</span>&#125;))</div><div class="line">        .pipe(autoprefixer())</div><div class="line">        .pipe(gulp.dest(<span class="string">'./source/css'</span>));</div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="comment">// 即時編譯</span></div><div class="line">gulp.task(<span class="string">'default'</span>, [<span class="string">'sass'</span>], <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    gulp.watch(<span class="string">'./source/scss/_partial/*.scss'</span>, [<span class="string">'sass'</span>]);</div><div class="line">    <span class="comment">// 同時 watch scss &amp; sass</span></div><div class="line">    gulp.watch([<span class="string">'./source/scss/*.scss'</span>, <span class="string">'./source/scss/*.sass'</span>], [<span class="string">'sass'</span>]);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-<figure class="highlight yml"><figcaption><span>themes/[your-themes]/</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 需在與 gulpfile 同一層才能跑</span></div><div class="line"><span class="comment"># 一次性編譯</span></div><div class="line">gulp sass</div><div class="line"><span class="comment"># 或者</span></div><div class="line"><span class="comment"># always watch</span></div><div class="line">gulp</div></pre></td></tr></table></figure>
-<hr>
-<h1 id="Tags"><a href="#Tags" class="headerlink" title="Tags"></a>Tags</h1><p>需安裝 <code>hexo-generate-tags</code></p>
-<div class="tip"><br>    注意 tag 大小寫，會造成資料夾目錄連不進去<br></div>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;不是秘技的秘技&quot;&gt;&lt;a href=&quot;#不是秘技的秘技&quot; class=&quot;headerlink&quot; title=&quot;不是秘技的秘技&quot;&gt;&lt;/a&gt;不是秘技的秘技&lt;/h1&gt;&lt;p&gt;將 themes 資料夾複製一份出來，這樣就可以自由修改la~ O_&amp;lt;&lt;/p&gt;
-&lt;div class=&quot;tip&quot;&gt;&lt;br&gt;&lt;div&gt;記得將 themes 資料夾底下的 .git 資料夾砍掉&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;code&gt;(Windows 檢視需開啟隱藏資料夾才看得到)&lt;/code&gt;&lt;/div&gt;&lt;br&gt;&lt;code&gt;這樣自己的 git 才 track 到 themes 底下的所有變更&lt;/code&gt;&lt;br&gt;&lt;/div&gt;
-    
-    </summary>
-    
-    
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
-    
-      <category term="gulp" scheme="http://yoursite.com/tags/gulp/"/>
-    
-      <category term="jade" scheme="http://yoursite.com/tags/jade/"/>
-    
-      <category term="SASS" scheme="http://yoursite.com/tags/SASS/"/>
     
   </entry>
   
